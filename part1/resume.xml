@@ -1,0 +1,123 @@
+<?xml version = "1.0"?>
+<?xml-stylesheet type="text/xsl" href="resume.xsl"?>
+
+<!-- My Resume: resume.xml -->
+<resume>
+	
+	<contactInfo>
+		<applicantName>
+			<firstName>Zakaria</firstName>
+			<lastName>Bakkal</lastName>
+		</applicantName>
+		<contactMethod>
+			<address>
+				<street>169-104 West Haven Drive</street>
+				<city>Leduc</city>
+				<province>Alberta</province>
+				<contry>Canada</contry>
+				<zip>T9E0N9</zip>
+			</address>
+			<phone>1.403.606.1714</phone>
+			<email>zackbakkal@hotmail.com</email>
+		</contactMethod>
+	</contactInfo>
+	
+	<education>
+		<school schoolType="university">
+			<date dateType="graduation">
+				<from>Jul 2015</from>
+				<to>Feb 2020</to>
+			</date>
+			<degree degreeType="bachelors">
+				<degreeName>Bachelors of computer Science and information Systems</degreeName>
+			</degree>
+			<schoolInfo>
+				<schoolName>Athabasca University</schoolName>
+				<contactMethod>
+					<address>
+						<street></street>
+						<city>Athabasca</city>
+						<province>Alberta</province>
+						<contry>Canada</contry>
+						<zip>T6E5V7</zip>
+					</address>
+					<phone>1.780.999.1822</phone>
+					<email>athabascau@athabascau.ca</email>
+				</contactMethod>
+			</schoolInfo>
+			<educationalMeasure measureType="gpa">
+				<maximumValue>4.00</maximumValue>
+				<measureValue>3.44</measureValue>
+			</educationalMeasure>
+		</school>
+		<highSchool type="highschool">
+			<date>
+				<graduationDate>Jun 1999</graduationDate>
+			</date>
+			<degree degreeType="diploma">
+				<degreeName>Experimental Science</degreeName>
+			</degree>
+			<schoolInfo>
+				<schoolName>Ibn El Haytham</schoolName>
+				<contactMethod>
+					<address>
+						<street></street>
+						<city>Casablanca</city>
+						<province>Anfa</province>
+						<contry>Morocco</contry>
+						<zip>20000</zip>
+					</address>
+					<phone>011212852741</phone>
+					<email>ibnelhaytham@ibnalhaytham.ma</email>
+				</contactMethod>
+			</schoolInfo>
+			<educationalMeasure measureType="gpa">
+				<maximumValue>20</maximumValue>
+				<measureValue>14.78</measureValue>
+			</educationalMeasure>
+		</highSchool>
+	</education>
+	
+	<workExperience>
+		<job type="fullTime">
+			<workDate>
+				<from>Mar 2014</from>
+				<to>Current</to>
+			</workDate>
+			<position>Manager</position>
+			<companyInfo>
+				<companyName>Executive Airways Grooming Services</companyName>
+				<contactMethod>
+					<address>
+						<street></street>
+						<city>Edmonton</city>
+						<province>Alberta</province>
+						<contry>Canada</contry>
+						<zip>T6B3YC</zip>
+					</address>
+					<phone>1.780.200.5718</phone>
+					<email>EAGS@eags.com</email>
+				</contactMethod>
+			</companyInfo>
+		</job>
+	</workExperience>
+	
+	<skills>
+		<language type="programming">
+			<skillname>Java</skillname>
+			<experience>Advanced</experience>
+		</language>
+		<language type="programming">
+			<skillname>C++</skillname>
+			<experience>Beginner</experience>
+		</language>
+		<language type="programming">
+			<skillname>SQL</skillname>
+			<experience>Advanced</experience>
+		</language>
+		<language type="scripting">
+			<skillname>JavaSciprt</skillname>
+			<experience>Beginner</experience>
+		</language>
+	</skills>
+</resume>

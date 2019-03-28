@@ -1,0 +1,202 @@
+/*classes*/
+.center {
+	text-align: center;
+}
+
+/*/////*elements/////*/
+
+/*body*/
+body {
+	font-family: sans-serif, serif, "New Times Roman", helvetica;
+	background-color: #072035;
+	color: white;
+}
+
+/*navigation menu*/
+nav div {
+	border-width: medium;
+	border-style: groove;
+	border-radius: 4px;
+	width: 5%;
+	text-align: center;
+	position: relative;
+	padding: 5px;
+	margin: 1px;
+	float: right;
+	z-index: 1;
+	right: 5%;
+	top: 10px;
+}
+
+/*header*/
+header h1{
+	-webkit-box-shadow: 3px 3px 30px 0px rgba(100, 200, 130, 0.75);
+	border-width: medium;
+	border-style: groove;
+	border-radius: 15px;
+	text-align: center;
+	position: relative;
+	padding: 10px;
+	margin: 20px;
+	width: 60%
+}
+
+/*section*/
+section {
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(100, 200, 130, 0.75);
+	background-color: #2A8ADF;
+	border-radius: 15px;
+	position: relative;
+	padding: 10px;
+	margin: 20px;
+}
+
+section details {
+	position: relative;
+	width: 90%;
+	left: 5%;
+	padding: 5px;
+	margin: 5px;
+}
+
+section ol {
+	position: relative;
+	width: 90%;
+	left: 5%;
+	font-size: 1em;
+}
+
+section ul {
+	margin-bottom: 20px;
+}
+
+section p {
+	font-size: 1em;
+	width: 90%;
+	left: 5%;
+	position: relative;
+}
+
+section header h1 {
+	position: relative;
+	width: 70%;
+}
+
+section header h2 {
+	font-size: 1.6em;
+	color: #B7E6FF;
+	position: relative;
+	width: 90%;
+	left: 5%;
+	text-decoration: underline;
+}
+
+section header h3 {
+	font-size: 1.4em;
+	color: #B7E6FF;
+	position: relative;
+	width: 90%;
+	left: 5%;
+	text-decoration: underline;
+}
+
+section details summary {
+	position: relative;
+	width: 90%;
+	left: 5%;
+	font-size: 1em;
+}
+
+section details summary a {
+	position: relative;
+	position: relative;
+	width: 90%;
+	left: 5%;
+	
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+/*a*/
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+section a:visited {
+	color: darkblue;
+}
+
+/*lists*/
+ul, ol {
+	position: relative;
+	width: 90%;
+	left: 5%;
+	font-size: 1em;
+}
+
+
+
+ul ul, ol ol {
+	font-size: 1em;
+	font-weight: normal;
+}
+
+/*footer*/
+footer {
+	text-align: left;
+	background-color: #3F7FBF;
+	position: relative;
+	bottom: 0px;
+	border-width: medium;
+	border-style: groove;
+	margin: 20px;
+}
+
+/*ids*/
+#coverpageul {
+	position: relative;
+	width: 90%;
+	left: 5%;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+#left {
+	position: relative;
+	width: 20%;
+	left: 5px;
+	text-align: center;
+	font-weight: bold;
+	border-width: thin;
+	border-color: white;
+	border-radius: 2px;
+	float: left;
+	margin: 20px;
+	padding: 5px;
+	z-index: 1;
+	background-color: red;
+}
+
+#next {
+	position: relative;
+	width: 5%;
+	right: 5px;
+	text-align: center;
+	font-weight: bold;
+	border-width: thin;
+	border-radius: 2px;
+	float: right;
+	margin: 20px;
+	padding: 5px;
+	z-index: 1;
+}
+
+
+
+
+

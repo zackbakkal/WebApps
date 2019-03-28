@@ -1,0 +1,229 @@
+<schema attributeFormDefault="unqualified" xmlns="http://www.w3.org/2001/XMLSchema">
+  <element name="resume">
+    <annotation>
+      <documentation>My Resume: resume.xml</documentation>
+    </annotation>
+    <complexType>
+      <sequence>
+        <element name="contactInfo">
+          <complexType>
+            <sequence>
+              <element name="applicantName">
+                <complexType>
+                  <sequence>
+                    <element type="string" name="firstName"/>
+                    <element type="string" name="lastName"/>
+                  </sequence>
+                </complexType>
+              </element>
+              <element name="contactMethod">
+                <complexType>
+                  <sequence>
+                    <element name="address">
+                      <complexType>
+                        <sequence>
+                          <element type="string" name="street"/>
+                          <element type="string" name="city"/>
+                          <element type="string" name="province"/>
+                          <element type="string" name="contry"/>
+                          <element type="string" name="zip"/>
+                        </sequence>
+                      </complexType>
+                    </element>
+                    <element type="string" name="phone"/>
+                    <element type="string" name="email"/>
+                  </sequence>
+                </complexType>
+              </element>
+            </sequence>
+          </complexType>
+        </element>
+        <element name="education">
+          <complexType>
+            <sequence>
+              <element name="school">
+                <complexType>
+                  <sequence>
+                    <element name="date">
+                      <complexType>
+                        <sequence>
+                          <element type="string" name="from"/>
+                          <element type="string" name="to"/>
+                        </sequence>
+                        <attribute type="string" name="dateType"/>
+                      </complexType>
+                    </element>
+                    <element name="degree">
+                      <complexType>
+                        <sequence>
+                          <element type="string" name="degreeName"/>
+                        </sequence>
+                        <attribute type="string" name="degreeType"/>
+                      </complexType>
+                    </element>
+                    <element name="schoolInfo">
+                      <complexType>
+                        <sequence>
+                          <element type="string" name="schoolName"/>
+                          <element name="contactMethod">
+                            <complexType>
+                              <sequence>
+                                <element name="address">
+                                  <complexType>
+                                    <sequence>
+                                      <element type="string" name="street"/>
+                                      <element type="string" name="city"/>
+                                      <element type="string" name="province"/>
+                                      <element type="string" name="contry"/>
+                                      <element type="string" name="zip"/>
+                                    </sequence>
+                                  </complexType>
+                                </element>
+                                <element type="string" name="phone"/>
+                                <element type="string" name="email"/>
+                              </sequence>
+                            </complexType>
+                          </element>
+                        </sequence>
+                      </complexType>
+                    </element>
+                    <element name="educationalMeasure">
+                      <complexType>
+                        <sequence>
+                          <element type="float" name="maximumValue"/>
+                          <element type="float" name="measureValue"/>
+                        </sequence>
+                        <attribute type="string" name="measureType"/>
+                      </complexType>
+                    </element>
+                  </sequence>
+                  <attribute type="string" name="schoolType"/>
+                </complexType>
+              </element>
+              <element name="highSchool">
+                <complexType>
+                  <sequence>
+                    <element name="date">
+                      <complexType>
+                        <sequence>
+                          <element type="string" name="graduationDate"/>
+                        </sequence>
+                      </complexType>
+                    </element>
+                    <element name="degree">
+                      <complexType>
+                        <sequence>
+                          <element type="string" name="degreeName"/>
+                        </sequence>
+                        <attribute type="string" name="degreeType"/>
+                      </complexType>
+                    </element>
+                    <element name="schoolInfo">
+                      <complexType>
+                        <sequence>
+                          <element type="string" name="schoolName"/>
+                          <element name="contactMethod">
+                            <complexType>
+                              <sequence>
+                                <element name="address">
+                                  <complexType>
+                                    <sequence>
+                                      <element type="string" name="street"/>
+                                      <element type="string" name="city"/>
+                                      <element type="string" name="province"/>
+                                      <element type="string" name="contry"/>
+                                      <element type="short" name="zip"/>
+                                    </sequence>
+                                  </complexType>
+                                </element>
+                                <element type="long" name="phone"/>
+                                <element type="string" name="email"/>
+                              </sequence>
+                            </complexType>
+                          </element>
+                        </sequence>
+                      </complexType>
+                    </element>
+                    <element name="educationalMeasure">
+                      <complexType>
+                        <sequence>
+                          <element type="byte" name="maximumValue"/>
+                          <element type="float" name="measureValue"/>
+                        </sequence>
+                        <attribute type="string" name="measureType"/>
+                      </complexType>
+                    </element>
+                  </sequence>
+                  <attribute type="string" name="type"/>
+                </complexType>
+              </element>
+            </sequence>
+          </complexType>
+        </element>
+        <element name="workExperience">
+          <complexType>
+            <sequence>
+              <element name="job">
+                <complexType>
+                  <sequence>
+                    <element name="workDate">
+                      <complexType>
+                        <sequence>
+                          <element type="string" name="from"/>
+                          <element type="string" name="to"/>
+                        </sequence>
+                      </complexType>
+                    </element>
+                    <element type="string" name="position"/>
+                    <element name="companyInfo">
+                      <complexType>
+                        <sequence>
+                          <element type="string" name="companyName"/>
+                          <element name="contactMethod">
+                            <complexType>
+                              <sequence>
+                                <element name="address">
+                                  <complexType>
+                                    <sequence>
+                                      <element type="string" name="street"/>
+                                      <element type="string" name="city"/>
+                                      <element type="string" name="province"/>
+                                      <element type="string" name="contry"/>
+                                      <element type="string" name="zip"/>
+                                    </sequence>
+                                  </complexType>
+                                </element>
+                                <element type="string" name="phone"/>
+                                <element type="string" name="email"/>
+                              </sequence>
+                            </complexType>
+                          </element>
+                        </sequence>
+                      </complexType>
+                    </element>
+                  </sequence>
+                  <attribute type="string" name="type"/>
+                </complexType>
+              </element>
+            </sequence>
+          </complexType>
+        </element>
+        <element name="skills">
+          <complexType>
+            <sequence>
+              <element name="language" maxOccurs="unbounded" minOccurs="0">
+                <complexType>
+                  <sequence>
+                    <element type="string" name="skillname"/>
+                    <element type="string" name="experience"/>
+                  </sequence>
+                  <attribute type="string" name="type" use="optional"/>
+                </complexType>
+              </element>
+            </sequence>
+          </complexType>
+        </element>
+      </sequence>
+    </complexType>
+  </element>
+</schema>

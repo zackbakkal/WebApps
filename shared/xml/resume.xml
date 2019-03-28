@@ -1,0 +1,79 @@
+<?xml version = "1.0"?>
+<?xml-stylesheet type="text/xsl" href="resume.xsl"?>
+
+<!-- My Resume: resume.xml -->
+<resume>
+	
+	<contactInfo>
+		<name>
+			<firstName>Zakaria</firstName>
+			<lastName>Bakkal</lastName>
+		</name>
+		<address>
+			<street>169-104 West Haven Drive</street>
+			<city>Leduc</city>
+			<province>Alberta</province>
+			<contry>Canada</contry>
+			<zip>T9E0N9</zip>
+		</address>
+		<phone>1.403.606.1714</phone>
+		<email>zackbakkal@hotmail.com</email>
+	</contactInfo>
+	
+	<education>
+		<entry>
+			<date>
+				<from>Mar 2014</from>
+				<to>Current</to>
+			</date>
+			<major>Bachelors of computer Science and information Systems</major>
+			<university>
+				<name>Athabasca University</name>
+				<city>Athabasca</city>
+				<province>Alberta</province>
+				<contry>Canada</contry>
+				<zip>T6E5V7</zip>
+			</university>
+			<gpa>3.44/4.00</gpa>
+		</entry>
+	</education>
+	
+	<workExperience>
+		<entry>
+			<date>
+				<from>Mar 2014</from>
+				<to>Current</to>
+			</date>
+			<position>Manager</position>
+			<company>
+				<name>Executive Airways Grooming Services</name>
+				<address>
+					<city>Edmonton</city>
+					<province>Alberta</province>
+					<contry>Canada</contry>
+					<zip>T6B3YC</zip>
+				</address>
+				<phone>1.780.200.5718</phone>
+			</company>
+		</entry>
+	</workExperience>
+	
+	<skills>
+		<language type="programming">
+			<name>Java</name>
+			<experience>Advanced</experience>
+		</language>
+		<language type="programming">
+			<name>C++</name>
+			<experience>Beginner</experience>
+		</language>
+		<language type="programming">
+			<name>SQL</name>
+			<experience>Advanced</experience>
+		</language>
+		<language type="scripting">
+			<name>JavaSciprt</name>
+			<experience>Beginner</experience>
+		</language>
+	</skills>
+</resume>

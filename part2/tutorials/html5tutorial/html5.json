@@ -1,0 +1,352 @@
+"menu": {
+	"intro": 
+		"<div class=\"main\">
+			<div id=\"intro\" class=\"part\">
+				<h2>HTML5 Document</h2>
+				<p>HTML stands for Hyper Text Markup Language. It describes the structure of Web pages
+					using markup. HTML elements are the building blocks of HTML pages. The elements are
+					represented by tags. These tags label pieces of content such as \"heading\", \"paragraph\",
+					\"table\", and so on.</p>
+				<p>Each element has a <span class=\"bold\">start TAG</span> and
+					an <span class=\"bold\">end TAG</span></p>
+				<p>A start tag is written as follow <span class=\"bold\">
+					&ltelementName&gt,</span> while the end tag is written as follow
+					<span class=\"bold\">&lt/elementName&gt. </span></p>
+				<p>Browsers do not display the HTML tags, but use them to render the content of the page</p>
+				<h3 class=\"indentOnce\">Example:</h3>
+				<div class=\"example\">
+					<p>&lt!DOCTYPE html&gt </p>
+					<p>&lthtml&gt </p>
+					<p class=\"indentOnce\">&lthead&gt </p>
+					<p class=\"indentTwice\">&lttitle&gtPage Title Here&lt/title&gt </p>
+					<p class=\"indentOnce\">&lt/head&gt </p>
+					<p class=\"indentOnce\">&ltbody&gt </p>
+					<h1 class=\"indentTwice\">&lth1&gtH1 Heading&lt/h1&gt </h1>
+					<h2 class=\"indentTwice\">&lth2&gtH2 Heading&lt/h2&gt </h2>
+					<h3 class=\"indentTwice\">&lth3&gtH3 Heading&lt/h3&gt </h3>
+					<p class=\"indentTwice\">&ltp&gtThis is a Paragraph&lt/p&gt </p>
+					<p class=\"indentOnce\">&lt/body&gt </p>
+					<p>&lt/html&gt </p>
+				</div>
+				<h3>Tags definitions</h2>
+					<ul>
+						<li>The &lt!DOCTYPE html&gt declaration defines this document to be HTML5</li>
+						<li>The &lthtml&gt element is the root element of an HTML page</li>
+						<li>The &lthead&gt element contains meta information about the document</li>
+						<li>The &lttitle&gt element specifies a title for the document</li>
+						<li>The &ltbody&gt element contains the visible page content</li>
+						<li>The &lth1&gt element defines a large heading</li>
+						<ul>
+							<li>Heading elements goes from h1 to h6, h1 is the biggest and h6 is the smallest</li>
+						</ul>
+						<li>The &ltp&gt element defines a paragraph</li>
+					</ul>
+			</div>
+
+			<div id=\"img\" class=\"part\">
+				<h2>img Element</h2>
+				<p>You can improve your website design and appearance by including
+					images.</p>
+				<p>In HTML, images are defined with the <span class=\"bold\">&ltimg&gt </span> tag</p>
+				<p>The &ltimg&gt tag is empty, it contains attributes such as the src, and alt attribute, and
+					does not have a closing tag.</p>
+				<p>The src attribute specifies the URL of the image, while the alt provides an alternate test for an image.
+					The
+					alt attribute is useful in case the user cannot view the image. The alt text describes the image.</p>
+
+				<h3 class=\"indentOnce\">Example:</h3>
+				<div class=\"example\">
+					<p>&lt!DOCTYPE html&gt </p>
+					<p>&lthtml&gt </p>
+					<p class=\"indentOnce\">&lthead&gt </p>
+					<p class=\"indentTwice\">&lttitle&gtHTML Images&lt/title&gt </p>
+					<p class=\"indentOnce\">&lt/head&gt </p>
+					<p class=\"indentOnce\">&ltbody&gt </p>
+					<p class=\"indentTwice\">&ltimg src=\"images/birds.jpg\" alt=\"Wild Birds\"&gt </p>
+					<p class=\"indentOnce\">&lt/body&gt </p>
+					<p>&lt/html&gt </p>
+				</div>
+
+				<h3>Image size</h2>
+				<p>You can specify the image's width and height by using the width and height attributes.
+					The width and height attributes always defines the width and height of the image in pixels.</p>
+				<div class=\"example\">
+					<p>&lt!DOCTYPE html&gt </p>
+					<p>&lthtml&gt </p>
+					<p class=\"indentOnce\">&lthead&gt </p>
+					<p class=\"indentTwice\">&lttitle&gtHTML Images&lt/title&gt </p>
+					<p class=\"indentOnce\">&lt/head&gt </p>
+					<p class=\"indentOnce\">&ltbody&gt </p>
+					<p class=\"indentTwice\">&ltimg src=\"images/birds.jpg\" alt=\"Wild Birds\" width=\"200\" heigth=\"300\"&gt
+					</p>
+					<p class=\"indentOnce\">&lt/body&gt </p>
+					<p>&lt/html&gt </p>
+				</div>
+
+				<p>You can also specify the image's width and height by using the style attribute.</p>
+				<div class=\"example\">
+					<p>&lt!DOCTYPE html&gt </p>
+					<p>&lthtml&gt </p>
+					<p class=\"indentOnce\">&lthead&gt </p>
+					<p class=\"indentTwice\">&lttitle&gtHTML Images&lt/title&gt </p>
+					<p class=\"indentOnce\">&lt/head&gt </p>
+					<p class=\"indentOnce\">&ltbody&gt </p>
+					<p class=\"indentTwice\">&ltimg src=\"images/birds.jpg\" alt=\"Wild Birds\"
+						style=\"width:200px;heigth:300px;\"&gt </p>
+					<p class=\"indentOnce\">&lt/body&gt </p>
+					<p>&lt/html&gt </p>
+				</div>
+
+				<p><span class=\"bold\">Note:</span> Using the style attribue prevents style sheets from changing the size
+					of images.<p>
+			</div>
+		</div>",
+	"header":
+		"<div class=\"main\">
+			<div id=\"header\" class=\"part\">
+				<h2>header element</h2>
+				<p>The &ltheader&gt element represents a container for introductory content or a set of navigational
+					links.</p>
+				<p>A &ltheader&gt element typically contains:
+					<ul>
+						<li>one or more heading elements ( &lth1&gt - &lth6&gt )</li>
+						<li>logo or icon</li>
+						<li>authorship information</li>
+					</ul>
+				</p>
+				<p>The default display value given to the &ltheader&gt element is block.</p>
+				<p>You can have several &ltheader&gt elements in one document.</p>
+				<p>
+					<span class=\"bold\">Note:</span> A &ltheader&gt tag cannot be placed within a &ltfooter&gt,
+						&ltaddress&gt or another &ltheader&gt element.</p>
+
+				<h3 class=\"indentOnce\">Example:</h3>
+				<div class=\"example\">
+					<p>&lt!DOCTYPE html&gt </p>
+					<p>&lthtml&gt </p>
+					<p class=\"indentOnce\">&lthead&gt </p>
+					<p class=\"indentTwice\">&lttitle&gtHeader Element&lt/title&gt </p>
+					<p class=\"indentOnce\">&lt/head&gt </p>
+					<p class=\"indentOnce\">&ltbody&gt </p>
+					<p class=\"indentTwice\">&ltheader&gt</p>
+					<p class=\"indentTrice\">&lth1&gtSame as a newspaper section header&lt/h1&gt</p>
+					<p class=\"indentTrice\">&ltp&gtSome paragragh for example goes here&lt/p&gt</p>
+					<p class=\"indentTwice\">&lt/header&gt</p>
+					<p class=\"indentOnce\">&lt/body&gt </p>
+					<p>&lt/html&gt </p>
+				</div>
+			</div>
+		</div>",
+	"footer":
+		"<div class=\"main\">
+			<div id=\"footer\" class=\"part\">
+				<h2>footer element</h2>
+				<p>The &ltfooter&gt element tag defines a footer for a document or section.
+				</p>
+				<p>	A &ltfooter&gt element typically contains:
+					<ul>
+						<li>authorship information</li>
+						<li>copyright information</li>
+						<li>contact information</li>
+						<li>sitemap</li>
+						<li>back to top links</li>
+						<li>related documents</li>
+					</ul>
+				</p>
+				<p>The default display value given to the &ltfooter&gt element is block.</p>
+				<p>You can have several &ltfooter&gt elements in one document.</p>
+				<p><span class=\"bold\">Note:</span> A &ltheader&gt tag cannot be placed within a &ltfooter&gt,
+					&ltaddress&gt or another &ltheader&gt element.</p>
+
+				<h3 class=\"indentOnce\">Example:</h3>
+				<div class=\"example\">
+					<p>&lt!DOCTYPE html&gt </p>
+					<p>&lthtml&gt </p>
+					<p class=\"indentOnce\">&lthead&gt </p>
+					<p class=\"indentTwice\">&lttitle&gtFooter Element&lt/title&gt </p>
+					<p class=\"indentOnce\">&lt/head&gt </p>
+					<p class=\"indentOnce\">&ltbody&gt </p>
+					<p class=\"indentTwice\">&ltheader&gt</p>
+					<p class=\"indentTrice\">&lth1&gtSame as a newspaper section header&lt/h1&gt</p>
+					<p class=\"indentTrice\">&ltp&gtSome paragragh for example goes here&lt/p&gt</p>
+					<p class=\"indentTwice\">&lt/header&gt</p>
+					<p class=\"indentTwice\">&ltfooter&gt</p>
+					<p class=\"indentTrice\">&ltp&gtCreated by: Zakaria Bakkal&lt/p&gt</p>
+					<p class=\"indentTrice\">&ltp&gtContact Info: &lta href=\"mailto:email@address.com\"&gt
+						email@address.com&lt/p&gt&lt/a&gt</p>
+					<p class=\"indentTwice\">&lt/footer&gt</p>
+					<p class=\"indentOnce\">&lt/body&gt </p>
+					<p>&lt/html&gt </p>
+				</div>
+			</div>
+		</div>",
+	"nav":
+		"<div id=\"nav\" class=\"part\">
+			<h2>nav element</h2>
+			<p>The &ltnav&gt tag defines a set of navigation links.</p>
+
+			<p>NOT all links of a document should be inside a &ltnav&gt element.
+				The &ltnav&gt element is intended only for major block of navigation links.</p>
+			<p>You can have several &ltfooter&gt elements in one document.</p>
+
+			<h3 class=\"indentOnce\">Example:</h3>
+			<div class=\"example\">
+				<p>&lt!DOCTYPE html&gt </p>
+				<p>&lthtml&gt </p>
+				<p class=\"indentOnce\">&lthead&gt </p>
+				<p class=\"indentTwice\">&lttitle&gtNav Element&lt/title&gt </p>
+				<p class=\"indentOnce\">&lt/head&gt </p>
+				<p class=\"indentOnce\">&ltbody&gt </p>
+				<p class=\"indentTwice\">&ltnav&gt</p>
+				<p class=\"indentTrice\">&lta href=\"/page1.htm&gt\"Page1&lt/a&gt</p>
+				<p class=\"indentTrice\">&lta href=\"/page2.htm&gt\"Page2&lt/a&gt</p>
+				<p class=\"indentTrice\">&lta href=\"/page3.htm&gt\"Page3&lt/a&gt</p>
+				<p class=\"indentTrice\">&lta href=\"/page4.htm&gt\"Page4&lt/a&gt</p>
+				<p class=\"indentTwice\">&lt/nav&gt</p>
+				<p class=\"indentOnce\">&lt/body&gt </p>
+				<p>&lt/html&gt </p>
+			</div>
+		</div>",
+	"blockquote":
+		"<div class=\"main\">
+			<div id=\"blockquote\" class=\"part\">
+			<h2>blockquote Element</h2>
+			<p>The &ltblockquote&gt tag specifies a section that is quoted from another source.</p>
+			<p>The default display value for &ltblockquote&gt is block. With a margin-top, margin-bottom
+				of 1em. And margin-left, margin-right of 40px.
+			</p>
+
+			<h3 class=\"indentOnce\">Example:</h3>
+			<div class=\"example\">
+				<p>&lt!DOCTYPE html&gt </p>
+				<p>&lthtml&gt </p>
+				<p class=\"indentOnce\">&lthead&gt </p>
+				<p class=\"indentTwice\">&lttitle&gtHeader Element&lt/title&gt </p>
+				<p class=\"indentOnce\">&lt/head&gt </p>
+				<p class=\"indentOnce\">&ltbody&gt </p>
+				<p class=\"indentTwice\">&ltblockquote cite=\"source\"&gt The cited text goes here</p>
+				<p class=\"indentTwice\">&lt/blockquote&gt</p>
+				<p class=\"indentOnce\">&lt/body&gt </p>
+				<p>&lt/html&gt </p>
+			</div>
+		</div>",
+	"section":
+		"<div class=\"main\">
+			<div id=\"section\" class=\"part\">
+				<h2>section Element</h2>
+				<p>The &ltsection&gt tag sections in a document, such as chapters, headers,
+					footers, or any other sections of the document.
+				</p>
+				<p>The default display value for &ltsection&gt is block.</p>
+				<p>You can have many sections in a page. Also, a section may contain a header,
+					a footer and other sections.</p>
+
+				<h3 class=\"indentOnce\">Example:</h3>
+				<div class=\"example\">
+					<p>&lt!DOCTYPE html&gt </p>
+					<p>&lthtml&gt </p>
+					<p class=\"indentOnce\">&lthead&gt </p>
+					<p class=\"indentTwice\">&lttitle&gtHeader Element&lt/title&gt </p>
+					<p class=\"indentOnce\">&lt/head&gt </p>
+					<p class=\"indentOnce\">&ltbody&gt </p>
+					<p class=\"indentTwice\">&ltsection id=\"section1\"&gt</p>
+					<p class=\"indentTrice\">&ltheader&gt</p>
+					<p class=\"indentTrice\">&lth2&gtSection 1 title here&lt/h2&gt</p>
+					<p class=\"indentTrice\">&lt/header&gt</p>
+					<p class=\"indentTwice\">&lt/section&gt</p>
+					<p class=\"indentTwice\">&ltsection id=\"section2\"&gt</p>
+					<p class=\"indentTrice\">&ltheader&gt</p>
+					<p class=\"indentTrice\">&lth2&gtSection 2 title here&lt/h2&gt</p>
+					<p class=\"indentTrice\">&lt/header&gt</p>
+					<p class=\"indentTwice\">&lt/section&gt</p>
+					<p class=\"indentOnce\">&lt/body&gt </p>
+					<p>&lt/html&gt </p>
+				</div>
+			</div>
+		</div>",
+	"details":
+		"<div class=\"main\">
+			<div id=\"details\" class=\"part\">
+				<h2>details & summary Elements</h2>
+				<p>The &ltdetails&gt tag specifies additional details that the user can view or
+					hide on demand.</p>
+				<p>The &ltdetails&gt tag can be used to create an interactive widget that the user
+					can open and close. Any sort of content can be put inside the &ltdetails&gt tag.</p>
+				<p>The content of a &ltdetails&gt element should not be visible unless the open attribute
+					is set.</p>
+				<p>The &ltsummary&gt tag defines a visible heading for the &ltdetails&gt element. The heading can
+					be clicked to view/hide the details.</p>
+				<p>The default display value for &ltdetails&gt is block.</p>
+
+				<h3 class=\"indetTOnce\">Example:</h3>
+				<div class=\"example\">
+					<p>&lt!DOCTYPE html&gt </p>
+					<p>&lthtml&gt </p>
+					<p class=\"indentOnce\">&lthead&gt </p>
+					<p class=\"indentTwice\">&lttitle&gtHeader Element&lt/title&gt </p>
+					<p class=\"indentOnce\">&lt/head&gt </p>
+					<p class=\"indentOnce\">&ltbody&gt </p>
+					<p class=\"indentTwice\">&ltdetails&gt</p>
+					<p class=\"indentTrice\">&ltsummary&gt Click here to expand</p>
+					<p class=\"indentTrice\">&ltp&gtThis paragraph is hidden until the the user
+						clicks on the summary tag text then it shows up. If the user clicks again
+						this paragraph will disappear.&lt/p&gt</p>
+					<p class=\"indentTrice\">&lt/summary&gt</p>
+					<p class=\"indentTwice\">&lt/details&gt</p>
+					<p class=\"indentOnce\">&lt/body&gt </p>
+					<p>&lt/html&gt </p>
+				</div>
+			</div>
+		</div>",
+	"main":
+		"<div class=\"main\">
+			<div id=\"main\" class=\"part\">
+				<h2>main Element</h2>
+				<p>The &ltmain&gt tag specifies the main content of a document.</p>
+				<p>The content inside the &ltmain&gt element should be unique to the document.
+					It should not contain any content that is repeated across documents such
+					as sidebars, navigation links, copyright information, site logos, and
+					search forms.</p>
+				<p><span class=\"bold\">Note: </span>There must not be more than one &ltmain&gt element in
+					a document. The &ltmain&gt element must NOT be a descendant of an &ltarticle&gt,
+					&ltaside&gt, &ltfooter>, &ltheader>, or &ltnav&gt element.</p>
+				<h3 class=\"indentOnce\">Example:</h3>
+				<div class=\"example\">
+					<p>&lt!DOCTYPE html&gt </p>
+					<p>&lthtml&gt </p>
+					<p class=\"indentOnce\">&lthead&gt </p>
+					<p class=\"indentTwice\">&lttitle&gtHeader Element&lt/title&gt </p>
+					<p class=\"indentOnce\">&lt/head&gt </p>
+					<p class=\"indentOnece\">&ltbody&gt </p>
+					<p class=\"indentTwice\">&ltmain&gt</p>
+					<p class=\"indentTrice\">&lth1&gtWeb Browsers&lt/h1&gt</p>
+					<p class=\"indentTrice\">&ltp&gtGoogle Chrome, Firefox, and Internet Explorer are the most used
+						browsers
+						today.&lt/p&gt</p>
+					<p class=\"indentTrice\">&ltarticle&gt</p>
+					<p class=\"indentFourTimes\">&lth1&gtGoogle Chrome&lt/h1&gt</p>
+					<p class=\"indentFourTimes\">&ltp&gtGoogle Chrome is a free, open-source web browser developed by
+						Google,
+						released in 2008.&lt/p&gt</p>
+					<p class=\"indentTrice\">&lt/article&gt</p>
+					<p class=\"indentTrice\">&ltarticle&gt</p>
+					<p class=\"indentFourTimes\">&lth1&gtInternet Expolorer&lt/h1&gt</p>
+					<p class=\"indentFourTimes\">&ltp&gtInternet Explorer is a free web browser from Microsoft, released
+						in
+						1995.&lt/p&gt</p>
+					<p class=\"indentTrice\">&lt/article&gt</p>
+					<p class=\"indentTrice\">&ltarticle&gt</p>
+					<p class=\"indentFourTimes\">&lth1&gtMozilla Firefox&lt/h1&gt</p>
+					<p class=\"indentFourTimes\">&ltp&gtFirefox is a free, open-source web browser from Mozilla, released
+						in
+						2004.&lt/p&gt</p>
+					<p class=\"indentTrice\">&lt/article&gt</p>
+
+					<p class=\"indentOnce\">&lt/main&gt</p>
+					<p class=\"indentOnce\">&lt/body&gt </p>
+					<p>&lt/html&gt </p>
+				</div>
+			</div>
+		</div>",
+}
+}
