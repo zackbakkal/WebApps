@@ -94,8 +94,6 @@ footer {
 	-moz-box-shadow:    0px 5px 10px 0px rgba(50, 50, 50, 0.5);
 	box-shadow:         0px 5px 10px 0px rgba(50, 50, 50, 0.5);
 	text-align: center;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
 	width: 100%;
 	background-color: #67CBE1;
 	color: black;
@@ -306,7 +304,6 @@ footer a {
 	margin-top: 5%;
 	border-radius: 10px;
 	background-color: rgba(222, 233, 232, 0.5);
-
 }
 
 #tutorial-buttons > ul{
@@ -346,6 +343,16 @@ footer a {
 #tutorial-buttons div {
 	max-width: 50px;
 	margin: auto;
+}
+
+.transparent {
+	-webkit-box-shadow: 0px 0px 30px 0px rgba(50, 50, 50, 1);
+	-moz-box-shadow:    0px 0px 30px 0px rgba(50, 50, 50, 1);
+	box-shadow:         0px 0px 30px 0px rgba(50, 50, 50, 1);
+	width: 100%;
+	margin-top: 5%;
+	border-radius: 10px;
+	background-color: rgba(222, 233, 232, 0.5);
 }
 
 .entrydates {
@@ -401,7 +408,6 @@ button:hover {
 .movingpart {
 	margin-bottom: 1px;
 	padding: 10px;
-	border-radius: 10px;
 	border-bottom: 1px solid black;
 	text-align: justify;
 	background-color: #55BCC9;
@@ -411,15 +417,13 @@ button:hover {
 	width: 15%;
 	background-color: #55BCC9;
 	text-align: center;
-	padding: 10px;
-	border-radius: 100%;
 }
 
 .movingpart:hover {
-	background-color: #FC4445;
-	transition: .5s ease-in;
+	transition: .05s ease-in;
 	color: white;
 	width: 102%;
+	font-size: 1.1em;
 }
 
 .left {
@@ -516,9 +520,12 @@ button:hover {
 	box-shadow:         0px 0px 30px 0px rgba(50, 50, 50, 1);
 	width: 100%;
 	margin-top: 5%;
+	padding: 5px;
 	/*background-color: #69C0FF;*/
 	border-radius: 10px;
 	width: 100%;
+	background-color: #ec7614;
+	background-size: cover;
 }
 
 .links {
