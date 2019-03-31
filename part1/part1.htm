@@ -3,102 +3,110 @@
 <!-- Part 1: part1.htm -->
 <!-- Assignment 1 -->
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<title>Assignment 1 - Part 1</title>
-		<link rel="stylesheet" type="text/css" href="../shared/stylesheets/myStyle.css" />
-	</head>
-	
-	<body>
-		<header>
-			<h1>Part 1</h1>
-		</header>
-		
-		<div>
-			<nav>
-				<div class="inline"><a href="../tma1.htm">Home</a></div>
-				<div class="inline"><a href="../tma1.htm">Back</a></div>
-				<div class="inline"><a href="../part2/part2.htm">Next</a></div>
-			</nav>
-		</div>
-		
-		<div id="main">
-			<div class="part">
-				<header>
-					<h3 id="description">1.The original description & requirements of the project</h3>
-				</header>
-				
-				<p>Create an XML version of your resume containing at least three sections: 
-				general information about you; your educational background, and your work experience. 
-				Create a schema for the XML document, and then create an XSLT for the XML document so 
+
+<head>
+	<meta charset="utf-8" />
+	<title>Assignment 1 - Part 1 - Resume</title>
+	<link rel="stylesheet" type="text/css" href="../shared/stylesheets/myStyle.css" />
+</head>
+
+<body>
+	<header>
+		<h1 id="top">Resume</h1>
+	</header>
+
+	<div>
+		<nav>
+			<div class="inline"><a href="../tma1.htm">Home</a></div>
+			<div class="inline"><a href="../part1/part1.htm">Resume</a></div>
+			<div class="inline"><a href="../part2/part2.htm">Tutorials</a></div>
+			<div class="inline"><a href="../part3/part3.htm">Slide Show</a></div>
+			<div class="inline"><a href="../part4/part4.htm">Tools</a></div>
+		</nav>
+	</div>
+
+	<div id="main1" class="clearfix">
+		<div class="part">
+			<header>
+				<h3 id="description">1.The original description & requirements of the project</h3>
+			</header>
+
+			<p>Create an XML version of your resume containing at least three sections:
+				general information about you; your educational background, and your work experience.
+				Create a schema for the XML document, and then create an XSLT for the XML document so
 				that it can be rendered in a browser.
-				</p>
-			</div>
-			
-			<div class="part">
-				<header>
-					<h3 id="interpretation">2. My interpretation of the assignment project & requirements</h3>
-				</header>
-				
-				<p>xxx
-				</p>
-			</div>
-			
-			<div  class="part">
-				<header>
-					<h3 id="analysisdesign">3. My analysis and design of the web application</h3>
-				</header>
-				
-				<p>xxx
-				</p>
-			</div>
-			
-			<div class="part">
-				<header>
-					<h3 id="documentation">4. Documentation of your implementation</h3>
-				</header>
-				
-				<p>xxx
-				</p>
-			</div>
-			
-			<div class="part">
-				<header>
-					<h3 id="guide">5.A guide for users</h3>
-				</header>
-				
-				<p>xxx
-				</p>
-			</div>
-			
-			<div class="part">
-				<header>
-					<h3 id="link">6. A hyperlink to the web applications you design for the project</h3>
-					<ul>
-						<li><a href="resumeXML.xml">XML</a></li>
-						<li><a href="resume.xsd">Schema</a></li>
-						<li><a href="resume.xsl">XSLT</a></li>
-						<li><a href="resume.xml">Final look</a></li>
-					</ul>
-				</header>
-			</div>
-			
-			<div class="part">
-				<header>
-					<h3 id="extra">7. Anything else you want to say to your tutor</h3>
-				</header>
-				
-				<p>xxx
-				</p>
-			</div>
+			</p>
 		</div>
-		
-		<footer class="center">
-				<h6>&copy; 2018 by Zakaria Bakkal.</h6>
-				<address>
-					E-mail me at <a href="mailto:zackbakkal@gmail.com">
-					zackbakkal@gmail</a>
-				</address>
-		</footer>
-	</body>
+
+		<div class="part">
+			<header>
+				<h3 id="interpretation">2. My interpretation of the assignment project & requirements</h3>
+			</header>
+
+			<p>xxx
+			</p>
+		</div>
+
+		<div class="part">
+			<header>
+				<h3 id="analysisdesign">3. My analysis and design of the web application</h3>
+			</header>
+
+			<p>xxx
+			</p>
+		</div>
+
+		<div class="part">
+			<header>
+				<h3 id="documentation">4. Documentation of your implementation</h3>
+			</header>
+
+			<p>xxx
+			</p>
+		</div>
+
+		<div class="part">
+			<header>
+				<h3 id="guide">5.A guide for users</h3>
+			</header>
+
+			<p>xxx
+			</p>
+		</div>
+
+		<div class="part">
+			<header>
+				<h3 id="link">6. A hyperlink to the web applications you design for the project</h3>
+				<ul>
+					<li><a href="resumeXML.xml">XML</a></li>
+					<li><a href="resume.xsd">Schema</a></li>
+					<li><a href="resume.xsl">XSLT</a></li>
+					<li><a href="resume.xml">Final look</a></li>
+				</ul>
+			</header>
+		</div>
+
+		<div class="part">
+			<header>
+				<h3 id="extra">7. Anything else you want to say to your tutor</h3>
+			</header>
+
+			<p>xxx
+			</p>
+		</div>
+	</div>
+
+	<div class="top-link clearfix">
+		<a href="#top">Back To Top</a>
+	</div>
+
+	<footer class="center clearfix">
+		<address>
+			E-mail me at <a href="mailto:zackbakkal@gmail.com">
+				zackbakkal@gmail</a>
+		</address>
+		<h6>&copy; 2018 by Zakaria Bakkal.</h6>
+	</footer>
+</body>
+
 </html>

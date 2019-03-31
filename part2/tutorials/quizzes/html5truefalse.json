@@ -1,0 +1,226 @@
+[
+    {
+        "question": "HTML stands for Hyper Text Language.",
+        "answer": "true"
+    },
+    {
+        "question": "Browsers display the HTML tags when rendering the content of the page.",
+        "answer": "false"
+    },
+    {
+        "question": "The <!DOCTYPE html> declaration defines the document to be HTML5.",
+        "answer": "true"
+    },
+    {
+        "question": "The <head> element is the root element of an HTML page.",
+        "answer": "false"
+    },
+    {
+        "question": "Heading elements goes from h1 to h4, h1 is the biggest and h4 is the smallest.",
+        "answer": "false"
+    },
+    {
+        "question": "The alt attribute is useful in case the user cannot view the image.",
+        "answer": "true"
+    },
+    {
+        "question": "The <header> element represents a container for introductory content or a set of navigational links.",
+        "answer": "true"
+    },
+    {
+        "question": "You can only have one <header> elements in one document.",
+        "answer": "false"
+    },
+    {
+        "question": "A <header> tag can be placed within a <footer>, <address> or another <header> element.",
+        "answer": "false"
+    },
+    {
+        "question": "The <footer> element tag defines a footer for a document or section.",
+        "answer": "true"
+    },
+    {
+        "question": "You can have several <footer> elements in one document.",
+        "answer": "true"
+    },
+    {
+        "question": "The <nav> tag defines a set of navigation links.",
+        "answer": "true"
+    },
+    {
+        "question": "All links of a document should be inside a <nav> element.",
+        "answer": "false"
+    },
+    {
+        "question": "The <nav> element is intended only for major block of navigation links.",
+        "answer": "true"
+    },
+    {
+        "question": "The <blockquote> tag specifies a section that is quoted from another source.",
+        "answer": "true"
+    },
+    {
+        "question": "The default display value for <blockquote> is inline-block. With a margin-top, margin-bottom of 1em. And margin-left, margin-right of 40px.",
+        "answer": "salse"
+    },
+    {
+        "question": "The <section> tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document.",
+        "answer": "true"
+    },
+    {
+        "question": "The default display value for <section> is inline.",
+        "answer": "false"
+    },
+    {
+        "question": "You can have only 2 sections in a page.",
+        "answer": "false"
+    },
+    {
+        "question": "A section may contain a header, a footer and other sections.",
+        "answer": "true"
+    },
+    {
+        "question": "The <details> tag specifies additional details that the user can view or hide on demand.",
+        "answer": "true"
+    },
+    {
+        "question": "The <details> tag can be used to create an interactive widget that the user can open and close.",
+        "answer": "true"
+    },
+    {
+        "question": "Any sort of content can be put inside the <details> tag.",
+        "answer": "true"
+    },
+    {
+        "question": "The content of a <details> element should be visible unless the close attribute is set.",
+        "answer": "false"
+    },
+    {
+        "question": "The <summary> tag defines a visible heading for the <details> element. The heading can be clicked to view/hide the details.",
+        "answer": "true"
+    },
+    {
+        "question": "The <main> tag specifies the main content of a <section> element.",
+        "answer": "false"
+    },
+    {
+        "question": "The <summary> tag defines a visible heading for the <details> element. The heading can be clicked to view/hide the details.",
+        "answer": "true"
+    },
+    {
+        "question": "The content inside the <main> element could be duplicated in a document. It could contain any content that is repeated across documents such as sidebars, navigation links, copyright information, site logos, and search forms.",
+        "answer": "false"
+    },
+    {
+        "question": "The <main> element must NOT be a descendant of an <article>, <aside>, <footer>, <header>, or <nav> element.",
+        "answer": "true"
+    },
+    {
+        "question": "There must not be more than one <main> element in a document.",
+        "answer": "true"
+    },
+    {
+        "question": "The <input type=\"date\"> is used for input fields that should contain date and time.",
+        "answer": "false"
+    },
+    {
+        "question": "Depending on the browser support, a date picker can show up in the input field.",
+        "answer": "true"
+    },
+    {
+        "question": "Min and max attributes to add restrictions to input of type date.",
+        "answer": "true"
+    },
+    {
+        "question": "The <input type=\"month\"> allow users to select a month and year in the format yyyy-mm",
+        "answer": "true"
+    },
+    {
+        "question": "The <input type=\"week\"> allows users to select a week and year in the format yyyy-Wnn",
+        "answer": "true"
+    },
+    {
+        "question": "The <input type=\"time\"> allows users to select a time (no time zone).",
+        "answer": "true"
+    },
+    {
+        "question": "The user can enter the time in the order hours, seconds, minutes and fraction of a second.",
+        "answer": "false"
+    },
+    {
+        "question": "The HTML5 specification indicates thata time must have two digits for hour, followed by a colon (:) and two digits representing the minute.",
+        "answer": "true"
+    },
+    {
+        "question": "The <input type=\"email\"> is used for input fields that should contain an e-mail address. Ther user can enter a list of emails separated by commas (if the many attribute is specified).",
+        "answer": "false"
+    },
+    {
+        "question": "HTML5 does check whether an e-mail address entered by the user exists, also validates that the e-mail address is in the proper format.",
+        "answer": "false"
+    },
+    {
+        "question": "Depending on browser support, the e-mail address can be automatically validated when submitted.",
+        "answer": "true"
+    },
+    {
+        "question": "The <input type=\"number\"> defines a numeric input field. It enables the user to enter a numerical value. Mobile browsers typically display a numeric keypad for this input type.",
+        "answer": "true"
+    },
+    {
+        "question": "You can set restrictions on what numbers are accepted, and how they are incremented.",
+        "answer": "true"
+    },
+    {
+        "question": "The min attribute sets the minimum valid number, and the max attribute sets the maximum valid number. The step attribute determines the increment in which the numbers increase.",
+        "answer": "true"
+    },
+    {
+        "question": "The value attribute sets the selected value by the user in the form for an input of type number.",
+        "answer": "false"
+    },
+    {
+        "question": "The <input type=\"range\"> defines a control for entering a number whose exact value is not important (like a slider control).",
+        "answer": "true"
+    },
+    {
+        "question": "You can set restrictions on what numbers are accepted, and how they are incremented in an input of type range.",
+        "answer": "true"
+    },
+    {
+        "question": "The range input type is inherently self-validating when it is rendered by the browser as a slider control, because the user is unable to move the slider outside the bounds of the minimum or maximum values.",
+        "answer": "true"
+    },
+    {
+        "question": "The <input type=\"tel\"> is used for input fields that should contain a telephone number from the local region.",
+        "answer": "false"
+    },
+    {
+        "question": "The tel type is currently only supported in Safari 8. And all other browsers render the tel input type as a text field.",
+        "answer": "true"
+    },
+    {
+        "question": "To ensure that the user enters a phone number in a proper format, it is recommended to use the pattern attribute since phone numbers length vary greatlty based on the location.",
+        "answer": "true"
+    },
+    {
+        "question": "The pattern attribute in an input of type tel uses a regular expession to determine whether the number is in the correct format.",
+        "answer": "true"
+    },
+    {
+        "question": "The <input type=\"url\"> is used for input fields that should contain a URL address.",
+        "answer": "true"
+    },
+    {
+        "question": "Depending on browser support, the url field can be automatically validated when submitted.",
+        "answer": "true"
+    },
+    {
+        "question": "The input type url is rendered as a text field, the proper format is http://www.domain.com .",
+        "answer": "true"
+    },
+    {
+        "question": "HTML5 does check whether the URL entered is valid; but it does not validate that the URL entered is in the proper format.",
+        "answer": "false"
+    }
+]

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>HTML5 Introduction</title>
+    <link rel="stylesheet" type="text/css" href="../../../shared/stylesheets/myStyle.css" />
+</head>
+
+<body>
+    <header>
+        <h1 id="top">Introduction to HTML5</h1>
+    </header>
+
+    <div>
+        <nav>
+            <div class="inline"><a href="../tutorialBanner.htm">Home</a></div>
+            <div class="inline"><a href="intro.htm">Introduction</a></div>
+            <div class="inline"><a href="pagestructures.htm">Page Structures</a></div>
+            <div class="inline"><a href="inputtypes.htm">Input Types</a></div>
+            <div class="inline"><a href="../quizzes/html5quiz.htm">Quiz</a></div>
+
+        </nav>
+    </div>
+
+    <div class="main clearfix">
+        <div id="intro" class="part">
+            <h2>HTML5 Document</h2>
+            <p>HTML stands for Hyper Text Markup Language. It describes the structure of Web pages
+                using markup. HTML elements are the building blocks of HTML pages. The elements are
+                represented by tags. These tags label pieces of content such as "heading", "paragraph",
+                "table", and so on.</p>
+            <p>Each element has a <span class="bold">start TAG</span> and
+                an <span class="bold">end TAG</span></p>
+            <p>A start tag is written as follow <span class="bold">
+                    &lt;elementName&gt;,</span> while the end tag is written as follow
+                <span class="bold">&lt;/elementName&gt;. </span></p>
+            <p>Browsers do not display the HTML tags, but use them to render the content of the page</p>
+            <h3 class="indentOnce">Example:</h3>
+            <div class="example">
+                <p>&lt;!DOCTYPE html&gt; </p>
+                <p>&lt;html&gt; </p>
+                <p class="indentOnce">&lt;head&gt; </p>
+                <p class="indentTwice">&lt;title&gt;Page Title Here&lt;/title&gt; </p>
+                <p class="indentOnce">&lt;/head&gt; </p>
+                <p class="indentOnce">&lt;body&gt; </p>
+                <h1 class="indentTwice">&lt;h1&gt;H1 Heading&lt;/h1&gt; </h1>
+                <h2 class="indentTwice">&lt;h2&gt;H2 Heading&lt;/h2&gt; </h2>
+                <h3 class="indentTwice">&lt;h3&gt;H3 Heading&lt;/h3&gt; </h3>
+                <p class="indentTwice">&lt;p&gt;This is a Paragraph&lt;/p&gt; </p>
+                <p class="indentOnce">&lt;/body&gt; </p>
+                <p>&lt;/html&gt; </p>
+            </div>
+            <h3>Tags definitions</h2>
+                <ul>
+                    <li>The &lt;!DOCTYPE html&gt; declaration defines this document to be HTML5</li>
+                    <li>The &lt;html&gt; element is the root element of an HTML page</li>
+                    <li>The &lt;head&gt; element contains meta information about the document</li>
+                    <li>The &lt;title&gt; element specifies a title for the document</li>
+                    <li>The &lt;body&gt; element contains the visible page content</li>
+                    <li>The &lt;h1&gt; element defines a large heading</li>
+                    <ul>
+                        <li>Heading elements goes from h1 to h6, h1 is the biggest and h6 is the smallest</li>
+                    </ul>
+                    <li>The &lt;p&gt; element defines a paragraph</li>
+                </ul>
+        </div>
+
+        <div id="img" class="part">
+            <h2>img Element</h2>
+            <p>You can improve your website design and appearance by including
+                images.</p>
+            <p>In HTML, images are defined with the <span class="bold">&lt;img&gt; </span> tag</p>
+            <p>The &lt;img&gt; tag is empty, it contains attributes such as the src, and alt attribute, and
+                does not have a closing tag.</p>
+            <p>The src attribute specifies the URL of the image, while the alt provides an alternate test for an image.
+                The
+                alt attribute is useful in case the user cannot view the image. The alt text describes the image.</p>
+
+            <h3 class="indentOnce">Example:</h3>
+            <div class="example">
+                <p>&lt;!DOCTYPE html&gt; </p>
+                <p>&lt;html&gt; </p>
+                <p class="indentOnce">&lt;head&gt; </p>
+                <p class="indentTwice">&lt;title&gt;HTML Images&lt;/title&gt; </p>
+                <p class="indentOnce">&lt;/head&gt; </p>
+                <p class="indentOnce">&lt;body&gt; </p>
+                <p class="indentTwice">&lt;img src="images/birds.jpg" alt="Wild Birds"&gt; </p>
+                <p class="indentOnce">&lt;/body&gt; </p>
+                <p>&lt;/html&gt; </p>
+            </div>
+
+            <h3>Image size</h2>
+                <p>You can specify the image's width and height by using the width and height attributes.
+                    The width and height attributes always defines the width and height of the image in pixels.</p>
+                <div class="example">
+                    <p>&lt;!DOCTYPE html&gt; </p>
+                    <p>&lt;html&gt; </p>
+                    <p class="indentOnce">&lt;head&gt; </p>
+                    <p class="indentTwice">&lt;title&gt;HTML Images&lt;/title&gt; </p>
+                    <p class="indentOnce">&lt;/head&gt; </p>
+                    <p class="indentOnce">&lt;body&gt; </p>
+                    <p class="indentTwice">&lt;img src="images/birds.jpg" alt="Wild Birds" width="200" heigth="300"&gt;
+                    </p>
+                    <p class="indentOnce">&lt;/body&gt; </p>
+                    <p>&lt;/html&gt; </p>
+                </div>
+
+                <p>You can also specify the image's width and height by using the style attribute.</p>
+                <div class="example">
+                    <p>&lt;!DOCTYPE html&gt; </p>
+                    <p>&lt;html&gt; </p>
+                    <p class="indentOnce">&lt;head&gt; </p>
+                    <p class="indentTwice">&lt;title&gt;HTML Images&lt;/title&gt; </p>
+                    <p class="indentOnce">&lt;/head&gt; </p>
+                    <p class="indentOnce">&lt;body&gt; </p>
+                    <p class="indentTwice">&lt;img src="images/birds.jpg" alt="Wild Birds"
+                        style="width:200px;heigth:300px;"&gt; </p>
+                    <p class="indentOnce">&lt;/body&gt; </p>
+                    <p>&lt;/html&gt; </p>
+                </div>
+
+                <p><span class="bold">Note:</span> Using the style attribue prevents style sheets from changing the size
+                    of images.<p>
+        </div>
+    </div>
+
+    <div id="quiz">
+        <p>Test yourself by taking a <span class="bold">
+                <a href="../quizzes/html5quiz.htm">quiz now.</a></span></p>
+    </div>
+
+    <div class="top-link clearfix">
+        <a href="#top">Back To Top</a>
+    </div>
+
+    <footer class="clearfix">
+        <div>
+            <address>
+                E-mail me at: <a href="mailto:zackbakkal@gmail.com">
+                    zackbakkal@gmail</a>
+            </address>
+        </div>
+        <div>
+            <h5>&copy; 2018 by Zakaria Bakkal.</h6>
+        </div>
+    </footer>
+
+</body>
+
+
+
+</html>

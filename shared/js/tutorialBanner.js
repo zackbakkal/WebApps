@@ -3,21 +3,16 @@
 
 // the element to show the welcome message
 var welcomeMessage;
-var getStartedButton;
-var introduction;
 
 function start() {
 	// retrieve the element needed
 	welcomeMessage = document.getElementById("welcomeMessage");
-	getStartedButton = document.getElementById("getStartedButton");
-	introduction = document.getElementById("introduction");
-	if(!sessionStorage.getItem("herePreviousely")) {
+	if (!sessionStorage.getItem("herePreviousely")) {
 		promptUserName();
 		sessionStorage.setItem("herePreviousely", true);
 	} else {
 		sameUser();
 	}
-	getStartedButton.addEventListener("click", startButtonClicked, false);
 }
 
 function promptUserName() {
@@ -30,10 +25,6 @@ function promptUserName() {
 
 function sameUser() {
 	welcomeMessage.innerHTML = "Welcome " + sessionStorage.getItem("userName");
-}
-
-function startButtonClicked() {
-	introduction.setAttribute("href", "tutorialParts/introduction.htm");
 }
 
 // add the window event listner

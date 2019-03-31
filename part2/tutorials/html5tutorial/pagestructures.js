@@ -9,8 +9,6 @@ function start() {
 function registerListeners() {
     var button;
     content = document.getElementById("content");
-    button = document.getElementById("intro");
-    button.addEventListener("click", function () { getContent("intro"); }, false);
 
     button = document.getElementById("header");
     button.addEventListener("click", function () { getContent("header"); }, false);
@@ -44,7 +42,7 @@ function getContent(item) {
         asyncRequest.onreadystatechange = function () {
             stateChange(item);
         };
-        asyncRequest.open("GET", "html5.json", true);
+        asyncRequest.open("GET", "pagestructures.json", true);
         asyncRequest.send(null);
     } catch (exception) {
         alert("Something went wrong.");
@@ -53,17 +51,18 @@ function getContent(item) {
 }
 
 function stateChange(item) {
+    console.log(item);
+    console.log(asyncRequest.readyState);
     if (asyncRequest.readyState == 4 && asyncRequest.status == 200) {
         var response = JSON.parse(asyncRequest.responseText);
 
         switch (item) {
-            case "intro": content.innerHTML = response.intro; break;
             case "header": content.innerHTML = response.header; break;
             case "footer": content.innerHTML = response.footer; break;
             case "nav": content.innerHTML = response.nav; break;
             case "details": content.innerHTML = response.details; break;
             case "section": content.innerHTML = response.section; break;
-            case "mn": content.innerHTML = response.main; break;
+            case "mn": content.innerHTML = response.mn; break;
             case "blockquote": content.innerHTML = response.blockquote; break;
         }
     }
