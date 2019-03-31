@@ -27,100 +27,21 @@
     </div>
 
     <div class="main clearfix">
-        <div id="intro" class="part">
-            <h2>JavaScript Data Types</h2>
-            <p>A variable in JavaScript can contain any data.
-                A variable can at one moment be a string and at another be a number.</p>
-            <p>Programming languages that allow such things are called “dynamically typed”,
-                meaning that there are data types, but variables are not bound to any of them.</p>
-            <p>There are seven basic data types in JavaScript.</p>
-
-            <h2>JavaScript Where To</h2>
-            <p>Javascript can be enbedded in the HTML document. The code must be inserted between
-                &lt;script&gt; and &lt;/script&gt; tags.</p>
-            <h3 class="indentOnce">Example:</h3>
-            <p class="indentTwice">This example will display the phrase &quot;Welcome to JavaScript Programming&quot;
-                as an h1 heading in the web page.</p>
-            <div class="example">
-                <p>&lt;script type=&quot;text/javascript&quot;&gt;</p>
-                <p class="indentOnce">document.writeline( &quot;&lt;h1&gt;Welcome to JavaScript
-                    Programming&lt;/h1&gt;&quot; )</p>
-                <p>&lt;/script&gt;</p>
-            </div>
-
-            <h3>JavaScript in &lt;head&gt; or &lt;body&gt;</h3>
-            <p>You can place any number of scripts in an HTML document. Scripts can be placed in the
-                <span class="bold">&lt;body&gt;</span>, or in the <span class="bold">&lt;head&gt;</span> section of an
-                HTML page, or in both.</p>
-            <h4 class="indentOnce">Example:</h4>
-            <p class="indentTwice">In this example, a JavaScript function is placed in the
-                <span class="bold">&lt;head&gt;</span> section of an HTML page.
-                The function is invoked (called) when a button is clicked:</p>
-            <div class="example">
-                <p>&lt;!DOCTYPE html</p>
-                <p>&lt;html</p>
-                <p class="indentOnce">&lt;head</p>
-                <p class="indentTwice">&lt;script</p>
-                <p class="indentTwice">function myFunction() {</p>
-                <p class="indentTrice">document.getElementById(&quot;demo&quot;).innerHTML = &quot;Paragraph
-                    changed.&quot;</p>
-                <p class="indentTwice">}</p>
-                <p class="indentTwice">&lt;/script&gt;</p>
-                <p class="indentOnce">&lt;/head&gt;</p>
-                <p class="indentOnce">&lt;body&gt;</p>
-
-                <p class="indentTwice">&lt;h1&gt;A Web Page&lt;/h1&gt;</p>
-                <p class="indentTwice">&lt;p id=&quot;demo&quot;&gt;A Paragraph&lt;/p&gt;</p>
-                <p class="indentOnce">&lt;button type=&quot;button&quot;
-                    onclick=&quot;myFunction()&quot;&gt;Try it&lt;/button&gt;</p>
-
-                <p class="indentOnce">&lt;/body&gt;</p>
-                <p>&lt;/html&gt;</p>
-            </div>
-            <p><span class="bold">Note: </span>Placing scripts at the bottom of the &lt;body&gt; element improves
-                the display speed, because script compilation slows down the display.</p>
-
-            <h3>External JavaScript</h3>
-            <p>Scripts can also be placed in external files. External scripts are practical when the same code is
-                used in many different web pages.</p>
-            <p>To use an external script, put the name of the script file in the src (source)
-                attribute of a &lt;script&gt; tag:</p>
-            <p>You can place an external script reference in &lt;head&gt; or &lt;body&gt; as you like.</p>
-            <p>JavaScript files have the file extension .js.</p>
-            <div class="example">
-                <p>&lt;!DOCTYPE html</p>
-                <p>&lt;html</p>
-                <p class="indentOnce">&lt;head</p>
-                <p class="indentOnce">&lt;script type=&quot;text/javascript&quot;
-                    src=&quot;myScript.js&quot;&gt;&lt;/script&gt;</p>
-                <p class="indentOnce">&lt;/head&gt;</p>
-                <p class="indentOnce">&lt;body&gt;</p>
-
-                <p class="indentTwice">&lt;h1&gt;A Web Page&lt;/h1&gt;</p>
-                <p class="indentTwice">&lt;p id=&quot;demo&quot;&gt;A Paragraph&lt;/p&gt;</p>
-                <p class="indentOnce">&lt;button type=&quot;button&quot;
-                    onclick=&quot;myFunction()&quot;&gt;Try it&lt;/button&gt;</p>
-
-                <p class="indentOnce">&lt;/body&gt;</p>
-                <p>&lt;/html&gt;</p>
-            </div>
-            <p>The JavaScript file would be: myScript.js</p>
-            <div class="example">
-                <p>function myFunction() {</p>
-                <p class="indentOnce">document.getElementById(&quot;demo&quot;).innerHTML = &quot;Paragraph
-                    changed.&quot;</p>
-                <p>}</p>
-            </div>
-            <p><span class="bold">Note: </span>External scripts cannot contain &lt;script&gt; tags.</p>
-            <p>Placing scripts in external files has some advantages:
+        <header class="part links">
+            <h2>Control Statements:</h2>
+            <p>In this tutorial you will learn about JavaScript data types String, Number, Boolean and Array.</p>
+            </headerv>
+            <div class="links">
                 <ul>
-                    <li>It separates HTML and code</li>
-                    <li>It makes HTML and JavaScript easier to read and maintain</li>
-                    <li>Cached JavaScript files can speed up page loads</li>
+                    <li id="string">String</li>
+                    <li id="number">Number</li>
+                    <li id="boolean">Boolean</li>
+                    <li id="array">Array</li>
                 </ul>
-            </p>
-        </div>
+            </div>
     </div>
+
+    <div id="content" class="clearfix"></div>
 
     <div id="quiz">
         <p>Test yourself by taking a <span class="bold">

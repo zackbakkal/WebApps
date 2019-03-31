@@ -52,7 +52,7 @@ nav div {
 }
 
 nav a:hover {
-	font-weight: bold;
+	color: gray;
 }
 
 nav a:active {

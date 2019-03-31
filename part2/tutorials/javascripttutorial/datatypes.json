@@ -1,0 +1,413 @@
+[
+    {
+        "name": "String",
+        "definition": [
+            "A string (or a text string) is a series of characters like \"Zack Bakkal\".",
+            "Strings are written with quotes. You can use single or double quotes.",
+            "A JavaScript program is a list of programming statements.",
+            "In JavaScript, there are 3 types of quotes: ",
+            "-> Double quotes: \"Hello\"",
+            "-> Single quotes: 'Hello' .",
+            "-> Backticks: `Hello`",
+            "Double and single quotes are simple quotes. There’s no difference between them in JavaScript.",
+            "Backticks are “extended functionality” quotes. They allow us to embed variables and expressions into a string by wrapping them in ${…}.",
+            "The expression inside ${…} is evaluated and the result becomes a part of the string. We can put anything in there: a variable like name or an arithmetical expression like 1 + 2 or something more complex."
+        ],
+        "examples": [
+            {
+                "title": "Using quotes inside strings",
+                "content": [
+                    "var answer1 = \"It's alright\"; // Single quote inside double quotes",
+                    "var answer2 = \"He is called 'Johnny''; // Single quotes inside double quotes",
+                    "var answer3 = 'He is called \"Johnny\"' // Double quotes inside single quotes"
+                ]
+            },
+            {
+                "title": "Concatenate strings using the + operator",
+                "content": [
+                    "var str1 = \"Hello \";",
+                    "var str2 = \"world!\";",
+                    "var str3 = str1 + str2;"
+                ]
+            },
+            {
+                "title": "Concatenate strings using the concat function",
+                "content": [
+                    "var str1 = \"Hello \";",
+                    "var str2 = \"world!\";",
+                    "var str3 = str1.concat(str2)",
+                    "",
+                    "The concat() method is used to join two or more strings.",
+                    "This method does not change the existing strings, but returns a new string containing the text of the joined strings."
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Number",
+        "definition": [
+            "JavaScript has only one type of numbers. Numbers can be written with, or without decimals. The number type represents both integer and floating point numbers.",
+            "There are many operations for numbers, e.g. multiplication *, division /, addition +, subtraction -, and so on.",
+            "Besides regular numbers, there are so-called “special numeric values” which also belong to this data type: Infinity, -Infinity and NaN:",
+            "-> Infinity represents the mathematical Infinity ∞. It is a special value that’s greater than any number. We can get it as a result of division by zero or just reference it directly with the word Infinity.",
+            "-> NaN represents a computational error. It is a result of an incorrect or an undefined mathematical operation. NaN is sticky. Any further operation on NaN returns NaN. So, if there’s a NaN somewhere in a mathematical expression, it propagates to the whole result."
+        ],
+        "examples": [
+            {
+                "title": "Integers and Decimals",
+                "content": [
+                    "var x1 = 34.00; // Written with decimals",
+                    "var x2 = 34; // Written without decimals"
+                ]
+            },
+            {
+                "title": "NaN, devision by zero",
+                "content": [
+                    "alert( 1 / 0 ); // Infinity using divising by zero"
+                ]
+            },
+            {
+                "title": "NaN, using the keyword Infinity",
+                "content": [
+                    "alert( Infinity ); // Infinity using the keyword Infinity"
+                ]
+            },
+            {
+                "title": "NaN, errouneous division",
+                "content": [
+                    "alert( \"not a number\" / 2 ); // NaN, such division is erroneous"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Boolean",
+        "definition": [
+            "The boolean type has only two values: true and false. This type is commonly used to store yes/no values: true means “yes, correct”, and false means “no, incorrect”.",
+            "Booleans are often used in conditional testing.",
+            "Very often, in programming, you will need a data type that can only have one of two values, like",
+            "-> Yes / No",
+            "-> On / Off",
+            "-> True / False",
+            "For this, JavaScript has a Boolean data type. It can only take the values true or false.",
+            "The Boolean value of an expression is the basis for all JavaScript comparisons and conditions.",
+            "In JavaScript Everything With a \"Value\" is True, and Everything Without a \"Value\" is False."
+        ],
+        "examples": [
+            {
+                "title": "The Boolean() Function",
+                "content": [
+                    "Boolean(10 > 9)        // returns true",
+                    "Boolean(10 < 9)        // returns false"
+                ]
+            },
+            {
+                "title": "Without the Boolean() Function",
+                "content": [
+                    "(10 > 9)              // also returns true",
+                    "10 > 9                // also returns true"
+                ]
+            },
+            {
+                "title": "True values",
+                "content": [
+                    "20",
+                    "1.4",
+                    "-30",
+                    "\"Hello\"",
+                    "\"false\"",
+                    "1 + 2 - 6"
+                ]
+            },
+            {
+                "title": "False values",
+                "content": [
+                    "var i = 0;        // zero",
+                    "Boolean(i);       // returns false",
+                    "var x = -0;       // minus zero",
+                    "Boolean(x);       // returns false",
+                    "var z = \"\";     // empty string",
+                    "Boolean(x);       // returns false",
+                    "var w;            // undefined",
+                    "Boolean(w);       // returns false",
+                    "var y = null;",
+                    "Boolean(y);       // returns false",
+                    "var a = false;",
+                    "Boolean(a);       // returns false",
+                    "var b = 10 / \"H\"; // NaN",
+                    "Boolean(b);       // returns false"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Array",
+        "definition": [
+            "JavaScript arrays are used to store multiple values in a single variable.",
+            "An array is a special variable, which can hold more than one value at a time.",
+            "If you have a list of items (a list of car names, for example), storing the cars in single variables could look like this:",
+            "-> var car1 = \"Dodge\";",
+            "-> var car2 = \"RAM\";",
+            "-> var car3 = \"Benz\";",
+            "However, what if you want to loop through the cars and find a specific one? And what if you had not 3 cars, but 300?",
+            "The solution is an array!",
+            "An array can hold many values under a single name, and you can access the values by referring to an index number."
+        ],
+        "examples": [
+            {
+                "title": "Creating an Array Syntax",
+                "content": [
+                    "var array_name = [item1, item2, ...];"
+                ]
+            },
+            {
+                "title": "For our example above",
+                "content": [
+                    "var cars = [\"Dodge\", \"RAM\", \"Benz\"];"
+                ]
+            },
+            {
+                "title": "Creating an Array using the new keyword",
+                "content": [
+                    "var array_name = new Array(item1, item2, ...);"
+                ]
+            },
+            {
+                "title": "Access the Elements of an Array",
+                "content": [
+                    "var name = cars[0];",
+                    "You access an array element by referring to the index number."
+                ]
+            },
+            {
+                "title": "Changing an Array Element",
+                "content": [
+                    "cars[0] = \"Opel\";"
+                ]
+            },
+            {
+                "title": "Adding Array Elements",
+                "content": [
+                    "var fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];",
+                    "fruits.push(\"Lemon\");    // adds a new element (Lemon) to fruits"
+                ]
+            },
+            {
+                "title": "Looping Array Elements",
+                "content": [
+                    "var fruits, text, fLen, i;",
+                    "fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];",
+                    "fLen = fruits.length;",
+                    "text = \"<ul>\";",
+                    "for (i = 0; i < fLen; i++) {",
+                    "text += \"<li>\" + fruits[i] + \"</li>\";",
+                    "}",
+                    "text += \"</ul>\";"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Object",
+        "definition": [
+            "The do/while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.",
+            "To execute multiple statements, use a block statement ({ ... }) to group those statements. If condition is true, the statement executes again. At the end of every execution, the condition is checked. When the condition is false, execution stops and control passes to the statement following do...while.",
+            "The condition test occurs before statement in the loop is executed. If the condition returns true, statement is executed and the condition is tested again. If the condition returns false, execution stops and control is passed to the statement following while.",
+            "Avoid infinite loops. Make sure the condition in a loop eventually becomes false; otherwise, the loop will never terminate."
+        ],
+        "examples": [
+            {
+                "title": "The do..while loop Statement Syntax",
+                "content": [
+                    "do",
+                    "statement",
+                    "while (condition);"
+                ]
+            },
+            {
+                "title": "In the following example, the do loop iterates at least once and reiterates until i is no longer less than 5.",
+                "content": [
+                    "var i = 0;",
+                    "do {",
+                    "i += 1;",
+                    "console.log(i);",
+                    "} while (i < 5);"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Undefined",
+        "definition": [
+            "The switch statement is used to perform different actions based on different conditions.",
+            "Use the switch statement to select one of many code blocks to be executed.",
+            "This is how it works:",
+            "The switch expression is evaluated once.",
+            "The value of the expression is compared with the values of each case.",
+            "If there is a match, the associated block of code is executed.",
+            "When JavaScript reaches a break keyword, it breaks out of the switch block. This will stop the execution of inside the block. It is not necessary to break the last case in a switch block. The block breaks (ends) there anyway.",
+            "If you omit the break statement, the next case will be executed even if the evaluation does not match the case.",
+            "The default keyword specifies the code to run if there is no case match"
+        ],
+        "examples": [
+            {
+                "title": "The switch Statement Syntax",
+                "content": [
+                    "switch(expression) {",
+                    "case x:",
+                    "// code block",
+                    "break;",
+                    "case y:",
+                    "// code block",
+                    "break;",
+                    "default:",
+                    "// code block",
+                    "}"
+                ]
+            },
+            {
+                "title": "This example uses the weekday number to calculate the weekday name:",
+                "content": [
+                    "switch(new Date().getDate()) {",
+                    "case 1:",
+                    "day = \"Monday\";",
+                    "break;",
+                    "case 2:",
+                    "day = \"Tuesday\";",
+                    "break;",
+                    "case 3:",
+                    "day = \"Wednesday\";",
+                    "break;",
+                    "case 4:",
+                    "day = \"Thursday\";",
+                    "break;",
+                    "case 5:",
+                    "day = \"Friday\";",
+                    "break;",
+                    "case 6:",
+                    "day = \"Saturday\";",
+                    "}"
+                ]
+            },
+            {
+                "title": "The default case does not have to be the last case in a switch block:",
+                "content": [
+                    "switch(new Date().getDate() {",
+                    "switch (new Date().getDay()) {",
+                    "default: ",
+                    "text = \"Looking forward to the Weekend\";",
+                    "break;",
+                    "case 6:",
+                    "text = \"Today is Saturday\";",
+                    "break; ",
+                    "case 0:",
+                    "text = \"Today is Sunday\";",
+                    "}"
+                ]
+            },
+            {
+                "title": "In this example case 4 and 5 share the same code block, and 0 and 6 share another code block:",
+                "content": [
+                    "switch(new Date().getDate() {",
+                    "case 4:",
+                    "case 5:",
+                    "text = \"Soon it is Weelend\";",
+                    "break; ",
+                    "case 0:",
+                    "case 6:",
+                    "text = \"It is Weenkend\";",
+                    "default: ",
+                    "text = \"Looking forward to the Weekend\";",
+                    "}"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Null",
+        "definition": [
+            "The switch statement is used to perform different actions based on different conditions.",
+            "Use the switch statement to select one of many code blocks to be executed.",
+            "This is how it works:",
+            "The switch expression is evaluated once.",
+            "The value of the expression is compared with the values of each case.",
+            "If there is a match, the associated block of code is executed.",
+            "When JavaScript reaches a break keyword, it breaks out of the switch block. This will stop the execution of inside the block. It is not necessary to break the last case in a switch block. The block breaks (ends) there anyway.",
+            "If you omit the break statement, the next case will be executed even if the evaluation does not match the case.",
+            "The default keyword specifies the code to run if there is no case match"
+        ],
+        "examples": [
+            {
+                "title": "The switch Statement Syntax",
+                "content": [
+                    "switch(expression) {",
+                    "case x:",
+                    "// code block",
+                    "break;",
+                    "case y:",
+                    "// code block",
+                    "break;",
+                    "default:",
+                    "// code block",
+                    "}"
+                ]
+            },
+            {
+                "title": "This example uses the weekday number to calculate the weekday name:",
+                "content": [
+                    "switch(new Date().getDate()) {",
+                    "case 1:",
+                    "day = \"Monday\";",
+                    "break;",
+                    "case 2:",
+                    "day = \"Tuesday\";",
+                    "break;",
+                    "case 3:",
+                    "day = \"Wednesday\";",
+                    "break;",
+                    "case 4:",
+                    "day = \"Thursday\";",
+                    "break;",
+                    "case 5:",
+                    "day = \"Friday\";",
+                    "break;",
+                    "case 6:",
+                    "day = \"Saturday\";",
+                    "}"
+                ]
+            },
+            {
+                "title": "The default case does not have to be the last case in a switch block:",
+                "content": [
+                    "switch(new Date().getDate() {",
+                    "switch (new Date().getDay()) {",
+                    "default: ",
+                    "text = \"Looking forward to the Weekend\";",
+                    "break;",
+                    "case 6:",
+                    "text = \"Today is Saturday\";",
+                    "break; ",
+                    "case 0:",
+                    "text = \"Today is Sunday\";",
+                    "}"
+                ]
+            },
+            {
+                "title": "In this example case 4 and 5 share the same code block, and 0 and 6 share another code block:",
+                "content": [
+                    "switch(new Date().getDate() {",
+                    "case 4:",
+                    "case 5:",
+                    "text = \"Soon it is Weelend\";",
+                    "break; ",
+                    "case 0:",
+                    "case 6:",
+                    "text = \"It is Weenkend\";",
+                    "default: ",
+                    "text = \"Looking forward to the Weekend\";",
+                    "}"
+                ]
+            }
+        ]
+    }
+]
