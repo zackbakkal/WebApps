@@ -217,13 +217,12 @@
             "The while loop loops through a block of code as long as a specified condition is true.",
             "If the condition becomes false, statement within the loop stops executing and control passes to the statement following the loop.",
             "The condition test occurs before statement in the loop is executed. If the condition returns true, statement is executed and the condition is tested again. If the condition returns false, execution stops and control is passed to the statement following while.",
-            "When a for loop executes, the following occurs:",
             "To execute multiple statements, use a block statement ({ ... }) to group those statements.",
             "Avoid infinite loops. Make sure the condition in a loop eventually becomes false; otherwise, the loop will never terminate."
         ],
         "examples": [
             {
-                "title": "The for loop Statement Syntax",
+                "title": "The while loop Statement Syntax",
                 "content": [
                     "while (condition)",
                     " statement"
@@ -232,56 +231,127 @@
             {
                 "title": "Iterate through number from 0 to 10 and print them on the console",
                 "content": [
-                    "for (i = 0; i < 5; i++) {",
+                    "var i = 0;",
+                    "while(i <= 10) {",
                     "   console.log(\"Number: \", i",
+                    "i++;",
+                    "}"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "do..while loop Statement",
+        "definition": [
+            "The do/while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.",
+            "To execute multiple statements, use a block statement ({ ... }) to group those statements. If condition is true, the statement executes again. At the end of every execution, the condition is checked. When the condition is false, execution stops and control passes to the statement following do...while.",
+            "The condition test occurs before statement in the loop is executed. If the condition returns true, statement is executed and the condition is tested again. If the condition returns false, execution stops and control is passed to the statement following while.",
+            "Avoid infinite loops. Make sure the condition in a loop eventually becomes false; otherwise, the loop will never terminate."
+        ],
+        "examples": [
+            {
+                "title": "The do..while loop Statement Syntax",
+                "content": [
+                    "do",
+                    "statement",
+                    "while (condition);"
+                ]
+            },
+            {
+                "title": "In the following example, the do loop iterates at least once and reiterates until i is no longer less than 5.",
+                "content": [
+                    "var i = 0;",
+                    "do {",
+                    "i += 1;",
+                    "console.log(i);",
+                    "} while (i < 5);"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "switch Statement",
+        "definition": [
+            "The switch statement is used to perform different actions based on different conditions.",
+            "Use the switch statement to select one of many code blocks to be executed.",
+            "This is how it works:",
+            "The switch expression is evaluated once.",
+            "The value of the expression is compared with the values of each case.",
+            "If there is a match, the associated block of code is executed.",
+            "When JavaScript reaches a break keyword, it breaks out of the switch block. This will stop the execution of inside the block. It is not necessary to break the last case in a switch block. The block breaks (ends) there anyway.",
+            "If you omit the break statement, the next case will be executed even if the evaluation does not match the case.",
+            "The default keyword specifies the code to run if there is no case match"
+        ],
+        "examples": [
+            {
+                "title": "The switch Statement Syntax",
+                "content": [
+                    "switch(expression) {",
+                    "case x:",
+                    "// code block",
+                    "break;",
+                    "case y:",
+                    "// code block",
+                    "break;",
+                    "default:",
+                    "// code block",
                     "}"
                 ]
             },
             {
-                "title": "You can omit statement 1 (like when your values are set before the loop starts):",
+                "title": "This example uses the weekday number to calculate the weekday name:",
                 "content": [
-                    "var i = 2;",
-                    "var len = cars.length;",
-                    "var text = \"\";",
-                    "for (; i < len; i++) {",
-                    " text += cars[i] + \"<br>\";",
-                    "}",
-                    "",
-                    "Normally you will use statement 1 to initialize the variable used in the loop (i = 0).",
-                    "This is not always the case, JavaScript doesn't care. Statement 1 is optional."
-                ]
-            },
-            {
-                "title": "Statement 3 can also be omitted (like when you increment your values inside the loop):",
-                "content": [
-                    "var i = 0;",
-                    "var len = cars.length;",
-                    "for (; i < len; ) {",
-                    "text += cars[i] + \"<br>\";",
-                    "i++;",
-                    "}",
-                    "",
-                    "Often statement 3 increments the value of the initial variable.",
-                    "This is not always the case, JavaScript doesn't care, and statement 3 is optional.",
-                    "Statement 3 can do anything like negative increment (i--), positive increment (i = i + 15), or anything else."
-                ]
-            },
-            {
-                "title": "Statement 2 can also be omitted but you need to add a break statement inside the loop:",
-                "content": [
-                    "for (var i = 0;; i++) {",
-                    "if (i == 10) {",
+                    "switch(new Date().getDate()) {",
+                    "case 1:",
+                    "day = \"Monday\";",
                     "break;",
-                    "}",
-                    "else {",
-                    "console.log(i);",
-                    "}",
-                    "}",
-                    "Often statement 2 is used to evaluate the condition of the initial variable.",
-                    "This is not always the case, JavaScript doesn't care. Statement 2 is also optional.",
-                    "If statement 2 returns true, the loop will start over again, if it returns false, the loop will end.",
-                    "",
-                    "If you omit statement 2, you must provide a break inside the loop. Otherwise the loop will never end. This will crash your browser."
+                    "case 2:",
+                    "day = \"Tuesday\";",
+                    "break;",
+                    "case 3:",
+                    "day = \"Wednesday\";",
+                    "break;",
+                    "case 4:",
+                    "day = \"Thursday\";",
+                    "break;",
+                    "case 5:",
+                    "day = \"Friday\";",
+                    "break;",
+                    "case 6:",
+                    "day = \"Saturday\";",
+                    "}"
+                ]
+            },
+            {
+                "title": "The default case does not have to be the last case in a switch block:",
+                "content": [
+                    "switch(new Date().getDate() {",
+                    "switch (new Date().getDay()) {",
+                    "default: ",
+                    "text = \"Looking forward to the Weekend\";",
+                    "break;",
+                    "case 6:",
+                    "text = \"Today is Saturday\";",
+                    "break; ",
+                    "case 0:",
+                    "text = \"Today is Sunday\";",
+                    "}"
+                ]
+            },
+            {
+                "title": "In this example case 4 and 5 share the same code block, and 0 and 6 share another code block:",
+                "content": [
+                    "switch(new Date().getDate() {",
+                    "case 4:",
+                    "case 5:",
+                    "text = \"Soon it is Weelend\";",
+                    "break; ",
+                    "case 0:",
+                    "case 6:",
+                    "text = \"It is Weenkend\";",
+                    "default: ",
+                    "text = \"Looking forward to the Weekend\";",
+                    "}"
                 ]
             }
         ]
