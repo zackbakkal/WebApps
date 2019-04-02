@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>AJAX Introduction</title>
+    <link rel="stylesheet" type="text/css" href="../../../shared/stylesheets/myStyle.css" />
+</head>
+
+<body>
+    <header>
+        <h1 id="top">Introduction to HTML5</h1>
+    </header>
+
+    <div>
+        <nav>
+            <div class="inline"><a href="../tutorialBanner.htm">Home</a></div>
+            <div class="inline"><a href="intro.htm">Introduction</a></div>
+            <div class="inline"><a href="states/states.htm">States</a></div>
+            <div class="inline"><a href="functions/functions.htm">Functions</a></div>
+            <div class="inline"><a href="../quizzes/html5quiz.htm">Quiz</a></div>
+
+        </nav>
+    </div>
+
+    <div class="main clearfix transparent">
+        <div id="intro">
+            <h2>AJAX</h2>
+            <p>AJAX is not a programming language. It is a technique for accessing web servers
+                from a web page. AJAX stands for Asynchronous JavaScript And XML.</p>
+            <p>AJAX just uses a combination of:
+                <ul>
+                    <li>A browser built-in &quot;XMLHttpRequest&quot; object (to request data
+                        from a web server)</li>
+                    <li>JavaScript and HTML DOM (to display or use the data)</li>
+                </ul>
+            </p>
+            <p>AJAX applications might use XML to transport data, but it is equally common to
+                transport data as plain text or JSON text.</p>
+            <p>AJAX allows web pages to be updated asynchronously by exchanging data with a
+                web server behind the scenes. This means that it is possible to update parts
+                of a web page, without reloading the whole page.</p>
+
+            <h2>How AJAX Works</h2>
+            <ol class="indentOnce">
+                <li>An event occurs in a web page (the page is loaded, a button is clicked)</li>
+                <li>An XMLHttpRequest object is created by JavaScript</li>
+                <li>The XMLHttpRequest object sends a request to a web server</li>
+                <li>The server processes the request</li>
+                <li>The server sends a response back to the web page</li>
+                <li>The response is read by JavaScript</li>
+                <li>Proper action (like page update) is performed by JavaScript</li>
+            </ol>
+
+            <h3 class="indentOnce">Example</h3>
+            <h4 class="indentTwice">HTML Page</h4>
+            <div class="example">
+                <p>&lt;!DOCTYPE html&gt; </p>
+                <p>&lt;html&gt; </p>
+                <p class="indentOnce">&lt;head&gt; </p>
+                <p class="indentTwice">&lt;title&gt;Page Title Here&lt;/title&gt; </p>
+                <p class="indentOnce">&lt;/head&gt; </p>
+                <p class="indentOnce">&lt;body&gt; </p>
+                <p class="indentTwice">&lt;div id=&quot;demo&quot;&gt;</p>
+                <p class="indentTwice">&lt;h1&gt;Let Ajax change this text&lt;/h1&gt; </p>
+                <p class="indentTwice">&lt;button type=&quot;button&quot; onclick=&quot;loadDoc()&quot;
+                    &gt;Change Content&lt;/button&gt; </p>
+                <p class="indentTwice">&lt;/div&gt;</p>
+                <p class="indentOnce">&lt;/body&gt; </p>
+                <p>&lt;/html&gt; </p>
+            </div>
+
+            <h4 class="indentTwice">Function loadDoc()</h4>
+            <div class="example">
+                <p>function loadDoc() {</p>
+                <p class="indentOnce">var xhttp = new XMLHttpRequest();</p>
+                <p class="indentOnce">xhttp.onreadystatechange = function() {</p>
+                <p class="indentTwice">if (this.readyState == 4 && this.status == 200) {</p>
+                <p class="indentTrice">document.getElementById("demo").innerHTML = this.responseText;</p>
+                <p class="indentTwice">}</p>
+                <p class="indentOnce">};</p>
+                <p class="indentOnce">xhttp.open("GET", "ajax_info.txt", true);</p>
+                <p class="indentOnce">xhttp.send();</p>
+                <p>}</p>
+            </div>
+
+            <h2>Explaining the Example</h2>
+            <p>The HTML page contains a &lt;div&gt; section and a &lt;button&gt;.
+                The &lt;div&gt; section is used to display information from a server.
+                The &lt;button&gt; calls a function (if it is clicked).
+                The function requests data from a web server and displays it</p>
+
+            <h2>The XMLHttpRequest Object</h2>
+            <p>All modern browsers support the XMLHttpRequest object. The XMLHttpRequest
+                object can be used to exchange data with a web server behind the scenes.
+                This means that it is possible to update parts of a web page, without reloading
+                the whole page.</p>
+
+            <h3>Create an XMLHttpRequest Object</h3>
+            <p>All modern browsers (Chrome, Firefox, IE7+, Edge, Safari, Opera) have a built-in
+                XMLHttpRequest object.</p>
+
+            <h4 class="indentOnce">Syntax</h4>
+            <div class="example">
+                <p>variableName = new XMLHttpRequest();</p>
+            </div>
+
+            <h2>Access Across Domains</h2>
+            <p>For security reasons, modern browsers do not allow access across domains.
+                This means that both the web page and the XML file it tries to load, must be located on the same server.
+                The examples on W3Schools all open XML files located on the W3Schools domain.
+                If you want to use the example above on one of your own web pages, the XML files you load must be
+                located on your own server.</p>
+
+            <h2>Older Browsers (IE5 and IE6)</h2>
+            <p>ld versions of Internet Explorer (5/6) use an ActiveX object instead of the XMLHttpRequest object.</p>
+            <h4 class="indentOnce">Syntax</h4>
+            <div class="example">
+                <p>variableName = new ActiveXObject("Microsoft.XMLHTTP");</p>
+            </div>
+
+            <p>To handle IE5 and IE6, check if the browser supports the XMLHttpRequest object, or else
+                create an ActiveX object.</p>
+
+            <h4 class="indentOnce">Example</h4>
+            <div class="example">
+                <p>if (window.XMLHttpRequest) {</p>
+                <p calss="indentOnce">// code for modern browsers</p>
+                <p calss="indentOnce">xmlhttp = new XMLHttpRequest();</p>
+                <p>} else {</p>
+                <p calss="indentOnce">// code for old IE browsers</p>
+                <p calss="indentOnce">xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");</p>
+                <p></p>}</p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="quiz">
+        <p>Test yourself by taking a <span class="bold">
+                <a href="../quizzes/ajaxquiz.htm">quiz now.</a></span></p>
+    </div>
+
+    <div class="top-link clearfix">
+        <a href="#top">Back To Top</a>
+    </div>
+
+    <footer class="clearfix">
+        <div>
+            <h5>&copy; 2019 by Zakaria Bakkal.</h6>
+        </div>
+    </footer>
+
+</body>
+
+
+
+</html>
