@@ -1,226 +1,282 @@
 [
     {
         "question": "HTML stands for Hyper Text Language.",
-        "answer": "true"
+        "answer": "true",
+        "correct": "HTML stands for Hyper Text Language."
     },
     {
         "question": "Browsers display the HTML tags when rendering the content of the page.",
-        "answer": "false"
+        "answer": "false",
+        "correct": "Browsers do not display the HTML tags when rendering the content of the page."
     },
     {
         "question": "The <!DOCTYPE html> declaration defines the document to be HTML5.",
-        "answer": "true"
+        "answer": "true",
+        "correct": "The <!DOCTYPE html> declaration defines the document to be HTML5."
     },
     {
         "question": "The <head> element is the root element of an HTML page.",
-        "answer": "false"
+        "answer": "false",
+        "correct": "The <html> element is the root element of an HTML page."
     },
     {
         "question": "Heading elements goes from h1 to h4, h1 is the biggest and h4 is the smallest.",
-        "answer": "false"
+        "answer": "false",
+        "correct": "Heading elements goes from h1 to h6, h1 is the biggest and h6 is the smallest."
     },
     {
         "question": "The alt attribute is useful in case the user cannot view the image.",
-        "answer": "true"
+        "answer": "true",
+        "correct": "The alt attribute is useful in case the user cannot view the image."
     },
     {
         "question": "The <header> element represents a container for introductory content or a set of navigational links.",
-        "answer": "true"
+        "answer": "true",
+        "correct": "The <header> element represents a container for introductory content or a set of navigational links."
     },
     {
         "question": "You can only have one <header> elements in one document.",
-        "answer": "false"
+        "answer": "false",
+        "correct": "You can have several <header> elements in one document."
     },
     {
         "question": "A <header> tag can be placed within a <footer>, <address> or another <header> element.",
-        "answer": "false"
+        "answer": "false",
+        "correct": "A <header> tag cannot be placed within a <footer>, <address> or another <header> element."
     },
     {
         "question": "The <footer> element tag defines a footer for a document or section.",
-        "answer": "true"
+        "answer": "true",
+        "correct": "The <footer> element tag defines a footer for a document or section."
     },
     {
         "question": "You can have several <footer> elements in one document.",
-        "answer": "true"
+        "answer": "true",
+        "correct": "You can have several <footer> elements in one document."
     },
     {
         "question": "The <nav> tag defines a set of navigation links.",
-        "answer": "true"
+        "answer": "true",
+        "correct": "The <nav> tag defines a set of navigation links."
     },
     {
         "question": "All links of a document should be inside a <nav> element.",
-        "answer": "false"
+        "answer": "false",
+        "correct": "NOT all links of a document should be inside a <nav> element."
     },
     {
         "question": "The <nav> element is intended only for major block of navigation links.",
-        "answer": "true"
+        "answer": "true",
+        "correct": "The <nav> element is intended only for major block of navigation links."
     },
     {
         "question": "The <blockquote> tag specifies a section that is quoted from another source.",
-        "answer": "true"
+        "answer": "true",
+        "correct": "The <blockquote> tag specifies a section that is quoted from another source."
     },
     {
         "question": "The default display value for <blockquote> is inline-block. With a margin-top, margin-bottom of 1em. And margin-left, margin-right of 40px.",
-        "answer": "salse"
+        "answer": "false",
+        "correct": "The default display value for <blockquote> is block. With a margin-top, margin-bottom of 1em. And margin-left, margin-right of 40px."
     },
     {
         "question": "The <section> tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document.",
-        "answer": "true"
+        "answer": "true",
+        "correct": "The <section> tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document."
     },
     {
         "question": "The default display value for <section> is inline.",
-        "answer": "false"
+        "answer": "false",
+        "correct": "The default display value for <section> is block."
     },
     {
         "question": "You can have only 2 sections in a page.",
-        "answer": "false"
+        "answer": "false",
+        "correct": "You can have many sections in a page."
     },
     {
         "question": "A section may contain a header, a footer and other sections.",
-        "answer": "true"
+        "answer": "true",
+        "correct": "A section may contain a header, a footer and other sections."
     },
     {
         "question": "The <details> tag specifies additional details that the user can view or hide on demand.",
-        "answer": "true"
+        "answer": "true",
+        "correct": "The <details> tag specifies additional details that the user can view or hide on demand."
     },
     {
         "question": "The <details> tag can be used to create an interactive widget that the user can open and close.",
-        "answer": "true"
+        "answer": "true",
+        "correct": "The <details> tag can be used to create an interactive widget that the user can open and close."
     },
     {
         "question": "Any sort of content can be put inside the <details> tag.",
-        "answer": "true"
+        "answer": "true",
+        "correct": "Any sort of content can be put inside the <details> tag."
     },
     {
         "question": "The content of a <details> element should be visible unless the close attribute is set.",
-        "answer": "false"
+        "answer": "false",
+        "correct": "The content of a <details> element should not be visible unless the open attribute is set."
     },
     {
         "question": "The <summary> tag defines a visible heading for the <details> element. The heading can be clicked to view/hide the details.",
-        "answer": "true"
+        "answer": "true",
+        "correct": "The <summary> tag defines a visible heading for the <details> element. The heading can be clicked to view/hide the details."
     },
     {
         "question": "The <main> tag specifies the main content of a <section> element.",
-        "answer": "false"
+        "answer": "false",
+        "correct": "The <main> tag specifies the main content of a document."
     },
     {
         "question": "The <summary> tag defines a visible heading for the <details> element. The heading can be clicked to view/hide the details.",
-        "answer": "true"
+        "answer": "true",
+        "correct": "The <summary> tag defines a visible heading for the <details> element. The heading can be clicked to view/hide the details."
     },
     {
         "question": "The content inside the <main> element could be duplicated in a document. It could contain any content that is repeated across documents such as sidebars, navigation links, copyright information, site logos, and search forms.",
-        "answer": "false"
+        "answer": "false",
+        "correct": "The content inside the <main> element should be unique to the document. It should not contain any content that is repeated across documents such as sidebars, navigation links, copyright information, site logos, and search forms."
     },
     {
         "question": "The <main> element must NOT be a descendant of an <article>, <aside>, <footer>, <header>, or <nav> element.",
-        "answer": "true"
+        "answer": "true",
+        "correct": "The <main> element must NOT be a descendant of an <article>, <aside>, <footer>, <header>, or <nav> element."
     },
     {
         "question": "There must not be more than one <main> element in a document.",
-        "answer": "true"
+        "answer": "true",
+        "correct": "There must not be more than one <main> element in a document."
     },
     {
         "question": "The <input type=\"date\"> is used for input fields that should contain date and time.",
-        "answer": "false"
+        "answer": "false",
+        "correct": "The <input type=\"date\"> is used for input fields that should contain date."
     },
     {
         "question": "Depending on the browser support, a date picker can show up in the input field.",
-        "answer": "true"
+        "answer": "true",
+        "correct": "Depending on the browser support, a date picker can show up in the input field."
     },
     {
         "question": "Min and max attributes to add restrictions to input of type date.",
-        "answer": "true"
+        "answer": "true",
+        "correct": "Min and max attributes to add restrictions to input of type date."
     },
     {
         "question": "The <input type=\"month\"> allow users to select a month and year in the format yyyy-mm",
-        "answer": "true"
+        "answer": "true",
+        "correct": "The <input type=\"month\"> allow users to select a month and year in the format yyyy-mm"
     },
     {
         "question": "The <input type=\"week\"> allows users to select a week and year in the format yyyy-Wnn",
-        "answer": "true"
+        "answer": "true",
+        "correct": "The <input type=\"week\"> allows users to select a week and year in the format yyyy-Wnn"
     },
     {
         "question": "The <input type=\"time\"> allows users to select a time (no time zone).",
-        "answer": "true"
+        "answer": "true",
+        "correct": "The <input type=\"time\"> allows users to select a time (no time zone)."
     },
     {
         "question": "The user can enter the time in the order hours, seconds, minutes and fraction of a second.",
-        "answer": "false"
+        "answer": "false",
+        "correct": "The user can enter an hour, minute, seconds and fraction of a second."
     },
     {
         "question": "The HTML5 specification indicates thata time must have two digits for hour, followed by a colon (:) and two digits representing the minute.",
-        "answer": "true"
+        "answer": "true",
+        "correct": "The HTML5 specification indicates thata time must have two digits for hour, followed by a colon (:) and two digits representing the minute."
     },
     {
         "question": "The <input type=\"email\"> is used for input fields that should contain an e-mail address. Ther user can enter a list of emails separated by commas (if the many attribute is specified).",
-        "answer": "false"
+        "answer": "false",
+        "correct": "The <input type=\"email\"> is used for input fields that should contain an e-mail address. Ther user can enter a list of emails separated by commas (if the multiple attribute is specified)."
     },
     {
         "question": "HTML5 does check whether an e-mail address entered by the user exists, also validates that the e-mail address is in the proper format.",
-        "answer": "false"
+        "answer": "false",
+        "correct": "HTML5 does not check whether an e-mail address entered by the user exists, but rather it just validates that the e-mail address is in the proper format."
     },
     {
         "question": "Depending on browser support, the e-mail address can be automatically validated when submitted.",
-        "answer": "true"
+        "answer": "true",
+        "correct": "Depending on browser support, the e-mail address can be automatically validated when submitted."
     },
     {
         "question": "The <input type=\"number\"> defines a numeric input field. It enables the user to enter a numerical value. Mobile browsers typically display a numeric keypad for this input type.",
-        "answer": "true"
+        "answer": "true",
+        "correct": "The <input type=\"number\"> defines a numeric input field. It enables the user to enter a numerical value. Mobile browsers typically display a numeric keypad for this input type."
     },
     {
         "question": "You can set restrictions on what numbers are accepted, and how they are incremented.",
-        "answer": "true"
+        "answer": "true",
+        "correct": "You can set restrictions on what numbers are accepted, and how they are incremented."
     },
     {
         "question": "The min attribute sets the minimum valid number, and the max attribute sets the maximum valid number. The step attribute determines the increment in which the numbers increase.",
-        "answer": "true"
+        "answer": "true",
+        "correct": "The min attribute sets the minimum valid number, and the max attribute sets the maximum valid number. The step attribute determines the increment in which the numbers increase."
     },
     {
         "question": "The value attribute sets the selected value by the user in the form for an input of type number.",
-        "answer": "false"
+        "answer": "false",
+        "correct": "The value attribute sets the initial value displayed in the form."
     },
     {
         "question": "The <input type=\"range\"> defines a control for entering a number whose exact value is not important (like a slider control).",
-        "answer": "true"
+        "answer": "true",
+        "correct": "The <input type=\"range\"> defines a control for entering a number whose exact value is not important (like a slider control)."
     },
     {
         "question": "You can set restrictions on what numbers are accepted, and how they are incremented in an input of type range.",
-        "answer": "true"
+        "answer": "true",
+        "correct": "You can set restrictions on what numbers are accepted, and how they are incremented in an input of type range."
     },
     {
         "question": "The range input type is inherently self-validating when it is rendered by the browser as a slider control, because the user is unable to move the slider outside the bounds of the minimum or maximum values.",
-        "answer": "true"
+        "answer": "true",
+        "correct": "The range input type is inherently self-validating when it is rendered by the browser as a slider control, because the user is unable to move the slider outside the bounds of the minimum or maximum values."
     },
     {
         "question": "The <input type=\"tel\"> is used for input fields that should contain a telephone number from the local region.",
-        "answer": "false"
+        "answer": "false",
+        "correct": "The <input type=\"tel\"> is used for input fields that should contain a telephone number."
     },
     {
         "question": "The tel type is currently only supported in Safari 8. And all other browsers render the tel input type as a text field.",
-        "answer": "true"
+        "answer": "true",
+        "correct": "The tel type is currently only supported in Safari 8. And all other browsers render the tel input type as a text field."
     },
     {
         "question": "To ensure that the user enters a phone number in a proper format, it is recommended to use the pattern attribute since phone numbers length vary greatlty based on the location.",
-        "answer": "true"
+        "answer": "true",
+        "correct": "To ensure that the user enters a phone number in a proper format, it is recommended to use the pattern attribute since phone numbers length vary greatlty based on the location."
     },
     {
         "question": "The pattern attribute in an input of type tel uses a regular expession to determine whether the number is in the correct format.",
-        "answer": "true"
+        "answer": "true",
+        "correct": "The pattern attribute in an input of type tel uses a regular expession to determine whether the number is in the correct format."
     },
     {
         "question": "The <input type=\"url\"> is used for input fields that should contain a URL address.",
-        "answer": "true"
+        "answer": "true",
+        "correct": "The <input type=\"url\"> is used for input fields that should contain a URL address."
     },
     {
         "question": "Depending on browser support, the url field can be automatically validated when submitted.",
-        "answer": "true"
+        "answer": "true",
+        "correct": "Depending on browser support, the url field can be automatically validated when submitted."
     },
     {
         "question": "The input type url is rendered as a text field, the proper format is http://www.domain.com .",
-        "answer": "true"
+        "answer": "true",
+        "correct": "The input type url is rendered as a text field, the proper format is http://www.domain.com ."
     },
     {
         "question": "HTML5 does check whether the URL entered is valid; but it does not validate that the URL entered is in the proper format.",
-        "answer": "false"
+        "answer": "false",
+        "correct": "HTML5 does not check whether the URL entered is valid; rather it validates that the URL entered is in the proper format."
     }
 ]

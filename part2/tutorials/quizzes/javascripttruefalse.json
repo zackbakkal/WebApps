@@ -1,226 +1,297 @@
 [
     {
-        "question": "HTML stands for Hyper Text Language.",
-        "answer": "true"
+        "question": "JavaScript is the programming language of HTML and the Web.",
+        "answer": "true",
+        "correct": "JavaScript is the programming language of HTML and the Web."
     },
     {
-        "question": "Browsers display the HTML tags when rendering the content of the page.",
-        "answer": "false"
+        "question": "JavaScript is one of the 3 languages all web developers must learn, HTML to define the content of web pages, CSS to specify the layout of web pages, and JavaScript to program the behaviour of web pages.",
+        "answer": "true",
+        "correct": "is one of the 3 languages all web developers must learn, HTML to define the content of web pages, CSS to specify the layout of web pages, and JavaScript to program the behaviour of web pages."
     },
     {
-        "question": "The <!DOCTYPE html> declaration defines the document to be HTML5.",
-        "answer": "true"
+        "question": "JavaSCript can only be used with Web pages.",
+        "answer": "false",
+        "correct": "Web pages are not the only place where JavaScript is used. Many desktop and server programs use JavaScript. Node.js is the best known."
     },
     {
-        "question": "The <head> element is the root element of an HTML page.",
-        "answer": "false"
+        "question": "JavaScript and Java are identical languages, both in concept and design.",
+        "answer": "false",
+        "correct": "JavaScript and Java are completely different languages, both in concept and design."
     },
     {
-        "question": "Heading elements goes from h1 to h4, h1 is the biggest and h4 is the smallest.",
-        "answer": "false"
+        "question": "JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997.",
+        "answer": "true",
+        "correct": "JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997."
     },
     {
-        "question": "The alt attribute is useful in case the user cannot view the image.",
-        "answer": "true"
+        "question": " ECMA-262 is the official name of the standard. ECMAScript is the official name of the language.",
+        "answer": "true",
+        "correct": " ECMA-262 is the official name of the standard. ECMAScript is the official name of the language."
     },
     {
-        "question": "The <header> element represents a container for introductory content or a set of navigational links.",
-        "answer": "true"
+        "question": "Javascript can be enbedded in the HTML document. The code must be inserted between <javascript> and </javascript> tags.",
+        "answer": "false",
+        "correct": "Javascript can be enbedded in the HTML document. The code must be inserted between <script> and </script> tags."
     },
     {
-        "question": "You can only have one <header> elements in one document.",
-        "answer": "false"
+        "question": "This line of code \" document.writeline( \"<h1>Welcome to JavaScript Programming</h1>\" ); \" will display the phrase \"Welcome to JavaScript Programming\" as an h1 heading in the web page.",
+        "answer": "true",
+        "correct": "This line of code \" document.writeline( \"<h1>Welcome to JavaScript Programming</h1>\" ); \" will display the phrase \"Welcome to JavaScript Programming\" as an h1 heading in the web page."
     },
     {
-        "question": "A <header> tag can be placed within a <footer>, <address> or another <header> element.",
-        "answer": "false"
+        "question": "You can only place one script in an HTML document.",
+        "answer": "false",
+        "correct": "You can place any number of scripts in an HTML document."
     },
     {
-        "question": "The <footer> element tag defines a footer for a document or section.",
-        "answer": "true"
+        "question": "Scripts can be placed in the <body>, or in the <head> section of an HTML page, or in both.",
+        "answer": "true",
+        "correct": "Scripts can be placed in the <body>, or in the <head> section of an HTML page, or in both."
     },
     {
-        "question": "You can have several <footer> elements in one document.",
-        "answer": "true"
+        "question": "Placing scripts at the bottom of the <body> element improves the display speed, because script compilation slows down the display.",
+        "answer": "true",
+        "correct": "Placing scripts at the bottom of the <body> element improves the display speed, because script compilation slows down the display."
     },
     {
-        "question": "The <nav> tag defines a set of navigation links.",
-        "answer": "true"
+        "question": "Scripts can also be placed in external files.",
+        "answer": "true",
+        "correct": "Scripts can also be placed in external files."
     },
     {
-        "question": "All links of a document should be inside a <nav> element.",
-        "answer": "false"
+        "question": "To use an external script, put the name of the script file in the href attribute of a <script> tag:",
+        "answer": "false",
+        "correct": "To use an external script, put the name of the script file in the src (source) attribute of a <script> tag:"
     },
     {
-        "question": "The <nav> element is intended only for major block of navigation links.",
-        "answer": "true"
+        "question": "You can place an external script reference only in the <head>.",
+        "answer": "false",
+        "correct": "You can place an external script reference in <head> or <body> as you like."
     },
     {
-        "question": "The <blockquote> tag specifies a section that is quoted from another source.",
-        "answer": "true"
+        "question": "JavaScript files have the file extension .js .",
+        "answer": "true",
+        "correct": "JavaScript files have the file extension .js ."
     },
     {
-        "question": "The default display value for <blockquote> is inline-block. With a margin-top, margin-bottom of 1em. And margin-left, margin-right of 40px.",
-        "answer": "salse"
+        "question": "External scripts are placed inside <script> tags.",
+        "answer": "false",
+        "correct": "External scripts cannot contain <script> tags."
     },
     {
-        "question": "The <section> tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document.",
-        "answer": "true"
+        "question": "Placing scripts in external files has the following advantages, It separates HTML and code, It makes HTML and JavaScript easier to read and maintain, and Cached JavaScript files can speed up page loads.",
+        "answer": "true",
+        "correct": "Placing scripts in external files has the following advantages, It separates HTML and code, It makes HTML and JavaScript easier to read and maintain, and Cached JavaScript files can speed up page loads."
     },
     {
-        "question": "The default display value for <section> is inline.",
-        "answer": "false"
+        "question": "In HTML, JavaScript programs are executed by the web browser.",
+        "answer": "true",
+        "correct": "In HTML, JavaScript programs are executed by the web browser."
     },
     {
-        "question": "You can have only 2 sections in a page.",
-        "answer": "false"
+        "question": "JavaScript statements are composed of Values, and Expressions.",
+        "answer": "false",
+        "correct": "JavaScript statements are composed of Values, Operators, Expressions, Keywords, and Comments."
     },
     {
-        "question": "A section may contain a header, a footer and other sections.",
-        "answer": "true"
+        "question": "When separated by semicolons, multiple statements on one line are allowed.",
+        "answer": "true",
+        "correct": "When separated by semicolons, multiple statements on one line are allowed."
     },
     {
-        "question": "The <details> tag specifies additional details that the user can view or hide on demand.",
-        "answer": "true"
+        "question": "If a JavaScript statement does not fit on one line, the best place to break it is after an operator as \"=, +, ...\".",
+        "answer": "true",
+        "correct": "If a JavaScript statement does not fit on one line, the best place to break it is after an operator as \"=, +, ...\"."
     },
     {
-        "question": "The <details> tag can be used to create an interactive widget that the user can open and close.",
-        "answer": "true"
+        "question": "JavaScript statements can be grouped together in code blocks, inside square brackets [...].",
+        "answer": "true",
+        "correct": "JavaScript statements can be grouped together in code blocks, inside curly brackets {...}."
     },
     {
-        "question": "Any sort of content can be put inside the <details> tag.",
-        "answer": "true"
+        "question": "JavaScript keywords are reserved words. Reserved words cannot be used as names for variables.",
+        "answer": "true",
+        "correct": "JavaScript keywords are reserved words. Reserved words cannot be used as names for variables."
     },
     {
-        "question": "The content of a <details> element should be visible unless the close attribute is set.",
-        "answer": "false"
+        "question": "This line of code is legal in JavaScript: a = 5; b = 6; c = a + b;",
+        "answer": "true",
+        "correct": "This line of code is legal in JavaScript: a = 5; b = 6; c = a + b;"
     },
     {
-        "question": "The <summary> tag defines a visible heading for the <details> element. The heading can be clicked to view/hide the details.",
-        "answer": "true"
+        "question": "You can use conditional statements in your code to perform different actions for different decisions.",
+        "answer": "true",
+        "correct": "You can use conditional statements in your code to perform different actions for different decisions."
     },
     {
-        "question": "The <main> tag specifies the main content of a <section> element.",
-        "answer": "false"
+        "question": "Use else to specify a block of code to be executed, if the same condition is false.",
+        "answer": "true",
+        "correct": "Use else to specify a block of code to be executed, if the same condition is false."
     },
     {
-        "question": "The <summary> tag defines a visible heading for the <details> element. The heading can be clicked to view/hide the details.",
-        "answer": "true"
+        "question": "Use if to specify a block of code to be executed, if a specified condition is true.",
+        "answer": "true",
+        "correct": "Use if to specify a block of code to be executed, if a specified condition is true."
     },
     {
-        "question": "The content inside the <main> element could be duplicated in a document. It could contain any content that is repeated across documents such as sidebars, navigation links, copyright information, site logos, and search forms.",
-        "answer": "false"
+        "question": "Use switch to specify many alternative blocks of code to be executed.",
+        "answer": "true",
+        "correct": "Use switch to specify many alternative blocks of code to be executed."
     },
     {
-        "question": "The <main> element must NOT be a descendant of an <article>, <aside>, <footer>, <header>, or <nav> element.",
-        "answer": "true"
+        "question": "A for loop repeats until a specified condition evaluates to true.",
+        "answer": "false",
+        "correct": "A for loop repeats until a specified condition evaluates to false."
     },
     {
-        "question": "There must not be more than one <main> element in a document.",
-        "answer": "true"
+        "question": "In a for loop, If the value of condition is true, the loop statements execute. If the value of condition is false, the for loop terminates. If the condition expression is omitted entirely, the condition is assumed to be true.",
+        "answer": "true",
+        "correct": "In for loop, If the value of condition is true, the loop statements execute. If the value of condition is false, the for loop terminates. If the condition expression is omitted entirely, the condition is assumed to be true."
     },
     {
-        "question": "The <input type=\"date\"> is used for input fields that should contain date and time.",
-        "answer": "false"
+        "question": "To execute multiple statements, use a block statement ({ ... }) to group those statements.",
+        "answer": "true",
+        "correct": " To execute multiple statements, use a block statement ({ ... }) to group those statements."
     },
     {
-        "question": "Depending on the browser support, a date picker can show up in the input field.",
-        "answer": "true"
+        "question": "In a for loop, If present, the update expression incrementExpression is executed.",
+        "answer": "true",
+        "correct": "In a for loop, If present, the update expression incrementExpression is executed."
     },
     {
-        "question": "Min and max attributes to add restrictions to input of type date.",
-        "answer": "true"
+        "question": "In a while loop, If the condition becomes false, statement within the loop stops executing and control passes to the statement following the loop.",
+        "answer": "true",
+        "correct": "In a while loop, If the condition becomes false, statement within the loop stops executing and control passes to the statement following the loop."
     },
     {
-        "question": "The <input type=\"month\"> allow users to select a month and year in the format yyyy-mm",
-        "answer": "true"
+        "question": "If the condition in a loop never becomes false, the loop will never terminate.",
+        "answer": "true",
+        "correct": "If the condition in a loop never becomes false, the loop will never terminate."
     },
     {
-        "question": "The <input type=\"week\"> allows users to select a week and year in the format yyyy-Wnn",
-        "answer": "true"
+        "question": "The do/while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.",
+        "answer": "true",
+        "correct": "The do/while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true."
     },
     {
-        "question": "The <input type=\"time\"> allows users to select a time (no time zone).",
-        "answer": "true"
+        "question": "The switch statement is used to perform different actions based on different conditions.",
+        "answer": "true",
+        "correct": "The switch statement is used to perform different actions based on different conditions."
     },
     {
-        "question": "The user can enter the time in the order hours, seconds, minutes and fraction of a second.",
-        "answer": "false"
+        "question": "In a switch statement, if there is a match, the associated block of code is executed.",
+        "answer": "true",
+        "correct": "In a switch statement, if there is a match, the associated block of code is executed."
     },
     {
-        "question": "The HTML5 specification indicates thata time must have two digits for hour, followed by a colon (:) and two digits representing the minute.",
-        "answer": "true"
+        "question": "In a swicth statement, when JavaScript reaches a break keyword, it breaks out of the switch block. And then start over again until no match is found.",
+        "answer": "false",
+        "correct": "When JavaScript reaches a break keyword, it breaks out of the switch block."
     },
     {
-        "question": "The <input type=\"email\"> is used for input fields that should contain an e-mail address. Ther user can enter a list of emails separated by commas (if the many attribute is specified).",
-        "answer": "false"
+        "question": "It is necessary to break the last case in a switch block.",
+        "answer": "false",
+        "correct": "It is not necessary to break the last case in a switch block."
     },
     {
-        "question": "HTML5 does check whether an e-mail address entered by the user exists, also validates that the e-mail address is in the proper format.",
-        "answer": "false"
+        "question": "If you omit the break statement, the next case will be executed even if the evaluation does not match the case.",
+        "answer": "true",
+        "correct": "If you omit the break statement, the next case will be executed even if the evaluation does not match the case."
     },
     {
-        "question": "Depending on browser support, the e-mail address can be automatically validated when submitted.",
-        "answer": "true"
+        "question": "The default keyword specifies the code to run if there is no case match.",
+        "answer": "true",
+        "correct": "The default keyword specifies the code to run if there is no case match."
     },
     {
-        "question": "The <input type=\"number\"> defines a numeric input field. It enables the user to enter a numerical value. Mobile browsers typically display a numeric keypad for this input type.",
-        "answer": "true"
+        "question": "A string (or a text string) is a series of characters like \"Athabasca University\".",
+        "answer": "true",
+        "correct": "A string (or a text string) is a series of characters like \"Athabasca University\"."
     },
     {
-        "question": "You can set restrictions on what numbers are accepted, and how they are incremented.",
-        "answer": "true"
+        "question": "Strings are written with double quotes only.",
+        "answer": "false",
+        "correct": "Strings are written with quotes. You can use single or double quotes."
     },
     {
-        "question": "The min attribute sets the minimum valid number, and the max attribute sets the maximum valid number. The step attribute determines the increment in which the numbers increase.",
-        "answer": "true"
+        "question": "In JavaScript, there are 3 types of quotes: Double quotes, Single quotes, and Backticks.",
+        "answer": "true",
+        "correct": "In JavaScript, there are 3 types of quotes: Double quotes, Single quotes, and Backticks."
     },
     {
-        "question": "The value attribute sets the selected value by the user in the form for an input of type number.",
-        "answer": "false"
+        "question": "Double and single quotes are simple quotes. There’s no difference between them in JavaScript.",
+        "answer": "true",
+        "correct": "Double and single quotes are simple quotes. There’s no difference between them in JavaScript."
     },
     {
-        "question": "The <input type=\"range\"> defines a control for entering a number whose exact value is not important (like a slider control).",
-        "answer": "true"
+        "question": "Backticks are “extended functionality” quotes. They allow us to embed variables and expressions into a string by wrapping them in ${…}.",
+        "answer": "true",
+        "correct": "Backticks are “extended functionality” quotes. They allow us to embed variables and expressions into a string by wrapping them in ${…}."
     },
     {
-        "question": "You can set restrictions on what numbers are accepted, and how they are incremented in an input of type range.",
-        "answer": "true"
+        "question": "JavaScript has only one type of numbers.",
+        "answer": "true",
+        "correct": "JavaScript has only one type of numbers."
     },
     {
-        "question": "The range input type is inherently self-validating when it is rendered by the browser as a slider control, because the user is unable to move the slider outside the bounds of the minimum or maximum values.",
-        "answer": "true"
+        "question": "Numbers can only be written with decimals.",
+        "answer": "false",
+        "correct": "Numbers can be written with, or without decimals."
     },
     {
-        "question": "The <input type=\"tel\"> is used for input fields that should contain a telephone number from the local region.",
-        "answer": "false"
+        "question": "The number type represents both integer and floating point numbers.",
+        "answer": "true",
+        "correct": "The number type represents both integer and floating point numbers."
     },
     {
-        "question": "The tel type is currently only supported in Safari 8. And all other browsers render the tel input type as a text field.",
-        "answer": "true"
+        "question": "Infinity, -Infinity and NaN are special numeric values that belongs to the Number data type.",
+        "answer": "true",
+        "correct": "Infinity, -Infinity and NaN are special numeric values that belongs to the Number data type."
     },
     {
-        "question": "To ensure that the user enters a phone number in a proper format, it is recommended to use the pattern attribute since phone numbers length vary greatlty based on the location.",
-        "answer": "true"
+        "question": "Infinity represents the mathematical Infinity ∞. We can get it as a result of division by zero.",
+        "answer": "true",
+        "correct": "Infinity represents the mathematical Infinity ∞. We can get it as a result of division by zero."
     },
     {
-        "question": "The pattern attribute in an input of type tel uses a regular expession to determine whether the number is in the correct format.",
-        "answer": "true"
+        "question": "NaN represents a computational error. It is a result of an incorrect or an undefined mathematical operation.",
+        "answer": "true",
+        "correct": "NaN represents a computational error. It is a result of an incorrect or an undefined mathematical operation."
     },
     {
-        "question": "The <input type=\"url\"> is used for input fields that should contain a URL address.",
-        "answer": "true"
+        "question": "NaN is sticky. Any further operation on NaN returns NaN. So, if there’s a NaN somewhere in a mathematical expression, it propagates to the whole result.",
+        "answer": "true",
+        "correct": "NaN is sticky. Any further operation on NaN returns NaN. So, if there’s a NaN somewhere in a mathematical expression, it propagates to the whole result."
     },
     {
-        "question": "Depending on browser support, the url field can be automatically validated when submitted.",
-        "answer": "true"
+        "question": "The boolean type has only two values: true and false.",
+        "answer": "true",
+        "correct": "The boolean type has only two values: true and false."
     },
     {
-        "question": "The input type url is rendered as a text field, the proper format is http://www.domain.com .",
-        "answer": "true"
+        "question": "In JavaScript Everything With a \"Value\" is True, and Everything Without a \"Value\" is False.",
+        "answer": "true",
+        "correct": "In JavaScript Everything With a \"Value\" is True, and Everything Without a \"Value\" is False."
     },
     {
-        "question": "HTML5 does check whether the URL entered is valid; but it does not validate that the URL entered is in the proper format.",
-        "answer": "false"
+        "question": "Syntax of creating an Array is: var array_name = [item1, item2, ...]; or var array_name = new Array(item1, item2, ...);",
+        "answer": "true",
+        "correct": "Syntax of creating an Array is: var array_name = [item1, item2, ...]; or var array_name = new Array(item1, item2, ...);"
+    },
+    {
+        "question": "This expression returns false: Boolean(10 > 9)",
+        "answer": "false",
+        "correct": "This expression returns true: Boolean(10 > 9)"
+    },
+    {
+        "question": "These are true values in JavaScript: 20, -1, 3.14, 1 + 2, \"false\", true.",
+        "answer": "true",
+        "correct": "In JavaScript Everything With a \"Value\" is True, and Everything Without a \"Value\" is False."
+    },
+    {
+        "question": "These are false values in JavaScript: 0, -0, \"\", '', null, false, (10 / \"H\").",
+        "answer": "true",
+        "correct": "Syntax of creating an Array is: var array_name = [item1, item2, ...]; or var array_name = new Array(item1, item2, ...);"
     }
 ]

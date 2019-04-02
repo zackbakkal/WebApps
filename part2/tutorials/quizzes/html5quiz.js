@@ -1,5 +1,6 @@
 var trueFalseMap = new Map();
 var trueFlaseMapIndex = 0;
+var trueFalseMapCorrect = new Map();
 var trueFalseAnswers = new Map();
 const trueFalseMax = 20;
 var trueFalseXHR;
@@ -120,16 +121,20 @@ function submit() {
     element.appendChild(text);
     results.appendChild(element);
 
-    var children = trueFalseContent.childNodes;
-    console.log(children.length);
+    results.style.fontWeight = "bold";
+    results.style.backgroundColor = "white";
 
-    for (var child = 0; child < children.length; child++) {
-        console.log(child, quizResults.get(child));
-    }
+    var children = trueFalseContent.childNodes;
 
     for (var child = 0; child < children.length; child++) {
         if (quizResults.get(child) == "Wrong") {
             children[child].style.backgroundColor = "red";
+            var correct = document.createElement("p");
+            var text = document.createTextNode("Correct Answer: " + trueFalseMapCorrect.get(child));
+            correct.appendChild(text);
+            correct.style.fontWeight = "bold";
+            correct.style.backgroundColor = "yellow";
+            children[child].appendChild(correct);
         } else if (quizResults.get(child) == "Correct") {
             children[child].style.backgroundColor = "lightgreen";
         } else if (quizResults.get(child) == "Unanswered") {
@@ -164,6 +169,7 @@ function generateTrueFalse() {
     if (trueFalseMap.size == 0 || !picked(test)) {
         trueFalseMap.set(trueFlaseMapIndex, trueFalseResponse[rand].question);
         trueFalseAnswers.set(trueFlaseMapIndex, trueFalseResponse[rand].answer);
+        trueFalseMapCorrect.set(trueFlaseMapIndex, trueFalseResponse[rand].correct);
         trueFlaseMapIndex++;
     } else {
         generateTrueFalse();

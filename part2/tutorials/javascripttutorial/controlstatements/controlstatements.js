@@ -12,17 +12,23 @@ function registerListeners() {
     var button;
     content = document.getElementById("content");
 
-    button = document.getElementById("string");
-    button.addEventListener("click", function () { getContent("string"); }, false);
+    button = document.getElementById("statements");
+    button.addEventListener("click", function () { getContent("statements"); }, false);
 
-    button = document.getElementById("number");
-    button.addEventListener("click", function () { getContent("number"); }, false);
+    button = document.getElementById("ifelse");
+    button.addEventListener("click", function () { getContent("ifelse"); }, false);
 
-    button = document.getElementById("boolean");
-    button.addEventListener("click", function () { getContent("boolean"); }, false);
+    button = document.getElementById("for");
+    button.addEventListener("click", function () { getContent("for"); }, false);
 
-    button = document.getElementById("array");
-    button.addEventListener("click", function () { getContent("array"); }, false);
+    button = document.getElementById("while");
+    button.addEventListener("click", function () { getContent("while"); }, false);
+
+    button = document.getElementById("dowhile");
+    button.addEventListener("click", function () { getContent("dowhile"); }, false);
+
+    button = document.getElementById("switch");
+    button.addEventListener("click", function () { getContent("switch"); }, false);
 }
 
 function getContent(item) {
@@ -34,7 +40,7 @@ function getContent(item) {
         asyncRequest.onreadystatechange = function () {
             stateChange(item);
         };
-        asyncRequest.open("GET", "datatypes.json", true);
+        asyncRequest.open("GET", "controlstatements.json", true);
         asyncRequest.send(null);
     } catch (exception) {
         alert("Something went wrong.");
@@ -43,16 +49,16 @@ function getContent(item) {
 }
 
 function stateChange(item) {
-    console.log(item);
-    console.log(asyncRequest.readyState);
     if (asyncRequest.readyState == 4 && asyncRequest.status == 200) {
         var response = JSON.parse(asyncRequest.responseText);
 
         switch (item) {
-            case "string": display(response, 0); break;
-            case "number": display(response, 1); break;
-            case "boolean": display(response, 2); break;
-            case "array": display(response, 3); break;
+            case "statements": display(response, 0); break;
+            case "ifelse": display(response, 1); break;
+            case "for": display(response, 2); break;
+            case "while": display(response, 3); break;
+            case "dowhile": display(response, 4); break;
+            case "switch": display(response, 5); break;
         }
     }
 }

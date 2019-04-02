@@ -1,0 +1,359 @@
+[
+    {
+        "name": "Statements",
+        "definition": [
+            "A computer program is a list of \"instructions\" to be \"executed\" by a computer.",
+            "In a programming language, these programming instructions are called statements.",
+            "A JavaScript program is a list of programming statements.",
+            "In HTML, JavaScript programs are executed by the web browser.",
+            "JavaScript statements are composed of Values, Operators, Expressions, Keywords, and Comments.",
+            "Most JavaScript programs contain many JavaScript statements, which are separated by a semicolon. When separated by semicolons, multiple statements on one line are allowed.",
+            "For best readability, programmers often like to avoid code lines longer than 80 characters. If a JavaScript statement does not fit on one line, the best place to break it is after an operator as \"=, +, ...\".",
+            "JavaScript statements can be grouped together in code blocks, inside curly brackets {...}. The purpose of code blocks is to define statements to be executed together. One place you will find statements grouped together in blocks, is in JavaScript functions.",
+            "JavaScript statements often start with a keyword to identify the JavaScript action to be performed. Some of the keywords are \"break, continue, var, function, for ...\". JavaScript keywords are reserved words. Reserved words cannot be used as names for variables."
+        ],
+        "examples": [
+            {
+                "title": "These are JavaScript statements:",
+                "content": [
+                    "var x, y, z;",
+                    "x = 5;",
+                    "y = 3;",
+                    "z = x + y;"
+                ]
+            },
+            {
+                "title": "This statement tells the browser to write \"Hello Zack.\" inside an HTML element with id=\"greeting\":",
+                "content": [
+                    "document.getElementById(\"demo\").innerHTML = \"Hello Dolly.\";"
+                ]
+            },
+            {
+                "title": "Multiple statements on one line separated by semicolons:",
+                "content": [
+                    "a = 5; b = 6; c = a + b;"
+                ]
+            },
+            {
+                "title": "Breaking a statement into two lines:",
+                "content": [
+                    "document.getElementById(\"demo\").innerHTML =",
+                    "\"Hello Dolly!\";"
+                ]
+            },
+            {
+                "title": "Statements grouped together in blocks:",
+                "content": [
+                    "function myFunction() {",
+                    "document.getElementById(\"demo1\").innerHTML = \"Hello Dolly!\";",
+                    "document.getElementById(\"demo2\").innerHTML = \"How are you?\";",
+                    "}"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "if..else a conditional statement",
+        "definition": [
+            "Very often when you write code, you want to perform different actions for different decisions. You can use conditional statements in your code to do this.",
+            "In a programming language, these programming instructions are called statements.",
+            "In JavaScript we have the following conditional statements:",
+            "-> if",
+            "-> if..else",
+            "-> if..else..if",
+            "Use if to specify a block of code to be executed, if a specified condition is true.",
+            "JavaScript statements are composed of Values, Operators, Expressions, Keywords, and Comments.",
+            "Use else to specify a block of code to be executed, if the same condition is false.",
+            "Use else if to specify a new condition to test, if the first condition is false.",
+            "Use switch to specify many alternative blocks of code to be executed. The switch statement is described by itself."
+        ],
+        "examples": [
+            {
+                "title": "The if Statement Syntax",
+                "content": [
+                    "if (condition) {",
+                    "   //  block of code to be executed if the condition is true",
+                    "}"
+                ]
+            },
+            {
+                "title": "Make a \"Good day\" greeting if the hour is less than 18:00:",
+                "content": [
+                    "if (hour < 18) {",
+                    "   greeting = \"Good day\";",
+                    "}"
+                ]
+            },
+            {
+                "title": "The else Statement Syntax",
+                "content": [
+                    "if (condition) {",
+                    "   //  block of code to be executed if the condition is true",
+                    "} else {",
+                    "   //  block of code to be executed if the condition is false",
+                    "}"
+                ]
+            },
+            {
+                "title": "If the hour is less than 18, create a \"Good day\" greeting, otherwise \"Good evening\"",
+                "content": [
+                    "if (condition) {",
+                    "   greeting = \"Good day\";",
+                    "} else {",
+                    "   greeting = \"Good evening\";",
+                    "}"
+                ]
+            },
+            {
+                "title": "The else if Statement Syntax",
+                "content": [
+                    "if (condition1) {",
+                    "   //  block of code to be executed if the condition1 is true",
+                    "} else if (condition2) {",
+                    "   //  block of code to be executed if the condition1 is true",
+                    "} else {",
+                    "   //  block of code to be executed if the condition1 is false and condition2 is false",
+                    "}"
+                ]
+            },
+            {
+                "title": "If time is less than 10:00, create a \"Good morning\" greeting, if not, but time is less than 20:00, create a \"Good day\" greeting, otherwise a \"Good evening\"",
+                "content": [
+                    "if (time < 10) {",
+                    "   greeting = \"Good morning\"",
+                    "} else if (time < 20) {",
+                    "   greeting = \"Good day\"",
+                    "} else {",
+                    "   greeting = \"Good evening\";",
+                    "}"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "for loop Statement",
+        "definition": [
+            "Loops are handy, if you want to run the same code over and over again, each time with a different value.",
+            "A for loop repeats until a specified condition evaluates to false. The JavaScript for loop is similar to the Java and C for loop.",
+            "When a for loop executes, the following occurs:",
+            "1- The initializing expression initialExpression, if any, is executed. This expression usually initializes one or more loop counters, but the syntax allows an expression of any degree of complexity. This expression can also declare variables.",
+            "2- The condition expression is evaluated. If the value of condition is true, the loop statements execute. If the value of condition is false, the for loop terminates. If the condition expression is omitted entirely, the condition is assumed to be true.",
+            "3- The statement executes. To execute multiple statements, use a block statement ({ ... }) to group those statements.",
+            "4- If present, the update expression incrementExpression is executed.",
+            "5- Control returns to step 2."
+        ],
+        "examples": [
+            {
+                "title": "The for loop Statement Syntax",
+                "content": [
+                    "for (statement 1; statement 2; statement 3) {",
+                    "   // code block to be executed",
+                    "}",
+                    "",
+                    "Statement 1 is executed (one time) before the execution of the code block.",
+                    "Statement 2 defines the condition for executing the code block.",
+                    "Statement 3 is executed (every time) after the code block has been executed."
+                ]
+            },
+            {
+                "title": "Iterate through number from 0 to 10 and print them on the console",
+                "content": [
+                    "for (i = 0; i < 5; i++) {",
+                    "   console.log(\"Number: \", i",
+                    "}"
+                ]
+            },
+            {
+                "title": "You can omit statement 1 (like when your values are set before the loop starts):",
+                "content": [
+                    "var i = 2;",
+                    "var len = cars.length;",
+                    "var text = \"\";",
+                    "for (; i < len; i++) {",
+                    " text += cars[i] + \"<br>\";",
+                    "}",
+                    "",
+                    "Normally you will use statement 1 to initialize the variable used in the loop (i = 0).",
+                    "This is not always the case, JavaScript doesn't care. Statement 1 is optional."
+                ]
+            },
+            {
+                "title": "Statement 3 can also be omitted (like when you increment your values inside the loop):",
+                "content": [
+                    "var i = 0;",
+                    "var len = cars.length;",
+                    "for (; i < len; ) {",
+                    "text += cars[i] + \"<br>\";",
+                    "i++;",
+                    "}",
+                    "",
+                    "Often statement 3 increments the value of the initial variable.",
+                    "This is not always the case, JavaScript doesn't care, and statement 3 is optional.",
+                    "Statement 3 can do anything like negative increment (i--), positive increment (i = i + 15), or anything else."
+                ]
+            },
+            {
+                "title": "Statement 2 can also be omitted but you need to add a break statement inside the loop:",
+                "content": [
+                    "for (var i = 0;; i++) {",
+                    "if (i == 10) {",
+                    "break;",
+                    "}",
+                    "else {",
+                    "console.log(i);",
+                    "}",
+                    "}",
+                    "Often statement 2 is used to evaluate the condition of the initial variable.",
+                    "This is not always the case, JavaScript doesn't care. Statement 2 is also optional.",
+                    "If statement 2 returns true, the loop will start over again, if it returns false, the loop will end.",
+                    "",
+                    "If you omit statement 2, you must provide a break inside the loop. Otherwise the loop will never end. This will crash your browser."
+                ]
+            }
+        ]
+    },
+    {
+        "name": "while loop Statement",
+        "definition": [
+            "The while loop loops through a block of code as long as a specified condition is true.",
+            "If the condition becomes false, statement within the loop stops executing and control passes to the statement following the loop.",
+            "The condition test occurs before statement in the loop is executed. If the condition returns true, statement is executed and the condition is tested again. If the condition returns false, execution stops and control is passed to the statement following while.",
+            "To execute multiple statements, use a block statement ({ ... }) to group those statements.",
+            "Avoid infinite loops. Make sure the condition in a loop eventually becomes false; otherwise, the loop will never terminate."
+        ],
+        "examples": [
+            {
+                "title": "The while loop Statement Syntax",
+                "content": [
+                    "while (condition)",
+                    " statement"
+                ]
+            },
+            {
+                "title": "Iterate through number from 0 to 10 and print them on the console",
+                "content": [
+                    "var i = 0;",
+                    "while(i <= 10) {",
+                    "   console.log(\"Number: \", i",
+                    "i++;",
+                    "}"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "do..while loop Statement",
+        "definition": [
+            "The do/while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.",
+            "To execute multiple statements, use a block statement ({ ... }) to group those statements. If condition is true, the statement executes again. At the end of every execution, the condition is checked. When the condition is false, execution stops and control passes to the statement following do...while.",
+            "Avoid infinite loops. Make sure the condition in a loop eventually becomes false; otherwise, the loop will never terminate."
+        ],
+        "examples": [
+            {
+                "title": "The do..while loop Statement Syntax",
+                "content": [
+                    "do",
+                    "statement",
+                    "while (condition);"
+                ]
+            },
+            {
+                "title": "In the following example, the do loop iterates at least once and reiterates until i is no longer less than 5.",
+                "content": [
+                    "var i = 0;",
+                    "do {",
+                    "i += 1;",
+                    "console.log(i);",
+                    "} while (i < 5);"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "switch Statement",
+        "definition": [
+            "The switch statement is used to perform different actions based on different conditions.",
+            "Use the switch statement to select one of many code blocks to be executed.",
+            "This is how it works:",
+            "The switch expression is evaluated once.",
+            "The value of the expression is compared with the values of each case.",
+            "If there is a match, the associated block of code is executed.",
+            "When JavaScript reaches a break keyword, it breaks out of the switch block. This will stop the execution of inside the block. It is not necessary to break the last case in a switch block. The block breaks (ends) there anyway.",
+            "If you omit the break statement, the next case will be executed even if the evaluation does not match the case.",
+            "The default keyword specifies the code to run if there is no case match"
+        ],
+        "examples": [
+            {
+                "title": "The switch Statement Syntax",
+                "content": [
+                    "switch(expression) {",
+                    "case x:",
+                    "// code block",
+                    "break;",
+                    "case y:",
+                    "// code block",
+                    "break;",
+                    "default:",
+                    "// code block",
+                    "}"
+                ]
+            },
+            {
+                "title": "This example uses the weekday number to calculate the weekday name:",
+                "content": [
+                    "switch(new Date().getDate()) {",
+                    "case 1:",
+                    "day = \"Monday\";",
+                    "break;",
+                    "case 2:",
+                    "day = \"Tuesday\";",
+                    "break;",
+                    "case 3:",
+                    "day = \"Wednesday\";",
+                    "break;",
+                    "case 4:",
+                    "day = \"Thursday\";",
+                    "break;",
+                    "case 5:",
+                    "day = \"Friday\";",
+                    "break;",
+                    "case 6:",
+                    "day = \"Saturday\";",
+                    "}"
+                ]
+            },
+            {
+                "title": "The default case does not have to be the last case in a switch block:",
+                "content": [
+                    "switch(new Date().getDate() {",
+                    "switch (new Date().getDay()) {",
+                    "default: ",
+                    "text = \"Looking forward to the Weekend\";",
+                    "break;",
+                    "case 6:",
+                    "text = \"Today is Saturday\";",
+                    "break; ",
+                    "case 0:",
+                    "text = \"Today is Sunday\";",
+                    "}"
+                ]
+            },
+            {
+                "title": "In this example case 4 and 5 share the same code block, and 0 and 6 share another code block:",
+                "content": [
+                    "switch(new Date().getDate() {",
+                    "case 4:",
+                    "case 5:",
+                    "text = \"Soon it is Weelend\";",
+                    "break; ",
+                    "case 0:",
+                    "case 6:",
+                    "text = \"It is Weenkend\";",
+                    "default: ",
+                    "text = \"Looking forward to the Weekend\";",
+                    "}"
+                ]
+            }
+        ]
+    }
+]
