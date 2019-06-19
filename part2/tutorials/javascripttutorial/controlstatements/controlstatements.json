@@ -45,8 +45,8 @@
                 "title": "Statements grouped together in blocks:",
                 "content": [
                     "function myFunction() {",
-                    "document.getElementById(\"demo1\").innerHTML = \"Hello Dolly!\";",
-                    "document.getElementById(\"demo2\").innerHTML = \"How are you?\";",
+                    "----document.getElementById(\"demo1\").innerHTML = \"Hello Dolly!\";",
+                    "----document.getElementById(\"demo2\").innerHTML = \"How are you?\";",
                     "}"
                 ]
             }
@@ -58,9 +58,7 @@
             "Very often when you write code, you want to perform different actions for different decisions. You can use conditional statements in your code to do this.",
             "In a programming language, these programming instructions are called statements.",
             "In JavaScript we have the following conditional statements:",
-            "-> if",
-            "-> if..else",
-            "-> if..else..if",
+            "<ul><li>if</li><li>if..else</li><li>if..else..if</li></ul>",
             "Use if to specify a block of code to be executed, if a specified condition is true.",
             "JavaScript statements are composed of Values, Operators, Expressions, Keywords, and Comments.",
             "Use else to specify a block of code to be executed, if the same condition is false.",
@@ -80,7 +78,7 @@
                 "title": "Make a \"Good day\" greeting if the hour is less than 18:00:",
                 "content": [
                     "if (hour < 18) {",
-                    "   greeting = \"Good day\";",
+                    "----greeting = \"Good day\";",
                     "}"
                 ]
             },
@@ -98,9 +96,9 @@
                 "title": "If the hour is less than 18, create a \"Good day\" greeting, otherwise \"Good evening\"",
                 "content": [
                     "if (condition) {",
-                    "   greeting = \"Good day\";",
+                    "----greeting = \"Good day\";",
                     "} else {",
-                    "   greeting = \"Good evening\";",
+                    "----greeting = \"Good evening\";",
                     "}"
                 ]
             },
@@ -120,11 +118,11 @@
                 "title": "If time is less than 10:00, create a \"Good morning\" greeting, if not, but time is less than 20:00, create a \"Good day\" greeting, otherwise a \"Good evening\"",
                 "content": [
                     "if (time < 10) {",
-                    "   greeting = \"Good morning\"",
+                    "----greeting = \"Good morning\"",
                     "} else if (time < 20) {",
-                    "   greeting = \"Good day\"",
+                    "----greeting = \"Good day\"",
                     "} else {",
-                    "   greeting = \"Good evening\";",
+                    "----greeting = \"Good evening\";",
                     "}"
                 ]
             }
@@ -136,11 +134,7 @@
             "Loops are handy, if you want to run the same code over and over again, each time with a different value.",
             "A for loop repeats until a specified condition evaluates to false. The JavaScript for loop is similar to the Java and C for loop.",
             "When a for loop executes, the following occurs:",
-            "1- The initializing expression initialExpression, if any, is executed. This expression usually initializes one or more loop counters, but the syntax allows an expression of any degree of complexity. This expression can also declare variables.",
-            "2- The condition expression is evaluated. If the value of condition is true, the loop statements execute. If the value of condition is false, the for loop terminates. If the condition expression is omitted entirely, the condition is assumed to be true.",
-            "3- The statement executes. To execute multiple statements, use a block statement ({ ... }) to group those statements.",
-            "4- If present, the update expression incrementExpression is executed.",
-            "5- Control returns to step 2."
+            "<ol><li>The initializing expression initialExpression, if any, is executed. This expression usually initializes one or more loop counters, but the syntax allows an expression of any degree of complexity. This expression can also declare variables.</li> <li>The condition expression is evaluated. If the value of condition is true, the loop statements execute. If the value of condition is false, the for loop terminates.</li> <li> If the condition expression is omitted entirely, the condition is assumed to be true.</li> </li>The statement executes. To execute multiple statements, use a block statement ({ ... }) to group those statements.</li> <li>If present, the update expression incrementExpression is executed.</li> <li>Control returns to step 2.</li></ol>"
         ],
         "examples": [
             {
@@ -159,7 +153,7 @@
                 "title": "Iterate through number from 0 to 10 and print them on the console",
                 "content": [
                     "for (i = 0; i < 5; i++) {",
-                    "   console.log(\"Number: \", i",
+                    "----console.log(\"Number: \", i",
                     "}"
                 ]
             },
@@ -170,7 +164,7 @@
                     "var len = cars.length;",
                     "var text = \"\";",
                     "for (; i < len; i++) {",
-                    " text += cars[i] + \"<br>\";",
+                    "----text += cars[i] + \"<br>\";",
                     "}",
                     "",
                     "Normally you will use statement 1 to initialize the variable used in the loop (i = 0).",
@@ -183,8 +177,8 @@
                     "var i = 0;",
                     "var len = cars.length;",
                     "for (; i < len; ) {",
-                    "text += cars[i] + \"<br>\";",
-                    "i++;",
+                    "----text += cars[i] + \"<br>\";",
+                    "----i++;",
                     "}",
                     "",
                     "Often statement 3 increments the value of the initial variable.",
@@ -196,12 +190,11 @@
                 "title": "Statement 2 can also be omitted but you need to add a break statement inside the loop:",
                 "content": [
                     "for (var i = 0;; i++) {",
-                    "if (i == 10) {",
-                    "break;",
-                    "}",
-                    "else {",
-                    "console.log(i);",
-                    "}",
+                    "----if (i == 10) {",
+                    "--------break;",
+                    "----} else {",
+                    "--------console.log(i);",
+                    "----}",
                     "}",
                     "Often statement 2 is used to evaluate the condition of the initial variable.",
                     "This is not always the case, JavaScript doesn't care. Statement 2 is also optional.",
@@ -234,8 +227,8 @@
                 "content": [
                     "var i = 0;",
                     "while(i <= 10) {",
-                    "   console.log(\"Number: \", i",
-                    "i++;",
+                    "----console.log(\"Number: \", i",
+                    "----i++;",
                     "}"
                 ]
             }
@@ -253,7 +246,7 @@
                 "title": "The do..while loop Statement Syntax",
                 "content": [
                     "do",
-                    "statement",
+                    " // statements",
                     "while (condition);"
                 ]
             },
@@ -262,8 +255,8 @@
                 "content": [
                     "var i = 0;",
                     "do {",
-                    "i += 1;",
-                    "console.log(i);",
+                    "----i += 1;",
+                    "----console.log(i);",
                     "} while (i < 5);"
                 ]
             }
@@ -302,39 +295,38 @@
                 "title": "This example uses the weekday number to calculate the weekday name:",
                 "content": [
                     "switch(new Date().getDate()) {",
-                    "case 1:",
-                    "day = \"Monday\";",
-                    "break;",
-                    "case 2:",
-                    "day = \"Tuesday\";",
-                    "break;",
-                    "case 3:",
-                    "day = \"Wednesday\";",
-                    "break;",
-                    "case 4:",
-                    "day = \"Thursday\";",
-                    "break;",
-                    "case 5:",
-                    "day = \"Friday\";",
-                    "break;",
-                    "case 6:",
-                    "day = \"Saturday\";",
+                    "----case 1:",
+                    "--------day = \"Monday\";",
+                    "--------break;",
+                    "----case 2:",
+                    "--------day = \"Tuesday\";",
+                    "--------break;",
+                    "----case 3:",
+                    "--------day = \"Wednesday\";",
+                    "--------break;",
+                    "----case 4:",
+                    "--------day = \"Thursday\";",
+                    "--------break;",
+                    "----case 5:",
+                    "--------day = \"Friday\";",
+                    "--------break;",
+                    "----case 6:",
+                    "--------day = \"Saturday\";",
                     "}"
                 ]
             },
             {
                 "title": "The default case does not have to be the last case in a switch block:",
                 "content": [
-                    "switch(new Date().getDate() {",
                     "switch (new Date().getDay()) {",
-                    "default: ",
-                    "text = \"Looking forward to the Weekend\";",
-                    "break;",
-                    "case 6:",
-                    "text = \"Today is Saturday\";",
-                    "break; ",
-                    "case 0:",
-                    "text = \"Today is Sunday\";",
+                    "----default: ",
+                    "--------text = \"Looking forward to the Weekend\";",
+                    "--------break;",
+                    "----case 6:",
+                    "--------text = \"Today is Saturday\";",
+                    "--------break;",
+                    "----case 0:",
+                    "--------text = \"Today is Sunday\";",
                     "}"
                 ]
             },
@@ -342,15 +334,15 @@
                 "title": "In this example case 4 and 5 share the same code block, and 0 and 6 share another code block:",
                 "content": [
                     "switch(new Date().getDate() {",
-                    "case 4:",
-                    "case 5:",
-                    "text = \"Soon it is Weelend\";",
-                    "break; ",
-                    "case 0:",
-                    "case 6:",
-                    "text = \"It is Weenkend\";",
-                    "default: ",
-                    "text = \"Looking forward to the Weekend\";",
+                    "----case 4:",
+                    "----case 5:",
+                    "--------text = \"Soon it is Weelend\";",
+                    "----break; ",
+                    "----case 0:",
+                    "----case 6:",
+                    "--------text = \"It is Weenkend\";",
+                    "----default: ",
+                    "--------text = \"Looking forward to the Weekend\";",
                     "}"
                 ]
             }

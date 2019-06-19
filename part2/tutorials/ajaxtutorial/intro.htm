@@ -6,23 +6,27 @@
     <meta charset="UTF-8" />
     <title>AJAX Introduction</title>
     <link rel="stylesheet" type="text/css" href="../../../shared/stylesheets/myStyle.css" />
+    <script src="../../../shared/js/bannerimg.js"></script>
+
 </head>
 
 <body>
     <header>
-        <h1 id="top">Introduction to HTML5</h1>
+        <h1 id="top">Introduction to AJAX</h1>
     </header>
 
     <div>
         <nav>
-            <div class="inline"><a href="../tutorialBanner.htm">Home</a></div>
+            <div class="inline"><a href="ajax.htm">Home</a></div>
             <div class="inline"><a href="intro.htm">Introduction</a></div>
-            <div class="inline"><a href="states/states.htm">States</a></div>
-            <div class="inline"><a href="functions/functions.htm">Functions</a></div>
-            <div class="inline"><a href="../quizzes/html5quiz.htm">Quiz</a></div>
+            <div class="inline"><a href="properties/properties.htm">Properties</a></div>
+            <div class="inline"><a href="methods/methods.htm">Methods</a></div>
+            <div class="inline"><a href="../quizzes/ajaxquiz.htm">Quiz</a></div>
 
         </nav>
     </div>
+
+    <div id="banner" class="clearfix margintop"></div>
 
     <div class="main clearfix transparent">
         <div id="intro">
@@ -114,7 +118,7 @@
                 located on your own server.</p>
 
             <h2>Older Browsers (IE5 and IE6)</h2>
-            <p>ld versions of Internet Explorer (5/6) use an ActiveX object instead of the XMLHttpRequest object.</p>
+            <p>Old versions of Internet Explorer (5/6) use an ActiveX object instead of the XMLHttpRequest object.</p>
             <h4 class="indentOnce">Syntax</h4>
             <div class="example">
                 <p>variableName = new ActiveXObject("Microsoft.XMLHTTP");</p>
@@ -133,6 +137,112 @@
                 <p calss="indentOnce">xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");</p>
                 <p></p>}</p>
             </div>
+
+            <h2>XMLHttpRequest Object Methods</h2>
+            <table class="xmlobjectmethods">
+                <caption>XMLHttpRequest Methods</caption>
+                <thead>
+                    <tr>
+                        <th>Method</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>new XMLHttpRequest()</td>
+                        <td>Creates a new XMLHttpRequest object</td>
+                    </tr>
+                    <tr>
+                        <td>abort()</td>
+                        <td>Cancels the current request</td>
+                    </tr>
+                    <tr>
+                        <td>getAllResponseHeaders()</td>
+                        <td>Returns header information</td>
+                    </tr>
+                    <tr>
+                        <td>getResponseHeader()</td>
+                        <td>Returns specific header information</td>
+                    </tr>
+                    <tr>
+                        <td>open(method, url, async, user, psw)</td>
+                        <td>Cancels the current request</td>
+                    </tr>
+                    <tr>
+                        <td>getAllResponseHeaders() </td>
+                        <td>Specifies the request<br>
+                            <br>
+                            method: the request type GET or POST<br>
+                            url: the file location<br>
+                            async: true (asynchronous) or false (synchronous)<br>
+                            user: optional user name<br>
+                            psw: optional password<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>send()</td>
+                        <td>Sends the request to the server
+                            Used for GET requests</td>
+                    </tr>
+                    <tr>
+                        <td>send(string)</td>
+                        <td>Sends the request to the server.
+                            Used for POST requests</td>
+                    </tr>
+                    <tr>
+                        <td>setRequestHeader()</td>
+                        <td>Adds a label/value pair to the header to be sent</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>XMLHttpRequest Object Properties</h2>
+            <table class="xmlobjectmethods">
+                <caption>XMLHttpRequest Methods</caption>
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>onreadystatechange</td>
+                        <td>Defines a function to be called when the readyState property changes</td>
+                    </tr>
+                    <tr>
+                        <td>readyState</td>
+                        <td>Holds the status of the XMLHttpRequest.<br>
+                            0: request not initialized <br>
+                            1: server connection established<br>
+                            2: request received <br>
+                            3: processing request <br>
+                            4: request finished and response is ready<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>responseText</td>
+                        <td>Returns the response data as a string</td>
+                    </tr>
+                    <tr>
+                        <td>responseXML</td>
+                        <td>Returns the response data as XML data</td>
+                    </tr>
+                    <tr>
+                        <td>status</td>
+                        <td>Returns the status-number of a request<br>
+                            200: "OK"<br>
+                            403: "Forbidden"<br>
+                            404: "Not Found"<br>
+                            For a complete list go to the Http Messages Reference<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>statusText</td>
+                        <td>Returns the status-text (e.g. "OK" or "Not Found")</td>
+                    </tr>
+                </tbody>
+            </table>
 
         </div>
     </div>

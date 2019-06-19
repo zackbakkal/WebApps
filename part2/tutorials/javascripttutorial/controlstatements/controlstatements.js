@@ -83,8 +83,7 @@ function display(response, item) {
 
     for (var p = 0; p < response[item].definition.length; p++) {
         var paragraph = document.createElement("p");
-        var text = document.createTextNode(response[item].definition[p]);
-        paragraph.appendChild(text);
+        paragraph.innerHTML = response[item].definition[p];
         div.appendChild(paragraph);
     }
     content.appendChild(div);

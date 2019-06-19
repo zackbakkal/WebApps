@@ -1,10 +1,506 @@
 {
-	"intro": "<div class=\"main\">  <div id=\"intro\" class=\"part\">  <h2>HTML5 Document</h2>  <p>HTML stands for Hyper Text Markup Language. It describes the structure of Web pages using markup. HTML elements are the building blocks of HTML pages. The elements are represented by tags. These tags label pieces of content such as \"heading\", \"paragraph\", \"table\", and so on.</p> <p>Each element has a <span class=\"bold\">start TAG</span> and an <span class=\"bold\">end TAG</span></p> <p>A start tag is written as follow <span class=\"bold\"> &lt;elementName&gt;,</span> while the end tag is written as follow <span class=\"bold\">&lt;/elementName&gt;. </span></p> <p>Browsers do not display the HTML tags, but use them to render the content of the page</p> <h3 class=\"indentOnce\">Example:</h3> <div class=\"example\"> <p>&lt;!DOCTYPE html&gt; </p> <p>&lt;html&gt; </p> <p class=\"indentOnce\">&lt;head&gt; </p> <p class=\"indentTwice\">&lt;title&gt;Page Title Here&lt;/title&gt; </p> <p class=\"indentOnce\">&lt;/head&gt; </p> <p class=\"indentOnce\">&lt;body&gt; </p> <h1 class=\"indentTwice\">&lt;h1&gt;H1 Heading&lt;/h1&gt; </h1> <h2 class=\"indentTwice\">&lt;h2&gt;H2 Heading&lt;/h2&gt; </h2> <h3 class=\"indentTwice\">&lt;h3&gt;H3 Heading&lt;/h3&gt; </h3> <p class=\"indentTwice\">&lt;p&gt;This is a Paragraph&lt;/p&gt; </p> <p class=\"indentOnce\">&lt;/body&gt; </p> <p>&lt;/html&gt; </p> </div> <h3>Tags definitions</h2> <ul> <li>The &lt;!DOCTYPE html&gt; declaration defines this document to be HTML5</li> <li>The &lt;html&gt; element is the root element of an HTML page</li> <li>The &lt;head&gt; element contains meta information about the document</li> <li>The &lt;title&gt; element specifies a title for the document</li> <li>The &lt;body&gt; element contains the visible page content</li> <li>The &lt;h1&gt; element defines a large heading</li> <ul> <li>Heading elements goes from h1 to h6, h1 is the biggest and h6 is the smallest</li> </ul> <li>The &lt;p&gt; element defines a paragraph</li> </ul> </div><div id=\"img\" class=\"part\"> <h2>img Element</h2> <p>You can improve your website design and appearance by including images.</p> <p>In HTML, images are defined with the <span class=\"bold\">&lt;img&gt; </span> tag</p> <p>The &lt;img&gt; tag is empty, it contains attributes such as the src, and alt attribute, and does not have a closing tag.</p> <p>The src attribute specifies the URL of the image, while the alt provides an alternate test for an image. The alt attribute is useful in case the user cannot view the image. The alt text describes the image.</p><h3 class=\"indentOnce\">Example:</h3> <div class=\"example\"> <p>&lt;!DOCTYPE html&gt; </p> <p>&lt;html&gt; </p> <p class=\"indentOnce\">&lt;head&gt; </p> <p class=\"indentTwice\">&lt;title&gt;HTML Images&lt;/title&gt; </p> <p class=\"indentOnce\">&lt;/head&gt; </p> <p class=\"indentOnce\">&lt;body&gt; </p> <p class=\"indentTwice\">&lt;img src=\"images/birds.jpg\" alt=\"Wild Birds\"&gt; </p> <p class=\"indentOnce\">&lt;/body&gt; </p> <p>&lt;/html&gt; </p> </div><h3>Image size</h2> <p>You can specify the image's width and height by using the width and height attributes. The width and height attributes always defines the width and height of the image in pixels.</p> <div class=\"example\"> <p>&lt;!DOCTYPE html&gt; </p> <p>&lt;html&gt; </p> <p class=\"indentOnce\">&lt;head&gt; </p> <p class=\"indentTwice\">&lt;title&gt;HTML Images&lt;/title&gt; </p> <p class=\"indentOnce\">&lt;/head&gt; </p> <p class=\"indentOnce\">&lt;body&gt; </p> <p class=\"indentTwice\">&lt;img src=\"images/birds.jpg\" alt=\"Wild Birds\" width=\"200\" heigth=\"300\"&gt; </p> <p class=\"indentOnce\">&lt;/body&gt; </p> <p>&lt;/html&gt; </p> </div><p>You can also specify the image's width and height by using the style attribute.</p> <div class=\"example\"> <p>&lt;!DOCTYPE html&gt; </p> <p>&lt;html&gt; </p> <p class=\"indentOnce\">&lt;head&gt; </p> <p class=\"indentTwice\">&lt;title&gt;HTML Images&lt;/title&gt; </p> <p class=\"indentOnce\">&lt;/head&gt; </p> <p class=\"indentOnce\">&lt;body&gt; </p> <p class=\"indentTwice\">&lt;img src=\"images/birds.jpg\" alt=\"Wild Birds\" style=\"width:200px;heigth:300px;\"&gt; </p> <p class=\"indentOnce\">&lt;/body&gt; </p> <p>&lt;/html&gt; </p></div><p><span class=\"bold\">Note:</span> Using the style attribue prevents style sheets from changing the size of images.<p> </div> </div>",
-	"header": "<div class=\"main\"> <div id=\"nav\" class=\"part\"> <h2>header element</h2> <p>The &lt;header&gt; element represents a container for introductory content or a set of navigational links.</p> <p>A &lt;header&gt; element typically contains: <ul> <li>one or more heading elements ( &lt;h1&gt; - &lt;h6&gt; )</li> <li>logo or icon</li> <li>authorship information</li> </ul> </p> <p>The default display value given to the &lt;header&gt; element is block.</p> <p>You can have several &lt;header&gt; elements in one document.</p> <p> <span class=\"bold\">Note:</span> A &lt;header&gt; tag cannot be placed within a &lt;footer&gt;, &lt;address&gt; or another &lt;header&gt; element.</p> <h3 class=\"indentOnce\">Example:</h3> <div class=\"example\"> <p>&lt;!DOCTYPE html&gt; </p> <p>&lt;html&gt; </p> <p class=\"indentOnce\">&lt;head&gt; </p> <p class=\"indentTwice\">&lt;title&gt;Header Element&lt;/title&gt; </p> <p class=\"indentOnce\">&lt;/head&gt; </p> <p class=\"indentOnce\">&lt;body&gt; </p> <p class=\"indentTwice\">&lt;header&gt;</p> <p class=\"indentTrice\">&lt;h1&gt;Same as a newspaper section header&lt;/h1&gt;</p> <p class=\"indentTrice\">&lt;p&gt;Some paragragh for example goes here&lt;/p&gt;</p> <p class=\"indentTwice\">&lt;/header&gt;</p> <p class=\"indentOnce\">&lt;/body&gt; </p> <p>&lt;/html&gt; </p> </div> </div> </div>",
-	"footer": "<div class=\"main\"> <div id=\"footer\" class=\"part\"> <h2>footer element</h2> <p>The &lt;footer&gt; element tag defines a footer for a document or section. </p> <p> A &lt;footer&gt; element typically contains: <ul> <li>authorship information</li> <li>copyright information</li> <li>contact information</li> <li>sitemap</li> <li>back to top links</li> <li>related documents</li> </ul> </p> <p>The default display value given to the &lt;footer&gt; element is block.</p> <p>You can have several &lt;footer&gt; elements in one document.</p>  <h3 class=\"indentOnce\">Example:</h3> <div class=\"example\"> <p>&lt;!DOCTYPE html&gt; </p> <p>&lt;html&gt; </p> <p class=\"indentOnce\">&lt;head&gt; </p> <p class=\"indentTwice\">&lt;title&gt;Footer Element&lt;/title&gt; </p> <p class=\"indentOnce\">&lt;/head&gt; </p> <p class=\"indentOnce\">&lt;body&gt; </p> <p class=\"indentTwice\">&lt;header&gt;</p> <p class=\"indentTrice\">&lt;h1&gt;Same as a newspaper section header&lt;/h1&gt;</p> <p class=\"indentTrice\">&lt;p&gt;Some paragragh for example goes here&lt;/p&gt;</p> <p class=\"indentTwice\">&lt;/header&gt;</p> <p class=\"indentTwice\">&lt;footer&gt;</p> <p class=\"indentTrice\">&lt;p&gt;Created by: Zakaria Bakkal&lt;/p&gt;</p> <p class=\"indentTrice\">&lt;p&gt;Contact Info: &lt;a href=\"mailto:email@address.com\"&gt; email@address.com&lt;/p&gt;&lt;/a&gt;</p> <p class=\"indentTwice\">&lt;/footer&gt;</p> <p class=\"indentOnce\">&lt;/body&gt; </p> <p>&lt;/html&gt; </p> </div> </div> </div>",
-	"nav": "<div class=\"main\"> <div id=\"nav\" class=\"part\"> <h2>nav element</h2> <p>The &lt;nav&gt; tag defines a set of navigation links.</p> <p>NOT all links of a document should be inside a &lt;nav&gt; element.</p> <p>The &lt;nav&gt; element is intended only for major block of navigation links.</p> <h3 class=\"indentOnce\">Example:</h3> <div class=\"example\"> <p>&lt;!DOCTYPE html&gt; </p> <p>&lt;html&gt; </p> <p class=\"indentOnce\">&lt;head&gt; </p> <p class=\"indentTwice\">&lt;title&gt;Nav Element&lt;/title&gt; </p> <p class=\"indentOnce\">&lt;/head&gt; </p> <p class=\"indentOnce\">&lt;body&gt; </p> <p class=\"indentTwice\">&lt;nav&gt;</p> <p class=\"indentTrice\">&lt;a href=\"/page1.htm&gt;\"Page1&lt;/a&gt;</p> <p class=\"indentTrice\">&lt;a href=\"/page2.htm&gt;\"Page2&lt;/a&gt;</p> <p class=\"indentTrice\">&lt;a href=\"/page3.htm&gt;\"Page3&lt;/a&gt;</p> <p class=\"indentTrice\">&lt;a href=\"/page4.htm&gt;\"Page4&lt;/a&gt;</p> <p class=\"indentTwice\">&lt;/nav&gt;</p> <p class=\"indentOnce\">&lt;/body&gt; </p> <p>&lt;/html&gt; </p> </div> </div> </div>",
-	"blockquote": "<div class=\"main\"> <div id=\"blockquote\" class=\"part\"> <h2>blockquote Element</h2> <p>The &lt;blockquote&gt; tag specifies a section that is quoted from another source.</p> <p>The default display value for &lt;blockquote&gt; is block. With a margin-top, margin-bottom of 1em. And margin-left, margin-right of 40px. </p> <h3 class=\"indentOnce\">Example:</h3> <div class=\"example\"> <p>&lt;!DOCTYPE html&gt; </p> <p>&lt;html&gt; </p> <p class=\"indentOnce\">&lt;head&gt; </p> <p class=\"indentTwice\">&lt;title&gt;Header Element&lt;/title&gt; </p> <p class=\"indentOnce\">&lt;/head&gt; </p> <p class=\"indentOnce\">&lt;body&gt; </p> <p class=\"indentTwice\">&lt;blockquote cite=\"source\"&gt; The cited text goes here</p> <p class=\"indentTwice\">&lt;/blockquote&gt;</p> <p class=\"indentOnce\">&lt;/body&gt; </p> <p>&lt;/html&gt; </p> </div> </div> </div>",
-	"section": "<div class=\"main\"> <div id=\"section\" class=\"part\"> <h2>section Element</h2> <p>The &lt;section&gt; tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document. </p> <p>The default display value for &lt;section&gt; is block.</p> <p>You can have many sections in a page. Also, a section may contain a header, a footer and other sections.</p> <h3 class=\"indentOnce\">Example:</h3> <div class=\"example\"> <p>&lt;!DOCTYPE html&gt; </p> <p>&lt;html&gt; </p> <p class=\"indentOnce\">&lt;head&gt; </p> <p class=\"indentTwice\">&lt;title&gt;Header Element&lt;/title&gt; </p> <p class=\"indentOnce\">&lt;/head&gt; </p> <p class=\"indentOnce\">&lt;body&gt; </p> <p class=\"indentTwice\">&lt;section id=\"section1\"&gt;</p> <p class=\"indentTrice\">&lt;header&gt;</p> <p class=\"indentTrice\">&lt;h2&gt;Section 1 title here&lt;/h2&gt;</p> <p class=\"indentTrice\">&lt;/header&gt;</p> <p class=\"indentTwice\">&lt;/section&gt;</p> <p class=\"indentTwice\">&lt;section id=\"section2\"&gt;</p> <p class=\"indentTrice\">&lt;header&gt;</p> <p class=\"indentTrice\">&lt;h2&gt;Section 2 title here&lt;/h2&gt;</p> <p class=\"indentTrice\">&lt;/header&gt;</p> <p class=\"indentTwice\">&lt;/section&gt;</p> <p class=\"indentOnce\">&lt;/body&gt; </p> <p>&lt;/html&gt; </p> </div> </div> </div>",
-	"details": "<div class=\"main\"> <div id=\"details\" class=\"part\"> <h2>details & summary Elements</h2> <p>The &lt;details&gt; tag specifies additional details that the user can view or hide on demand.</p> <p>The &lt;details&gt; tag can be used to create an interactive widget that the user can open and close. Any sort of content can be put inside the &lt;details&gt; tag.</p> <p>The content of a &lt;details&gt; element should not be visible unless the open attribute is set.</p> <p>The &lt;summary&gt; tag defines a visible heading for the &lt;details&gt; element. The heading can be clicked to view/hide the details.</p> <p>The default display value for &lt;details&gt; is block.</p> <h3 class=\"indetTOnce\">Example:</h3> <div class=\"example\"> <p>&lt;!DOCTYPE html&gt; </p> <p>&lt;html&gt; </p> <p class=\"indentOnce\">&lt;head&gt; </p> <p class=\"indentTwice\">&lt;title&gt;Header Element&lt;/title&gt; </p> <p class=\"indentOnce\">&lt;/head&gt; </p> <p class=\"indentOnce\">&lt;body&gt; </p> <p class=\"indentTwice\">&lt;details&gt;</p> <p class=\"indentTrice\">&lt;summary&gt; Click here to expand</p> <p class=\"indentTrice\">&lt;p&gt;This paragraph is hidden until the the user clicks on the summary tag text then it shows up. If the user clicks again this paragraph will disappear.&lt;/p&gt;</p> <p class=\"indentTrice\">&lt;/summary&gt;</p> <p class=\"indentTwice\">&lt;/details&gt;</p> <p class=\"indentOnce\">&lt;/body&gt; </p> <p>&lt;/html&gt; </p> </div> </div> </div>",
-	"mn": "<div class=\"main\"> <div id=\"mn\" class=\"part\"> <h2>main Element</h2> <p>The &lt;main&gt; tag specifies the main content of a document.</p> <p>The content inside the &lt;main&gt; element should be unique to the document. It should not contain any content that is repeated across documents such as sidebars, navigation links, copyright information, site logos, and search forms.</p> <p><span class=\"bold\">Note: </span>There must not be more than one &lt;main&gt; element in a document. The &lt;main&gt; element must NOT be a descendant of an &lt;article&gt;, &lt;aside&gt;, &lt;footer>, &lt;header>, or &lt;nav&gt; element.</p> <h3 class=\"indentOnce\">Example:</h3> <div class=\"example\"> <p>&lt;!DOCTYPE html&gt; </p> <p>&lt;html&gt; </p> <p class=\"indentOnce\">&lt;head&gt; </p> <p class=\"indentTwice\">&lt;title&gt;Header Element&lt;/title&gt; </p> <p class=\"indentOnce\">&lt;/head&gt; </p> <p class=\"indentOnece\">&lt;body&gt; </p> <p class=\"indentTwice\">&lt;main&gt;</p> <p class=\"indentTrice\">&lt;h1&gt;Web Browsers&lt;/h1&gt;</p> <p class=\"indentTrice\">&lt;p&gt;Google Chrome, Firefox, and Internet Explorer are the most used browsers today.&lt;/p&gt;</p> <p class=\"indentTrice\">&lt;article&gt;</p> <p class=\"indentFourTimes\">&lt;h1&gt;Google Chrome&lt;/h1&gt;</p> <p class=\"indentFourTimes\">&lt;p&gt;Google Chrome is a free, open-source web browser developed by Google, released in 2008.&lt;/p&gt;</p> <p class=\"indentTrice\">&lt;/article&gt;</p> <p class=\"indentTrice\">&lt;article&gt;</p> <p class=\"indentFourTimes\">&lt;h1&gt;Internet Expolorer&lt;/h1&gt;</p> <p class=\"indentFourTimes\">&lt;p&gt;Internet Explorer is a free web browser from Microsoft, released in 1995.&lt;/p&gt;</p> <p class=\"indentTrice\">&lt;/article&gt;</p> <p class=\"indentTrice\">&lt;article&gt;</p> <p class=\"indentFourTimes\">&lt;h1&gt;Mozilla Firefox&lt;/h1&gt;</p> <p class=\"indentFourTimes\">&lt;p&gt;Firefox is a free, open-source web browser from Mozilla, released in 2004.&lt;/p&gt;</p> <p class=\"indentTrice\">&lt;/article&gt;</p> <p class=\"indentOnce\">&lt;/main&gt;</p> <p class=\"indentOnce\">&lt;/body&gt; </p> <p>&lt;/html&gt; </p> </div> </div> </div>"
+    "header": {
+        "id": "headerElement",
+        "title": "header Element",
+        "description": [
+            "The &lt;header&gt; element represents a container for introductory content or a set of navigational links.",
+            "A &lt;header&gt; element typically contains: <ul><li>one or more heading elements ( &lt;h1&gt; - &lt;h6&gt; )</li><li>logo or icon</li><li>authorship information</li></ul>",
+            "The default display value given to the &lt;header&gt; element is block.",
+            "You can have several &lt;header&gt; elements in one document.",
+            " <span class=\"bold\">Note:</span> A &lt;header&gt; tag cannot be placed within a &lt;footer&gt;, &lt;address&gt; or another &lt;header&gt; element."
+        ],
+        "example": [
+            {
+                "class": "",
+                "content": "<!DOCTYPE html>"
+            },
+            {
+                "class": "",
+                "content": "<html>"
+            },
+            {
+                "class": "indentOnce",
+                "content": "<head>"
+            },
+            {
+                "class": "indentTwice",
+                "content": "<title>Header Element</title>"
+            },
+            {
+                "class": "indentOnce",
+                "content": "</head>"
+            },
+            {
+                "class": "indentOnce",
+                "content": "<body>"
+            },
+            {
+                "class": "indentTwice",
+                "content": "<header>"
+            },
+            {
+                "class": "indentTrice",
+                "content": "<h1>Same as a newspaper section header</h1>"
+            },
+            {
+                "class": "indentTrice",
+                "content": "<p>Some paragragh for example goes here</p>"
+            },
+            {
+                "class": "indentTwice",
+                "content": "</header>"
+            },
+            {
+                "class": "indentOnce",
+                "content": "</body>"
+            },
+            {
+                "class": "",
+                "content": "<html>"
+            }
+        ]
+    },
+    "footer": {
+        "id": "footerElement",
+        "title": "footer Element",
+        "description": [
+            "The &lt;footer&gt; element tag defines a footer for a document or section.",
+            "A &lt;footer&gt; element typically contains: <ul><li>authorship information</li><li>copyright information</li><li>contact information</li><li>sitemap</li><li>back to top links</li><li>related documents</li></ul>",
+            "You can have several &lt;footer&gt; elements in one document."
+        ],
+        "example": [
+            {
+                "class": "",
+                "content": "<!DOCTYPE html>"
+            },
+            {
+                "class": "",
+                "content": "<html>"
+            },
+            {
+                "class": "indentOnce",
+                "content": "<head>"
+            },
+            {
+                "class": "indentTwice",
+                "content": "<title>Footer Element</title>"
+            },
+            {
+                "class": "indentOnce",
+                "content": "</head>"
+            },
+            {
+                "class": "indentOnce",
+                "content": "<body>"
+            },
+            {
+                "class": "indentTwice",
+                "content": "<header>"
+            },
+            {
+                "class": "indentTrice",
+                "content": "<h1>Same as a newspaper section header</h1>"
+            },
+            {
+                "class": "indentTrice",
+                "content": "<p>Some paragragh for example goes here</p>"
+            },
+            {
+                "class": "indentTwice",
+                "content": "</header>"
+            },
+            {
+                "class": "indentTwice",
+                "content": "<footer>"
+            },
+            {
+                "class": "indentTrice",
+                "content": "<p>Created by Zakaria Bakkal</p>"
+            },
+            {
+                "class": "indentTrice",
+                "content": "<p>Contact Info: <a href=\"mailto:email@address.com\" /></p>"
+            },
+            {
+                "class": "indentTwice",
+                "content": "</footer>"
+            },
+            {
+                "class": "indentOnce",
+                "content": "</body>"
+            },
+            {
+                "class": "",
+                "content": "<html>"
+            }
+        ]
+    },
+    "nav": {
+        "id": "navElement",
+        "title": "nav Element",
+        "description": [
+            "The &lt;nav&gt; tag defines a set of navigation links.",
+            "NOT all links of a document should be inside a &lt;nav&gt; element.",
+            "The &lt;nav&gt; element is intended only for major block of navigation links."
+        ],
+        "example": [
+            {
+                "class": "",
+                "content": "<!DOCTYPE html>"
+            },
+            {
+                "class": "",
+                "content": "<html>"
+            },
+            {
+                "class": "indentOnce",
+                "content": "<head>"
+            },
+            {
+                "class": "indentTwice",
+                "content": "<title>nav Element</title>"
+            },
+            {
+                "class": "indentOnce",
+                "content": "</head>"
+            },
+            {
+                "class": "indentOnce",
+                "content": "<body>"
+            },
+            {
+                "class": "indentTwice",
+                "content": "<nav>"
+            },
+            {
+                "class": "indentTrice",
+                "content": "<a href=\"page1.htm\">Page1</a>"
+            },
+            {
+                "class": "indentTrice",
+                "content": "<a href=\"page2.htm\">Page2</a>"
+            },
+            {
+                "class": "indentTrice",
+                "content": "<a href=\"page3.htm\">Page3</a>"
+            },
+            {
+                "class": "indentTrice",
+                "content": "<a href=\"page4.htm\">Page4</a>"
+            },
+            {
+                "class": "indentTwice",
+                "content": "</nav>"
+            },
+            {
+                "class": "indentOnce",
+                "content": "</body>"
+            },
+            {
+                "class": "",
+                "content": "<html>"
+            }
+        ]
+    },
+    "blockquote": {
+        "id": "blockquoteElement",
+        "title": "blockquote element",
+        "description": [
+            "The &lt;blockquote&gt; tag specifies a section that is quoted from another source.",
+            "The default display value for &lt;blockquote&gt; is block. With a margin-top, margin-bottom of 1em. And margin-left, margin-right of 40px."
+        ],
+        "example": [
+            {
+                "class": "",
+                "content": "<!DOCTYPE html>"
+            },
+            {
+                "class": "",
+                "content": "<html>"
+            },
+            {
+                "class": "indentOnce",
+                "content": "<head>"
+            },
+            {
+                "class": "indentTwice",
+                "content": "<title>blockquote Element</title>"
+            },
+            {
+                "class": "indentOnce",
+                "content": "</head>"
+            },
+            {
+                "class": "indentOnce",
+                "content": "<body>"
+            },
+            {
+                "class": "indentTwice",
+                "content": "<blockquote cite=\"source\">The cited text goes here"
+            },
+            {
+                "class": "indentTwice",
+                "content": "</blockquote>"
+            },
+            {
+                "class": "indentOnce",
+                "content": "</body>"
+            },
+            {
+                "class": "",
+                "content": "<html>"
+            }
+        ]
+    },
+    "section": {
+        "id": "sectionElement",
+        "title": "secrtion Element",
+        "description": [
+            "The &lt;section&gt; tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document.",
+            "The default display value for &lt;section&gt; is block.",
+            "You can have many sections in a page. Also, a section may contain a header, a footer and other sections."
+        ],
+        "example": [
+            {
+                "class": "",
+                "content": "<!DOCTYPE html>"
+            },
+            {
+                "class": "",
+                "content": "<html>"
+            },
+            {
+                "class": "indentOnce",
+                "content": "<head>"
+            },
+            {
+                "class": "indentTwice",
+                "content": "<title>section Element</title>"
+            },
+            {
+                "class": "indentOnce",
+                "content": "</head>"
+            },
+            {
+                "class": "indentOnce",
+                "content": "<body>"
+            },
+            {
+                "class": "indentTwice",
+                "content": "<section id=\"section1\">"
+            },
+            {
+                "class": "indentTrice",
+                "content": "<header>"
+            },
+            {
+                "class": "indentTrice",
+                "content": "<h2>Section 1 title here</h2>"
+            },
+            {
+                "class": "indentTrice",
+                "content": "</header>"
+            },
+            {
+                "class": "indentTwice",
+                "content": "</section>"
+            },
+            {
+                "class": "indentTwice",
+                "content": "<section id=\"section2\">"
+            },
+            {
+                "class": "indentTrice",
+                "content": "<header>"
+            },
+            {
+                "class": "indentTrice",
+                "content": "<h2>Section 2 title here</h2>"
+            },
+            {
+                "class": "indentTrice",
+                "content": "</header>"
+            },
+            {
+                "class": "indentTwice",
+                "content": "</section>"
+            },
+            {
+                "class": "indentOnce",
+                "content": "</body>"
+            },
+            {
+                "class": "",
+                "content": "<html>"
+            }
+        ]
+    },
+    "details": {
+        "id": "detailsElement",
+        "title": "details Element",
+        "description": [
+            "The &lt;details&gt; tag specifies additional details that the user can view or hide on demand.",
+            "The &lt;details&gt; tag can be used to create an interactive widget that the user can open and close. Any sort of content can be put inside the &lt;details&gt; tag.",
+            "The content of a &lt;details&gt; element should not be visible unless the open attribute is set.",
+            "The &lt;summary&gt; tag defines a visible heading for the &lt;details&gt; element. The heading can be clicked to view/hide the details.",
+            "The default display value for &lt;details&gt; is block."
+        ],
+        "example": [
+            {
+                "class": "",
+                "content": "<!DOCTYPE html>"
+            },
+            {
+                "class": "",
+                "content": "<html>"
+            },
+            {
+                "class": "indentOnce",
+                "content": "<head>"
+            },
+            {
+                "class": "indentTwice",
+                "content": "<title>details Element</title>"
+            },
+            {
+                "class": "indentOnce",
+                "content": "</head>"
+            },
+            {
+                "class": "indentOnce",
+                "content": "<body>"
+            },
+            {
+                "class": "indentTwice",
+                "content": "<details>"
+            },
+            {
+                "class": "indentTrice",
+                "content": "<summary>Click Here to expand"
+            },
+            {
+                "class": "indentTrice",
+                "content": "<p>This paragraph is hidden until the the user clicks on the summary tag text then it shows up. If the user clicks again this paragraph will disappear.</p>"
+            },
+            {
+                "class": "indentTwice",
+                "content": "</summary>"
+            },
+            {
+                "class": "indentOnce",
+                "content": "</body>"
+            },
+            {
+                "class": "",
+                "content": "<html>"
+            }
+        ]
+    },
+    "main": {
+        "id": "mainElement",
+        "title": "mainElement",
+        "description": [
+            "The &lt;main&gt; tag specifies the main content of a document.",
+            "The content inside the &lt;main&gt; element should be unique to the document. It should not contain any content that is repeated across documents such as sidebars, navigation links, copyright information, site logos, and search forms.",
+            "<span class=\"bold\">Note: </span>There must not be more than one &lt;main&gt; element in a document. The  &lt;main&gt; element must NOT be a descendant of an &lt;article&gt;, &lt;aside&gt;, &lt;footer>, &lt;header>, or &lt;nav&gt; element."
+        ],
+        "example": [
+            {
+                "class": "",
+                "content": "<!DOCTYPE html>"
+            },
+            {
+                "class": "",
+                "content": "<html>"
+            },
+            {
+                "class": "indentOnce",
+                "content": "<head>"
+            },
+            {
+                "class": "indentTwice",
+                "content": "<title>main Element</title>"
+            },
+            {
+                "class": "indentOnce",
+                "content": "</head>"
+            },
+            {
+                "class": "indentOnce",
+                "content": "<body>"
+            },
+            {
+                "class": "indentTwice",
+                "content": "<main>"
+            },
+            {
+                "class": "indentTrice",
+                "content": "<h1>Web Browsers</h1>"
+            },
+            {
+                "class": "indentTrice",
+                "content": "<p>Google Chrome, Firefox, and Internet Explorer are the most used browsers today.</p>"
+            },
+            {
+                "class": "indentTrice",
+                "content": "<article>"
+            },
+            {
+                "class": "indentFoutTimes",
+                "content": "<h1>Google Chrome</h1>"
+            },
+            {
+                "class": "indentFoutTimes",
+                "content": "<p>Google Chrome is a free, open-source web browser developed by Google, released in 2008.</p>"
+            },
+            {
+                "class": "indentTrice",
+                "content": "</article>"
+            },
+            {
+                "class": "indentTrice",
+                "content": "<article>"
+            },
+            {
+                "class": "indentFoutTimes",
+                "content": "<h1>Internet Expolorer</h1>"
+            },
+            {
+                "class": "indentFoutTimes",
+                "content": "<p>Internet Explorer is a free web browser from Microsoft, released in 1995.</p>"
+            },
+            {
+                "class": "indentTrice",
+                "content": "</article>"
+            },
+            {
+                "class": "indentTrice",
+                "content": "<article>"
+            },
+            {
+                "class": "indentFoutTimes",
+                "content": "<h1>Mozilla Firefox</h1>"
+            },
+            {
+                "class": "indentFoutTimes",
+                "content": "<p>Firefox is a free, open-source web browser from Mozilla, released in 2004.</p>"
+            },
+            {
+                "class": "indentTrice",
+                "content": "</article>"
+            },
+            {
+                "class": "indentTwice",
+                "content": "</main>"
+            },
+            {
+                "class": "indentOnce",
+                "content": "</body>"
+            },
+            {
+                "class": "",
+                "content": "<html>"
+            }
+        ]
+    }
 }

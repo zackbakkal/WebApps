@@ -1,0 +1,204 @@
+[
+    {
+        "name": "open() Method",
+        "definition": [
+            "The XMLHttpRequest method open() initializes a newly-created request, or re-initializes an existing one.",
+            "Calling this method for an already active request (one for which open() has already been called) is the equivalent of calling abort().",
+            "The syntax of the open() method is:",
+            "XMLHttpRequest.open(method, url, async, user, password);",
+            "The open() method uses HTTP methods to make requests to a server. The HTTP request methods to use, are \"GET\", \"POST\", \"PUT\", and \"DELETE\".",
+            "The url is a DOMString representing the URL to send the request to.",
+            "The async is an optional Boolean parameter, defaulting to true, indicating whether or not to perform the operation asynchronously. If this value is false, the send() method does not return until the response is received. If true, notification of a completed transaction is provided using event listeners. This must be true if the multipart attribute is true, or an exception will be thrown.",
+            "The user is an optional user name to use for authentication purposes; by default, this is the null value.",
+            "The password is an password to use for authentication purposes; by default, this is the null value."
+        ],
+        "examples": [
+            {
+                "title": "Change content of an element:",
+                "content": [
+                    "function loadDoc() {",
+                    "----var xhttp = new XMLHttpRequest();",
+                    "----xhttp.onreadystatechange = function() {",
+                    "--------if (this.readyState == 4 && this.status == 200) {",
+                    "------------document.getElementById(\"demo\").innerHTML = this.responseText;",
+                    "--------}",
+                    "----};",
+                    "xhttp.open(\"GET\", \"ajax_info.txt\", true);",
+                    "xhttp.send();"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "getResponseHeader Method",
+        "definition": [
+            "The XMLHttpRequest method getResponseHeader() returns the string containing the text of a particular header's value. If there are multiple response headers with the same name, then their values are returned as a single concatenated string, where each value is separated from the previous one by a pair of comma and space. The getResponseHeader() method returns the value as a UTF byte sequence.",
+            "The search for the header name is case-insensitive.",
+            "If you need to get the raw string of all of the headers, use the getAllResponseHeaders() method, which returns the entire raw header string.",
+            "The syntax for the getResponseHeader() method is:",
+            "XMLHttpRequest.getResponseHeader(headerName);",
+            "The headerNAme is a ByteString indicating the name of the header you want to return the text value of.",
+            "The return value is a ByteString representing the header's text value, or null if either the response has not yet been received or the header doesn't exist in the response."
+        ],
+        "examples": [
+            {
+                "title": "Recieve headers of a sent request",
+                "content": [
+                    "In this example, a request is created and sent, and a readystatechange handler is established to look for the readyState to indicate that the headers have been received; when that is the case, the value of the Content-Type header is fetched. If the Content-Type isn't the desired value, the XMLHttpRequest is canceled by calling abort().",
+                    "var client = new XMLHttpRequest();",
+                    "client.open(\"GET\",unicorns-are-teh-awesome.txt\", true);",
+                    "client.send();",
+                    "client.onreadystatechange = function() {",
+                    "----if(this.readyState == this.HEADERS_RECEIVED) {",
+                    "--------var contentType = client.getResponseHeader(\"Content-Type\");",
+                    "--------if (contentType != my_expected_type) {",
+                    "------------client.abort();",
+                    "--------}",
+                    "----}",
+                    "}"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "setRequestHeader Method",
+        "definition": [
+            "The XMLHttpRequest method setRequestHeader() sets the value of an HTTP request header. When using setRequestHeader(), you must call it after calling open(), but before calling send(). If this method is called several times with the same header, the values are merged into one single request header.",
+            "Each time you call setRequestHeader() after the first time you call it, the specified text is appended to the end of the existing header's content.",
+            "If no Accept header has been set using this, an Accept header with the type \"*/*\" is sent with the request when send() is called.",
+            "For security reasons, some headers can only be controlled by the user agent. These headers include the forbidden header names  and forbidden response header names.",
+            "For your custom fields, you may encounter a \"not allowed by Access-Control-Allow-Headers in preflight response\" exception when you send requests across domains. In this situation, you need to set up the Access-Control-Allow-Headers in your response header at server side.",
+            "The syntax for the setRequestHeader() is:",
+            "XMLHttpRequest.setRequestHeader(header, value);",
+            "The header is the name of the header whose value is to be set.",
+            "The value is the value to set as the body of the header.",
+            "The return value is undefined."
+        ],
+        "examples": [
+            {
+                "title": "Setting request header",
+                "content": [
+                    "To POST data like an HTML form, add an HTTP header with setRequestHeader(). Specify the data you want to send in the send() method:",
+                    "function loadDoc() {",
+                    "----var xhttp = new XMLHttpRequest();",
+                    "----xhttp.onreadystatechange = function() {",
+                    "--------if (this.readyState == 4 && this.status == 200) {",
+                    "------------document.getElementById(\"demo\").innerHTML = this.responseText;",
+                    "--------}",
+                    "----};",
+                    "----xhttp.open(\"POST\", \"demo_post2.asp\", true);",
+                    "----xhttp.setRequestHeader(\"Content-type\", \"application/x-www-form-urlencoded\");",
+                    "----xhttp.send(\"fname=Henry&lname=Ford\");",
+                    "}"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "overrideMimeType Method",
+        "definition": [
+            "The XMLHttpRequest method overrideMimeType() specifies a MIME type other than the one provided by the server to be used instead when interpreting the data being transferred in a request. This may be used, for example, to force a stream to be treated and parsed as \"text/xml\", even if the server does not report it as such. This method must be called before calling send().",
+            "The syntax for the overrideMimeType() is:",
+            "XMLHttpRequest.overrideMimeType(mimeType);",
+            "The mimeType is a DOMString specifying the MIME type to use instead of the one specified by the server. If the server doesn't specify a type, XMLHttpRequest assumes \"text/xml\".",
+            "The return value is undefined.",
+            "If the server doesn't provide a Content-Type header, XMLHttpRequest assumes that the MIME type is \"text/xml\". If the content isn't valid XML, an \"XML Parsing Error: not well-formed\" error occurs. You can avoid this by calling overrideMimeType() to specify a different type."
+        ],
+        "examples": [
+            {
+                "title": "Specify a MIME type of \"text/plain\", overriding the server's stated type for the data being received.",
+                "content": [
+                    "// Interpret the received data as plain text",
+                    "req = new XMLHttpRequest();",
+                    "req.overrideMimeType(\"text/plain\");",
+                    "req.addEventListener(\"load\", callback, false);",
+                    "req.open(\"get\", url);",
+                    "req.send();"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "send Method",
+        "definition": [
+            "The XMLHttpRequest method send() sends the request to the server. If the request is asynchronous (which is the default), this method returns as soon as the request is sent and the result is delivered using events. If the request is synchronous, this method doesn't return until the response has arrived.",
+            "send() accepts an optional parameter which lets you specify the request's body; this is primarily used for requests such as PUT. If the request method is GET or HEAD, the body parameter is ignored and the request body is set to null.",
+            "If no Accept header has been set using the setRequestHeader(), an Accept header with the type \"*/*\" (any type) is sent.",
+            "The syntax for the send: method is:",
+            "XMLHttpRequest.send(body)",
+            "The bosy is body of data to be sent in the XHR request. This can be a Document, in which case it is serialized before being sent, or a BodyInit, which as per the Fetch spec can be a Blob, BufferSource, FormData, URLSearchParams, ReadableStream, or USVString object.",
+            "If no value is specified for the body, a default value of null is used.",
+            "The best way to send binary content (e.g. in file uploads) is by using an ArrayBufferView or Blob in conjunction with the send() method.",
+            "The return value is undefined"
+        ],
+        "examples": [
+            {
+                "title": "Print the status codes of an XHR object",
+                "content": [
+                    "GET Example:",
+                    "var xhr = new XMLHttpRequest();",
+                    "xhr.open('GET', '/server', true);",
+                    "xhr.onload = function () {",
+                    "----// Request finished. Do processing here.",
+                    "};",
+                    "xhr.send(null);",
+                    "// xhr.send('string');",
+                    "// xhr.send(new Blob());",
+                    "// xhr.send(new Int8Array());",
+                    "// xhr.send(document);",
+                    "",
+                    "--------------------------------",
+                    "",
+                    "POST Example",
+                    "var xhr = new XMLHttpRequest();",
+                    "xhr.open(\"POST\", '/server', true);",
+                    "//Send the proper header information along with the request",
+                    "xhr.setRequestHeader(\"Content-Type\", application/x-www-form-urlencoded\");",
+                    "xhr.onreadystatechange = function() { // Call a function when the state changes.",
+                    "----if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {",
+                    "--------// Request finished. Do processing here.",
+                    "----}",
+                    "}",
+                    "xhr.send(\"foo=bar&lorem=ipsum\");",
+                    "// xhr.send(new Int8Array());",
+                    "// xhr.send(document);"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "statusText Property",
+        "definition": [
+            "The read-only XMLHttpRequest.statusText property returns a DOMString containing the response's status message as returned by the HTTP server.",
+            "Unlike XMLHTTPRequest.status which indicates a numerical status code, this property contains the text of the response status, such as \"OK\" or \"Not Found\".",
+            "If the request's readyState is in UNSENT or OPENED state, the value of statusText will be an empty string.",
+            "If the server response doesn't explicitly specify a status text, statusText will assume the default value \"OK\"."
+        ],
+        "examples": [
+            {
+                "title": "Print the status text of an XHR object",
+                "content": [
+                    "var xhr = new XMLHttpRequest;",
+                    "console.log('0 UNSENT', xhr.statusText);",
+                    "xhr.open('GET', '/server');",
+                    "console.log('1 OPENED', xhr.statusText);",
+                    "xhr.onprogress = function () {",
+                    "----console.log('3 LOADING', xhr.statusText);",
+                    "};",
+                    "xhr.onload = function () {",
+                    "----console.log('4 DONE', xhr.statusText);",
+                    "};",
+                    "xhr.send();",
+                    "/**",
+                    "* Outputs the following:",
+                    "*",
+                    "* 0 UNSENT",
+                    "* 1 OPENED",
+                    "* 3 LOADING OK",
+                    "* 4 DONE OK",
+                    "*/"
+                ]
+            }
+        ]
+    }
+]

@@ -30,13 +30,11 @@ function registerListeners() {
 
     button = document.getElementById("mn");
     button.addEventListener("click", function () { getContent("mn"); }, false);
-
 }
 
 function getContent(item) {
     try {
         asyncRequest = new XMLHttpRequest(); // create request object
-        //asyncRequest.overrideMimeType("application/json");
 
         // register event handler
         asyncRequest.onreadystatechange = function () {
@@ -51,21 +49,63 @@ function getContent(item) {
 }
 
 function stateChange(item) {
-    console.log(item);
-    console.log(asyncRequest.readyState);
     if (asyncRequest.readyState == 4 && asyncRequest.status == 200) {
         var response = JSON.parse(asyncRequest.responseText);
 
+        content.innerHTML = "";
+
         switch (item) {
-            case "header": content.innerHTML = response.header; break;
-            case "footer": content.innerHTML = response.footer; break;
-            case "nav": content.innerHTML = response.nav; break;
-            case "details": content.innerHTML = response.details; break;
-            case "section": content.innerHTML = response.section; break;
-            case "mn": content.innerHTML = response.mn; break;
-            case "blockquote": content.innerHTML = response.blockquote; break;
+            case "header": content.append(generateContent(response.header)); break;
+            case "footer": content.append(generateContent(response.footer)); break;
+            case "nav": content.append(generateContent(response.nav)); break;
+            case "blockquote": content.append(generateContent(response.blockquote)); break;
+            case "section": content.append(generateContent(response.section)); break;
+            case "details": content.append(generateContent(response.details)); break;
+            case "mn": content.append(generateContent(response.main)); break;
         }
     }
+}
+
+function generateContent(item) {
+    var mainDiv = document.createElement("div");
+    mainDiv.setAttribute("class", "main");
+
+    var contentDiv = document.createElement("div");
+    contentDiv.setAttribute("class", "part");
+
+    var h2 = document.createElement("h2");
+    h2.innerHTML = item.title;
+
+    contentDiv.append(h2);
+
+    item.description.forEach(element => {
+        var p = document.createElement("p");
+        //var text = document.createTextNode(element);
+        p.innerHTML = element;
+        contentDiv.append(p);
+    });
+
+    var h3 = document.createElement("h3");
+    h3.setAttribute("class", "indentOnce");
+
+    contentDiv.append(h3);
+
+    var exampleDiv = document.createElement("div");
+    exampleDiv.setAttribute("class", "example");
+
+    item.example.forEach(element => {
+        var p = document.createElement("p");
+        p.setAttribute("class", element.class);
+        var text = document.createTextNode(element.content);
+        p.append(text);
+        exampleDiv.append(p);
+    });
+
+    contentDiv.append(exampleDiv);
+
+    mainDiv.append(contentDiv);
+
+    return mainDiv;
 }
 
 window.addEventListener("load", start, false);

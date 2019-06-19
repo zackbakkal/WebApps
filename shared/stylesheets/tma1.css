@@ -1,0 +1,120 @@
+.wrapper {
+    display: flex;  
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+  }
+  
+  .wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+  }
+  
+  #header {
+    display: flex;
+    flex-flow: row wrap;
+    background: tomato;
+    text-align: left;
+    padding: 10px;
+    color: black;
+  }
+
+  #header h1 {
+      text-align: center;
+      box-shadow: 0 0 5px 0 black;
+      height: 50px;
+  }
+
+  #header ul {
+      list-style: none;
+      text-decoration: none;
+  }
+
+  #firstrow, #secondrow {
+    display: flex;
+    font-size: 3em;
+    color: rgb(4, 27, 128);
+  }
+  
+  footer {
+    background: lightgreen;
+    color: black;
+  }
+
+  img {
+      opacity: .5;
+  }
+
+  a {
+      text-decoration: none;
+  }
+
+  a:visited {
+      text-decoration: none;
+      color: black;
+  }
+
+    #part1 { 
+        background-image: url("../images/resume.png");
+        background-size: cover;
+        order: 1;
+        padding: 10px;
+        flex: 1;
+        height: 10em;
+        margin: 5px;
+    }
+     
+    #part2 {
+        background-image: url("../images/tutorials.png");
+        background-size: cover;
+        order: 2;
+        padding: 10px;
+        flex: 1;
+        height: 10em;
+        margin: 5px;
+    }
+
+    #part3 {
+        background-image: url("../images/slideshow.png");
+        background-size: cover;
+        order: 3;
+        padding: 10px;
+        flex: 1;
+        height: 10em;
+        margin: 5px;
+    }
+
+    #part4 {
+        background-image: url("../images/tools.png");
+        background-size: cover;
+        order: 4;
+        padding: 10px;
+        flex: 1;
+        height: 10em;
+        margin: 5px;
+    }
+
+    footer  {
+        order: 5;
+    }
+
+    #main div div {
+        box-shadow: 0 0 8px 0 black;
+    }
+
+    #header h1 {
+        flex: 1;
+        order: 1;
+      }
+    
+      #header #info {
+        flex: 2;
+        order: 2;
+      }
+
+      body {
+          padding: 1em;
+      }

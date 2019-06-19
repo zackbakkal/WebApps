@@ -1,0 +1,181 @@
+[
+    {
+        "name": "onreadystatechange Property",
+        "definition": [
+            "With the XMLHttpRequest object you can define a function to be executed when the request receives an answer.",
+            "The function is defined in the onreadystatechange property of the XMLHttpResponse object.",
+            "The onreadystatechange property defines a function to be executed when the readyState changes.",
+            "The onreadystatechange function is called every time the readyState changes.",
+            "The onreadystatechange event is triggered four times (1-4), one time for each change in the readyState.",
+            "When readyState property is 4 and status property is 200, the response is ready."
+        ],
+        "examples": [
+            {
+                "title": "Change content of an element:",
+                "content": [
+                    "function loadDoc() {",
+                    "----var xhttp = new XMLHttpRequest();",
+                    "----xhttp.onreadystatechange = function() {",
+                    "--------if (this.readyState == 4 && this.status == 200) {",
+                    "------------document.getElementById(\"demo\").innerHTML = this.responseText;",
+                    "--------}",
+                    "----};",
+                    "xhttp.open(\"GET\", \"ajax_info.txt\", true);",
+                    "xhttp.send();"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "readyState Property",
+        "definition": [
+            "The readyState property returns the state an XMLHttpRequest client is in. An XMLHttpRequest (XHR) client exists in one of the following states:",
+            "<ul><li>UNSENT state with the value 0. At this state the client has been created, and the open() method not called yet.</li> <li>OPENED state with the value 1. At this state the open() method has been invoked. During this state, the request headers can be set using the setRequestHeader() method and the send() method can be called which will initiate the fetch.</li> <li>HEADERS_RECEIVED with the value 2. At this state the send() method has been called, and the headers and status are available.</li> <li>LOADING state with the value 3. At this state the data requested is being downloaded and the responseText property holds partial data.</li> <li>DONE with the value 4. At this state the fetch operation is complete. This could mean that either the data transfer has been completed successfully or failed.</li></ul>"
+        ],
+        "examples": [
+            {
+                "title": "The various states of an XHR object",
+                "content": [
+                    "var xhr = new XMLHttpRequest();",
+                    "console.log('UNSENT', xhr.readyState); // readyState will be 0",
+                    "xhr.open('GET', '/api', true);",
+                    "console.log('OPENED', xhr.readyState); // readyState will be 1",
+                    "xhr.onprogress = function () {",
+                    "----console.log('LOADING', xhr.readyState); // readyState will be 3",
+                    "};",
+                    "xhr.onload = function () {",
+                    "----console.log('DONE', xhr.readyState); // readyState will be 4",
+                    "};",
+                    "xhr.send(null);"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "responseText Property",
+        "definition": [
+            "The read-only XMLHttpRequest property responseText returns the text received from a server following a request being sent.",
+            "The value of a responseText is a DOMString which contains either the textual data received using the XMLHttpRequest or null if the request failed or has not yet been sent by calling send().",
+            "While handling an asynchronous request, the value of responseText always has the current content received from the server, even if it's incomplete because the data has not been completely received yet.",
+            "You know the entire content has been received when the value of readyState becomes XMLHttpRequest.DONE (4), and status becomes 200 (\"OK\").",
+            "Since the responseText property is only valid for text content, any other value is an error condition."
+        ],
+        "examples": [
+            {
+                "title": "Retrieving the content of a txt file",
+                "content": [
+                    "var xhr = new XMLHttpRequest();",
+                    "xhr.open('GET', 'myFile.txt', true);",
+                    "// If specified, responseType must be empty string or \"text\"",
+                    "xhr.responseType = 'text';",
+                    "xhr.onload = function () {",
+                    "----if (xhr.readyState === xhr.DONE) {",
+                    "--------if (xhr.status === 200) {",
+                    "------------console.log(xhr.responseText);",
+                    "--------}",
+                    "----}",
+                    "};",
+                    "xhr.send(null);"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "responseXML Property",
+        "definition": [
+            "The XMLHttpRequest.responseXML read-only property returns a Document containing the HTML or XML retrieved by the request; or null if the request was unsuccessful, has not yet been sent, or if the data can't be parsed as XML or HTML.",
+            "Usually, the response is parsed as \"text/xml\". If the responseType is set to \"document\" and the request was made asynchronously, instead the response is parsed as \"text/html\". responseXML is null for any other types of data, as well as for data: URLs.",
+            "If the server doesn't specify the Content-Type as \"text/xml\" or \"application/xml\", you can use XMLHttpRequest.overrideMimeType() to parse it as XML anyway.",
+            "The value of the reponseXML is a Document from parsing the XML or HTML received using XMLHttpRequest, or null if no data was received or if the data is not XML/HTML."
+        ],
+        "examples": [
+            {
+                "title": "Reading the content of an xml file",
+                "content": [
+                    "var xhr = new XMLHttpRequest();",
+                    "xhr.open('GET', 'myFile.xml', true);",
+                    "// If specified, responseType must be empty string or \"text\"",
+                    "xhr.responseType = 'text';",
+                    "xhr.onload = function () {",
+                    "----if (xhr.readyState === xhr.DONE) {",
+                    "--------if (xhr.status === 200) {",
+                    "------------console.log(xhr.responseXML);",
+                    "--------}",
+                    "----}",
+                    "};",
+                    "xhr.send(null);"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "status Property",
+        "definition": [
+            "The read-only XMLHttpRequest.status property returns the numerical HTTP status code of the XMLHttpRequest's response.",
+            "Before the request completes, the value of status is 0. Browsers also report a status of 0 in case of XMLHttpRequest errors.",
+            "Some status codes are:",
+            "<ul><li>200: OK</li> <li>403: Forbidden</li> <li>404: Page not found</li> <li>For a complete list go to <a href=\"https://www.w3schools.com/tags/ref_httpmessages.asp\">HTTP Messages Reference</li><ul>"
+        ],
+        "examples": [
+            {
+                "title": "Print the status codes of an XHR object",
+                "content": [
+                    "var xhr = new XMLHttpRequest;",
+                    "console.log('UNSENT: ', xhr.status);",
+                    "xhr.open('GET', '/server');",
+                    "console.log('OPENED: ', xhr.status);",
+                    "xhr.onprogress = function () {",
+                    "----console.log('LOADING: ', xhr.status);",
+                    "};",
+                    "xhr.onload = function () {",
+                    "----console.log('DONE: ', xhr.status);",
+                    "};",
+                    "xhr.send();",
+                    "/**",
+                    "* Outputs the following:",
+                    "*",
+                    "* UNSENT: 0",
+                    "* OPENED: 0",
+                    "* LOADING: 200",
+                    "* DONE: 200",
+                    "*/"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "statusText Property",
+        "definition": [
+            "The read-only XMLHttpRequest.statusText property returns a DOMString containing the response's status message as returned by the HTTP server.",
+            "Unlike XMLHTTPRequest.status which indicates a numerical status code, this property contains the text of the response status, such as \"OK\" or \"Not Found\".",
+            "If the request's readyState is in UNSENT or OPENED state, the value of statusText will be an empty string.",
+            "If the server response doesn't explicitly specify a status text, statusText will assume the default value \"OK\"."
+        ],
+        "examples": [
+            {
+                "title": "Print the status text of an XHR object",
+                "content": [
+                    "var xhr = new XMLHttpRequest;",
+                    "console.log('0 UNSENT', xhr.statusText);",
+                    "xhr.open('GET', '/server');",
+                    "console.log('1 OPENED', xhr.statusText);",
+                    "xhr.onprogress = function () {",
+                    "----console.log('3 LOADING', xhr.statusText);",
+                    "};",
+                    "xhr.onload = function () {",
+                    "----console.log('4 DONE', xhr.statusText);",
+                    "};",
+                    "xhr.send();",
+                    "/**",
+                    "* Outputs the following:",
+                    "*",
+                    "* 0 UNSENT",
+                    "* 1 OPENED",
+                    "* 3 LOADING OK",
+                    "* 4 DONE OK",
+                    "*/"
+                ]
+            }
+        ]
+    }
+]

@@ -9,6 +9,7 @@ function start() {
 function registerListeners() {
     var button;
     content = document.getElementById("content");
+
     button = document.getElementById("date");
     button.addEventListener("click", function () { getContent("date"); }, false);
 
@@ -35,13 +36,11 @@ function registerListeners() {
 
     button = document.getElementById("url");
     button.addEventListener("click", function () { getContent("url"); }, false);
-
 }
 
 function getContent(item) {
     try {
         asyncRequest = new XMLHttpRequest(); // create request object
-        //asyncRequest.overrideMimeType("application/json");
 
         // register event handler
         asyncRequest.onreadystatechange = function () {
@@ -56,23 +55,65 @@ function getContent(item) {
 }
 
 function stateChange(item) {
-    console.log(item);
-    console.log(asyncRequest.readyState);
     if (asyncRequest.readyState == 4 && asyncRequest.status == 200) {
         var response = JSON.parse(asyncRequest.responseText);
 
+        content.innerHTML = "";
+
         switch (item) {
-            case "date": content.innerHTML = response.date; break;
-            case "month": content.innerHTML = response.month; break;
-            case "week": content.innerHTML = response.week; break;
-            case "time": content.innerHTML = response.time; break;
-            case "email": content.innerHTML = response.email; break;
-            case "number": content.innerHTML = response.number; break;
-            case "range": content.innerHTML = response.range; break;
-            case "tel": content.innerHTML = response.tel; break;
-            case "url": content.innerHTML = response.url; break;
+            case "date": content.append(generateContent(response.date)); break;
+            case "month": content.append(generateContent(response.month)); break;
+            case "week": content.append(generateContent(response.week)); break;
+            case "time": content.append(generateContent(response.time)); break;
+            case "email": content.append(generateContent(response.email)); break;
+            case "number": content.append(generateContent(response.number)); break;
+            case "range": content.append(generateContent(response.range)); break;
+            case "tel": content.append(generateContent(response.tel)); break;
+            case "url": content.append(generateContent(response.url)); break;
         }
     }
+}
+
+function generateContent(item) {
+    var mainDiv = document.createElement("div");
+    mainDiv.setAttribute("class", "main");
+
+    var contentDiv = document.createElement("div");
+    contentDiv.setAttribute("class", "part");
+
+    var h2 = document.createElement("h2");
+    h2.innerHTML = item.title;
+
+    contentDiv.append(h2);
+
+    item.description.forEach(element => {
+        var p = document.createElement("p");
+        //var text = document.createTextNode(element);
+        p.innerHTML = element;
+        contentDiv.append(p);
+    });
+
+    var h3 = document.createElement("h3");
+    h3.setAttribute("class", "indentOnce");
+
+    contentDiv.append(h3);
+
+    var exampleDiv = document.createElement("div");
+    exampleDiv.setAttribute("class", "example");
+
+    item.example.forEach(element => {
+        var p = document.createElement("p");
+        p.setAttribute("class", element.class);
+        var text = document.createTextNode(element.content);
+        p.append(text);
+        exampleDiv.append(p);
+    });
+
+    contentDiv.append(exampleDiv);
+
+    mainDiv.append(contentDiv);
+
+    return mainDiv;
 }
 
 window.addEventListener("load", start, false);

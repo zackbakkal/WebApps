@@ -57,7 +57,7 @@ function getTrueFalseContent() {
         trueFalseXHR.onreadystatechange = function () {
             stateChange();
         };
-        trueFalseXHR.open("GET", "javascripttruefalse.json", true);
+        trueFalseXHR.open("GET", "ajaxtruefalse.json", true);
         trueFalseXHR.send(null);
     } catch (exception) {
         alert("Something went wrong.");

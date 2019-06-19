@@ -1,0 +1,152 @@
+[
+    {
+        "question": "AJAX is a technique for accessing web servers from a web page.",
+        "answer": "true",
+        "correct": "AJAX is a technique for accessing web servers from a web page."
+    },
+    {
+        "question": "AJAX stands for Asynchronous Java And XML.",
+        "answer": "false",
+        "correct": "AJAX stands for Asynchronous JavaScript And XML."
+    },
+    {
+        "question": "AJAX just uses a combination of a browser built-in \"XMLHttpRequest\" object (to request data from a web server) and JavaScript and HTML DOM (to display or use the data).",
+        "answer": "true",
+        "correct": "AJAX just uses a combination of a browser built-in \"XMLHttpRequest\" object (to request data from a web server) and JavaScript and HTML DOM (to display or use the data)."
+    },
+    {
+        "question": "AJAX applications use only XML to transport data.",
+        "answer": "false",
+        "correct": "AJAX applications might use XML to transport data, but it is equally common to transport data as plain text or JSON text."
+    },
+    {
+        "question": "AJAX allows web pages to be updated asynchronously by exchanging data with a web server behind the scenes.",
+        "answer": "true",
+        "correct": "AJAX allows web pages to be updated asynchronously by exchanging data with a web server behind the scenes."
+    },
+    {
+        "question": "For security reasons the web page and the XML file the browser tries to load, must be located on the separate servers.",
+        "answer": "false",
+        "correct": "For security reasons, modern browsers do not allow access across domains. This means that both the web page and the XML file it tries to load, must be located on the same server."
+    },
+    {
+        "question": "With the XMLHttpRequest object you can define a function to be executed when the request receives an answer.",
+        "answer": "true",
+        "correct": "With the XMLHttpRequest object you can define a function to be executed when the request receives an answer."
+    },
+    {
+        "question": "The readState property defines a function to be executed when the readyState changes.",
+        "answer": "false",
+        "correct": "The onreadystatechange property defines a function to be executed when the readyState changes."
+    },
+    {
+        "question": "The onreadystatechange function is called every time the readyState changes.",
+        "answer": "true",
+        "correct": "The onreadystatechange function is called every time the readyState changes."
+    },
+    {
+        "question": "The onreadystatechange event is triggered 1 time when the readyState value is 4.",
+        "answer": "false",
+        "correct": "The onreadystatechange event is triggered four times (1-4), one time for each change in the readyState."
+    },
+    {
+        "question": "When readyState property is 4 and status property is 200, the response is ready.",
+        "answer": "true",
+        "correct": "When readyState property is 4 and status property is 200, the response is ready."
+    },
+    {
+        "question": "The readyState property returns the state an XMLHttpRequest client is in.",
+        "answer": "true",
+        "correct": "The readyState property returns the state an XMLHttpRequest client is in."
+    },
+    {
+        "question": "An XMLHttpRequest (XHR) client exists in one of the following states: unsent, opened, headers_recieved, loading, and closed.",
+        "answer": "false",
+        "correct": "An XMLHttpRequest (XHR) client exists in one of the following states: unsent, opened, headers_recieved, loading, and done."
+    },
+    {
+        "question": "UNSENT state with the value 0. At this state the client has been created, and the open() method not called yet.",
+        "answer": "true",
+        "correct": "UNSENT state with the value 0. At this state the client has been created, and the open() method not called yet."
+    },
+    {
+        "question": "OPENED state with the value 1. At this state the open() method has been invoked. During this state, the request headers can be set using the setRequestHeader() method and the send() method can be called which will initiate the fetch.",
+        "answer": "true",
+        "correct": "OPENED state with the value 1. At this state the open() method has been invoked. During this state, the request headers can be set using the setRequestHeader() method and the send() method can be called which will initiate the fetch."
+    },
+    {
+        "question": "HEADERS_RECEIVED with the value 2. At this state the send() method has been called, and the headers and status are available.",
+        "answer": "true",
+        "correct": "HEADERS_RECEIVED with the value 2. At this state the send() method has been called, and the headers and status are available."
+    },
+    {
+        "question": "LOADING state with the value 3. At this state the data requested is being downloaded and the responseText property holds partial data.",
+        "answer": "true",
+        "correct": "LOADING state with the value 3. At this state the data requested is being downloaded and the responseText property holds partial data."
+    },
+    {
+        "question": "DONE with the value 4. At this state the fetch operation is complete. This could mean that either the data transfer has been completed successfully or failed.",
+        "answer": "true",
+        "correct": "DONE with the value 4. At this state the fetch operation is complete. This could mean that either the data transfer has been completed successfully or failed."
+    },
+    {
+        "question": "You know the entire content has been received when the value of readyState becomes XMLHttpRequest. HEADERS_RECIEVED (2), and status becomes 200 (\"OK\").",
+        "answer": "false",
+        "correct": "You know the entire content has been received when the value of readyState becomes XMLHttpRequest.DONE (4), and status becomes 200 (\"OK\")."
+    },
+    {
+        "question": "While handling an asynchronous request, the value of responseText satys \"null\" until the entire content is received from the server,",
+        "answer": "false",
+        "correct": "While handling an asynchronous request, the value of responseText always has the current content received from the server, even if it's incomplete because the data has not been completely received yet."
+    },
+    {
+        "question": "The value of a responseText is a DOMString which contains either the textual data received using the XMLHttpRequest or null if the request failed or has not yet been sent by calling send().",
+        "answer": "true",
+        "correct": "The value of a responseText is a DOMString which contains either the textual data received using the XMLHttpRequest or null if the request failed or has not yet been sent by calling send()."
+    },
+    {
+        "question": "If the server doesn't specify the Content-Type as \"text/xml\" or \"application/xml\", you can use XMLHttpRequest.overrideMimeType() to parse it as XML anyway.",
+        "answer": "true",
+        "correct": "If the server doesn't specify the Content-Type as \"text/xml\" or \"application/xml\", you can use XMLHttpRequest.overrideMimeType() to parse it as XML anyway."
+    },
+    {
+        "question": "The read-only XMLHttpRequest.status property returns the numerical HTTP status code of the XMLHttpRequest's response.",
+        "answer": "true",
+        "correct": "The read-only XMLHttpRequest.status property returns the numerical HTTP status code of the XMLHttpRequest's response."
+    },
+    {
+        "question": "Before the request completes, the value of status is 0. Browsers also report a status of 0 in case of XMLHttpRequest errors.",
+        "answer": "true",
+        "correct": "Before the request completes, the value of status is 0. Browsers also report a status of 0 in case of XMLHttpRequest errors."
+    },
+    {
+        "question": "The read-only XMLHttpRequest.statusText property returns a DOMString containing the response's status message as returned by the HTTP server.",
+        "answer": "true",
+        "correct": "The read-only XMLHttpRequest.statusText property returns a DOMString containing the response's status message as returned by the HTTP server."
+    },
+    {
+        "question": "If the request's readyState is in UNSENT or OPENED state, the value of statusText will be \"null\".",
+        "answer": "false",
+        "correct": "If the request's readyState is in UNSENT or OPENED state, the value of statusText will be an empty string."
+    },
+    {
+        "question": "If the server response doesn't explicitly specify a status text, statusText will assume the default value \"FAILED\".",
+        "answer": "false",
+        "correct": "If the server response doesn't explicitly specify a status text, statusText will assume the default value \"OK\"."
+    },
+    {
+        "question": "The XMLHttpRequest method open() initializes a newly-created request, or re-initializes an existing one.",
+        "answer": "true",
+        "correct": "The XMLHttpRequest method open() initializes a newly-created request, or re-initializes an existing one."
+    },
+    {
+        "question": "The XMLHttpRequest method getResponseHeader() returns the string containing the text of a particular header's value.",
+        "answer": "true",
+        "correct": "The XMLHttpRequest method getResponseHeader() returns the string containing the text of a particular header's value."
+    },
+    {
+        "question": "The XMLHttpRequest method send() sends the request to the server. If the request is asynchronous (which is the default), this method returns as soon as the request is sent and the result is delivered using events. If the request is synchronous, this method doesn't return until the response has arrived.",
+        "answer": "true",
+        "correct": "The XMLHttpRequest method send() sends the request to the server. If the request is asynchronous (which is the default), this method returns as soon as the request is sent and the result is delivered using events. If the request is synchronous, this method doesn't return until the response has arrived."
+    }
+]

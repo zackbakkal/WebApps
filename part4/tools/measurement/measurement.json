@@ -1,0 +1,62 @@
+{
+    "types": [
+        "Length",
+        "Area",
+        "Mass",
+        "Volume",
+        "Temprature",
+        "Speed"
+    ],
+    "units": [
+        [
+            "Kilometer",
+            "Meter",
+            "Centimeter",
+            "Millimiter",
+            "Mile",
+            "Yard",
+            "Foot",
+            "Inch"
+        ],
+        [
+            "Square kilometer",
+            "Square meter",
+            "Square mile",
+            "Square yard",
+            "Square foot",
+            "Square inch",
+            "Hectar",
+            "Acre"
+        ],
+        [
+            "Tonne",
+            "Kilogram",
+            "Gram",
+            "Milligram",
+            "Microgram",
+            "Pound",
+            "Ounce"
+        ],
+        [
+            "Liter",
+            "Milliliter",
+            "Cubic meter",
+            "Cubic foot",
+            "Cubic inch",
+            "US liquid gallon",
+            "US fluid ounce"
+        ],
+        [
+            "Celcius",
+            "Fahrenheit",
+            "Kelvin"
+        ],
+        [
+            "Kilimeters /hour",
+            "Meter /second",
+            "Miles /second",
+            "Foot /second",
+            "Knot"
+        ]
+    ]
+}

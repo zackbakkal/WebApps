@@ -1,7 +1,5 @@
 var asyncRequest; // variable to hold XMLHttpRequest object
-var content;
-var div;
-var title;
+var content = document.getElementById("content");
 
 function start() {
     registerListeners();
@@ -12,29 +10,35 @@ function registerListeners() {
     var button;
     content = document.getElementById("content");
 
-    button = document.getElementById("string");
-    button.addEventListener("click", function () { getContent("string"); }, false);
+    button = document.getElementById("onreadystatechange");
+    button.addEventListener("click", function () { getContent("onreadystatechange"); }, false);
 
-    button = document.getElementById("number");
-    button.addEventListener("click", function () { getContent("number"); }, false);
+    button = document.getElementById("readyState");
+    button.addEventListener("click", function () { getContent("readyState"); }, false);
 
-    button = document.getElementById("boolean");
-    button.addEventListener("click", function () { getContent("boolean"); }, false);
+    button = document.getElementById("responseText");
+    button.addEventListener("click", function () { getContent("responseText"); }, false);
 
-    button = document.getElementById("array");
-    button.addEventListener("click", function () { getContent("array"); }, false);
+    button = document.getElementById("responseXML");
+    button.addEventListener("click", function () { getContent("responseXML"); }, false);
+
+    button = document.getElementById("status");
+    button.addEventListener("click", function () { getContent("status"); }, false);
+
+    button = document.getElementById("statusText");
+    button.addEventListener("click", function () { getContent("statusText"); }, false);
+
 }
 
 function getContent(item) {
     try {
         asyncRequest = new XMLHttpRequest(); // create request object
-        //asyncRequest.overrideMimeType("application/json");
 
         // register event handler
         asyncRequest.onreadystatechange = function () {
             stateChange(item);
         };
-        asyncRequest.open("GET", "datatypes.json", true);
+        asyncRequest.open("GET", "properties.json", true);
         asyncRequest.send(null);
     } catch (exception) {
         alert("Something went wrong.");
@@ -47,10 +51,12 @@ function stateChange(item) {
         var response = JSON.parse(asyncRequest.responseText);
 
         switch (item) {
-            case "string": display(response, 0); break;
-            case "number": display(response, 1); break;
-            case "boolean": display(response, 2); break;
-            case "array": display(response, 3); break;
+            case "onreadystatechange": display(response, 0); break;
+            case "readyState": display(response, 1); break;
+            case "responseText": display(response, 2); break;
+            case "responseXML": display(response, 3); break;
+            case "status": display(response, 4); break;
+            case "statusText": display(response, 5); break;
         }
     }
 }
@@ -82,7 +88,7 @@ function display(response, item) {
 
     var h3 = document.createElement("h3");
     h3.setAttribute("class", "indentOnce");
-    h3.innerHTML = "Examples"
+    h3.innerHTML = "Example"
     div.appendChild(h3);
 
     var examples = response[item].examples;

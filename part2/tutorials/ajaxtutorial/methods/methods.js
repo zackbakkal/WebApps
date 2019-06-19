@@ -1,7 +1,5 @@
 var asyncRequest; // variable to hold XMLHttpRequest object
-var content;
-var div;
-var title;
+var content = document.getElementById("content");
 
 function start() {
     registerListeners();
@@ -12,29 +10,32 @@ function registerListeners() {
     var button;
     content = document.getElementById("content");
 
-    button = document.getElementById("string");
-    button.addEventListener("click", function () { getContent("string"); }, false);
+    button = document.getElementById("open");
+    button.addEventListener("click", function () { getContent("open"); }, false);
 
-    button = document.getElementById("number");
-    button.addEventListener("click", function () { getContent("number"); }, false);
+    button = document.getElementById("getResponseHeader");
+    button.addEventListener("click", function () { getContent("getResponseHeader"); }, false);
 
-    button = document.getElementById("boolean");
-    button.addEventListener("click", function () { getContent("boolean"); }, false);
+    button = document.getElementById("setRequestHeader");
+    button.addEventListener("click", function () { getContent("setRequestHeader"); }, false);
 
-    button = document.getElementById("array");
-    button.addEventListener("click", function () { getContent("array"); }, false);
+    button = document.getElementById("overrideMimeType");
+    button.addEventListener("click", function () { getContent("overrideMimeType"); }, false);
+
+    button = document.getElementById("send");
+    button.addEventListener("click", function () { getContent("send"); }, false);
+
 }
 
 function getContent(item) {
     try {
         asyncRequest = new XMLHttpRequest(); // create request object
-        //asyncRequest.overrideMimeType("application/json");
 
         // register event handler
         asyncRequest.onreadystatechange = function () {
             stateChange(item);
         };
-        asyncRequest.open("GET", "datatypes.json", true);
+        asyncRequest.open("GET", "methods.json", true);
         asyncRequest.send(null);
     } catch (exception) {
         alert("Something went wrong.");
@@ -47,10 +48,11 @@ function stateChange(item) {
         var response = JSON.parse(asyncRequest.responseText);
 
         switch (item) {
-            case "string": display(response, 0); break;
-            case "number": display(response, 1); break;
-            case "boolean": display(response, 2); break;
-            case "array": display(response, 3); break;
+            case "open": display(response, 0); break;
+            case "getResponseHeader": display(response, 1); break;
+            case "setRequestHeader": display(response, 2); break;
+            case "overrideMimeType": display(response, 3); break;
+            case "send": display(response, 4); break;
         }
     }
 }
@@ -82,7 +84,7 @@ function display(response, item) {
 
     var h3 = document.createElement("h3");
     h3.setAttribute("class", "indentOnce");
-    h3.innerHTML = "Examples"
+    h3.innerHTML = "Example"
     div.appendChild(h3);
 
     var examples = response[item].examples;
